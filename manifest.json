@@ -39,7 +39,7 @@
     }
   ],
 
-  "start_url": "/index.html",
+  "start_url": "/PWA-Testing/index.html",
 
   "display": "standalone",
   "orientation": "portrait-primary",
