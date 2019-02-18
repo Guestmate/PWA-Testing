@@ -528,7 +528,7 @@ var Constant = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeviceServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_device__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_device__ = __webpack_require__(154);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1104,7 +1104,7 @@ var HomeServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommunicationServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_http__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_http__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__errorhandler_guestmate_error_handler__ = __webpack_require__(344);
@@ -2005,23 +2005,23 @@ var ReservationServiceProvider = /** @class */ (function () {
 
 var map = {
 	"../pages/activities-booking/activities-booking.module": [
-		772,
+		771,
 		2
 	],
 	"../pages/activities-details/activities-details.module": [
-		745,
+		747,
 		34
 	],
 	"../pages/activities/activities.module": [
-		746,
+		745,
 		33
 	],
 	"../pages/activity-payment/activity-payment.module": [
-		771,
+		772,
 		32
 	],
 	"../pages/amenities/amenities.module": [
-		747,
+		746,
 		31
 	],
 	"../pages/checkin-arrivaltime/checkin-arrivaltime.module": [
@@ -2137,7 +2137,7 @@ var map = {
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
-		783,
+		782,
 		11
 	],
 	"../pages/room-service/room-service.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		782,
+		784,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -2165,7 +2165,7 @@ var map = {
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		784,
+		783,
 		5
 	],
 	"../pages/wellness/wellness.module": [
@@ -5081,7 +5081,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_checkin_service_checkin_service__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__ionic_native_camera__ = __webpack_require__(391);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_ancillary_service_ancillary_service__ = __webpack_require__(390);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__ionic_native_device__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__ionic_native_device__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__providers_restaurant_service_restaurant_service__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(401);
@@ -5095,7 +5095,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__providers_amenities_service_amenities_service__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__ionic_native_onesignal__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ionic_native_http__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ionic_native_http__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__ionic_native_file_transfer__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__ionic_native_file__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__providers_room_service_extra_room_service_extra__ = __webpack_require__(189);
@@ -5185,9 +5185,9 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_17__angular_http__["b" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/activities-details/activities-details.module#ActivitiesDetailsPageModule', name: 'ActivitiesDetailsPage', segment: 'activities-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/amenities/amenities.module#AmenitiesPageModule', name: 'AmenitiesPage', segment: 'amenities', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/activities-details/activities-details.module#ActivitiesDetailsPageModule', name: 'ActivitiesDetailsPage', segment: 'activities-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-arrivaltime/checkin-arrivaltime.module#CheckinArrivaltimePageModule', name: 'CheckinArrivaltimePage', segment: 'checkin-arrivaltime', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-summary/checkin-summary.module#CheckinSummaryPageModule', name: 'CheckinSummaryPage', segment: 'checkin-summary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-basicinfo/checkout-basicinfo.module#CheckoutBasicinfoPageModule', name: 'CheckoutBasicinfoPage', segment: 'checkout-basicinfo', priority: 'low', defaultHistory: [] },
@@ -5211,8 +5211,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness/wellness.module#WellnessPageModule', name: 'WellnessPage', segment: 'wellness', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
@@ -5222,9 +5222,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
@@ -6273,7 +6273,7 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__model_reservation_model__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_hotel_model__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_hotel_service_hotel_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_onesignal__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_my_bookings_my_bookings__ = __webpack_require__(402);
