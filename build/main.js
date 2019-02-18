@@ -2085,7 +2085,7 @@ var map = {
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		780,
+		781,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		781,
+		780,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -5217,8 +5217,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
@@ -7086,9 +7086,7 @@ var HomePage = /** @class */ (function () {
             }
         }
         else {
-            console.log(this.platForm.is('ios'));
-            console.log(this.platForm.is('android'));
-            if (this.hotel.objHotel.checkinService && !(this.platForm.is('ios') || this.platForm.is('android'))) {
+            if (this.hotel.objHotel.checkinService && (this.platForm.is('ios') || this.platForm.is('android'))) {
                 if (checkId == "checkout" && this.disableCheckout)
                     disabled = true;
                 serviceButtons.push({ iconClass: checkCls, id: checkId, ui: 'circleItems', service: checkService, disabled: disabled, hasChild: false });
