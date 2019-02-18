@@ -1,0 +1,648 @@
+{
+	"version" : "1",
+	"language" : "es",
+	"view" : {
+        "login" : {
+
+
+        		"label":{
+        					"reserva":{
+                              "title":"Id Reserva:",
+                              "placeHolder":"<Tu Id>"
+                      },
+                  "mail":{
+                              "title":"Email:",
+                              "placeHolder":"<Tu e-mail>"
+                      },
+        					   "tour":"Si no tienes un Id de Reserva, por favor introduce el código <b>000000</b> para acceder a la demo",
+        				      "login":"ACCESO",
+                      "requestId":{
+                                  "button":"SOLICITAR ID",
+                                  "title":"Solicitar Id"
+                      },
+                      "back":"Entra tu Id de Reserva",
+                      "forgot": {
+                                 "title":"Has olvidado tu Id de Reserva?",
+                                 "message":"Te hemos enviado un email con tu Id de Reserva. Por favor revisa tu carpeta de entrada en <b>{mail}</b>."
+                                 },
+
+                        "legal":"Al registrarme acepto las <br> <span id='termsOfService'><b>Condiciones del Servicio</b></span> y <span id='privacyPolicy'><b>Política de Privacidad</b></span>",
+
+                        "name":{
+                                      "title":"Nombre:",
+                                      "placeHolder":"<Tu nombre>"
+
+                          },
+                        "surname":{
+                                      "title":"Apellido:",
+                                      "placeHolder":"<Tu primer apellido>"
+
+                          },
+                        "locator":{
+                                      "title":"Localizador:",
+                                      "placeHolder":"<Tu localizador de reserva>"
+
+                          },
+                        "contactphone":{
+                                      "title":"Teléfono:",
+                                      "placeHolder":"<Tu teléfono de contacto>"
+
+                          },
+                        "nostay": {
+                                 "title":"No me alojo en el hotel"
+                                  },
+                        "backview":"Volver atrás",
+                        "newsletter":"Acepto recibir información comercial",
+												"privacy":"He leído y acepto la <span id='privacyPolicy'><b>Política de Privacidad</b></span> y las <span id='termsOfService'><b>Condiciones</b>.</span>",
+												"privacyerrormessage": "Para registrarse debe aceptar las condiciones y política de privacidad."
+
+        		      },
+
+        		 "error":{
+        		 		"credentials":"Por favor introduce un código de reserva válido.",
+        		 		 "connection":"Sin conexión. Por favor inténtalo más tarde.",
+                      "empty":"Por favor introduce un código de reserva válido.",
+                      "emptyMail":"Por favor introduce una dirección de correo electrónico válida.",
+                     "entityNotFound":"Código de reserva no encontrado."
+        		 		}
+        },
+        "privacyPolicy":{
+              "title":"Política de Privacidad",
+              "message":"En preparación ....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "termsOfService":{
+              "title":"Condiciones del Servicio",
+              "message":"<p style='font-size:14px';>En preparació a recuperar del BO<br><br>....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum <p/>"
+        },
+        "reception" : {
+                "message":"Hola {nombreHuesped},<br><br> ¡bienvenido a nuestro Hotel!<br>Mi nombre es {nombreRecepcionista}. Te invito a descubrir todos los servicios que puedes disfrutar en nuestro hotel.<br><br>Gracias y disfruta de tu estancia con nosotros!",
+
+             "label":{
+                      "check":"Tómate un minuto para comprobar tus datos"
+             }
+        },
+
+        "main" : {
+            "welcome" : "Bienvenido al hotel {hotelName}",
+            "description" : "Dispone de una reserva de {nightNumber} noche/s a partir de {startDate}",
+            "continue": "Continuar registro"
+        },
+        "summary" : {
+
+            "label":{
+                   "info":"Información de tu reserva",
+              "localizer":"Localizador",
+                 "dateIn":"Entrada",
+                 "nights":"Noches",
+                   "room":"Tipo Habitación",
+                 "people":"Personas"
+            },
+  "messageTemplate":[
+                     "<div id='summary-card'>",
+                        "<p>Hola <strong>{nombreHuesped}</strong>, a continuación te mostramos el detalle de la reserva correspondiente a tu localizador GuestPilot <strong>{localizer}</strong> y localizador de hotel <strong>{localizadorHotel}</strong>.</p>",
+                        "<p>Dispones de una habitación tipo <strong>{tipoHabitacion}</strong> para <strong>{personas}</strong> persona(s) en el hotel <strong>{nombreHotel}</strong>.</p>",
+                        "<p> La reserva es para <strong>{noches}</strong> noche(s) y la fecha prevista de entrada es para el próximo <strong>{entradaFormateada}</strong>.</p>",
+                        "<p>Pulsa sobre el botón continuar para completar tu proceso de registro. Gracias</p>",
+                      "</div>"
+                    ]
+        },
+
+
+        "hotelInfo":{
+
+                      "title":"Información",
+                      "legal":"Si necesitas alguna cosa no dudes en contactar con nosotros. Estaremos encantados de ayudarte. Por favor envíanos un mensaje o llámanos directamente.",
+                      "help":"¿Te podemos ayudar?",
+                      "emptyMsg":"Por favor escribe tu mensaje y luego pulsa sobre el botón <Enviar>",
+                      "successMsg":"Hemos recibido tu mensaje correctamente. Nos pondremos en contacto contigo lo antes posible. Gracias.",
+                      "placeHolder": "Escribe tu mensaje aquí",
+                      "messageTemplate":[]
+
+          },
+          "restaurantCarousel" : {
+              "title" : "Restaurantes"
+          },
+
+          "restaurantLearnMore" : {
+              "title" : "Restaurantes"
+          },
+          "saludCarousel" : {
+              "title" : "Wellness"
+          },
+          "saludLearnMore" : {
+              "title" : "Wellness"
+          },
+          "actividadCarousel" : {
+              "title" : "Actividades"
+          },
+          "actividadLearnMore" : {
+              "title" : "Actividades"
+          },
+          "ofertaCarousel" : {
+              "title" : "Ofertas"
+          },
+          "ofertaLearnMore" : {
+              "title" : "Ofertas"
+          },
+
+          "servicioHabitacion" :{
+              "title" : "Servicio de habitaciones",
+              "carrito":{
+                          "check":"Comprueba y confirma tu pedido",
+                          "order":"Pedido actual",
+                          "total":"Total",
+                          "empty":"La lista está vacía"
+              },
+              "error": {
+                        "checkinNoRealizado":"Para acceder al servicio de habitaciones es necesario haber realizado primero el check-in y tener la habitación asignada.",
+                        "carritoVacio":"No has seleccionado todavía ningún producto. Antes de confirmar tu petición selecciona las cantidades en la parte inferior mediante (+) y (-). Consulta las diferentes categorias desde el panel superior mediante (<) y (>)"
+              }
+          },
+          "checkout": {
+              "title": "Check-out express",
+              "request":"SOLICITAR CHECK-OUT",
+              "subtitle":{
+                          "requestInfo":"Datos de registro",
+                          "payment":"Datos de pago",
+                          "checkoutUnavailable":"La opción de Check-out express no está disponible"
+              },
+               "error": {
+                            "mustAgree":"Para poder realizar el check-out express debes aceptar las condiciones"
+              },
+              "success": "Tu solicitud de check-out express se ha enviado correctamente",
+              "label": {
+                      "unavailable": {
+                                "title":"La opción de check-out express se encuentra <b>deshabilitada</b>. Horas antes de tu marcha del hotel recibirás una <b>notificación</b> informándote de que la opción de check-out express ha sido habilitada. A partir de ese instante podrás realizar el check-out express si lo deseas."
+                      },
+                      "expired": {
+                                "title":"La opción de check-out express ya no está disponible. Por favor pásate por recepción para poder realizar el checkout."
+                      },
+
+                      "realizado": {
+                                "title":"Ya se ha realizado el check-out para esta reserva."
+                      },
+
+                      "legal":{
+                              "title":"Utilizando el servicio de check-out express no se necesita revisar la factura. Simplemente deja la llave en recepción cuando dejes la habitación. Recibirás tu factura por correo electrónico en las próximas 48 horas."
+                      },
+                      "signature":{
+                              "title":"El importe de la factura final se cargará en este número de tarjeta sin la necesidad de firma por parte del titular."
+                      }
+              },
+              "template":{
+                      "welcome":"Hola {nombreHuesped}, <br> estás utilizando nuestro servicio de Check-out Express. Gran elección. Por favor, confirma que la siguiente información es correcta y modifica cuanto sea necesario."
+              }
+
+          },
+
+
+          "checkin" : {
+              "title" : "Check-in express",
+              "request":"SOLICITAR CHECK-IN",
+              "subtitle":{
+                            "requestInfo":"Datos de registro",
+                            "arrival":"Llegada estimada",
+                            "payment":"Datos de pago",
+                            "roomUpgrade":"Tu mejor opción de upgrade",
+                            "servicesUpgrade":"Servicios auxiliares",
+                            "checkinSummary":"Resumen",
+                            "checkinUnavailable":"El Check-in express no está disponible"
+
+                },
+                "error": {
+                            "mustAgree":"Para poder realizar el check-in express debes aceptar las condiciones."
+                },
+                "success": "Tu solicitud de check-in express se ha enviado correctamente",
+                "incomplete": "Por favor cumplimenta los datos para cada huésped de la reserva.<br>Selecciona '+' para abrir el siguiente formulario. Gracias!",
+
+              "template":{
+
+
+                    "welcome" : "Hola {nombreHuesped}, <br> estás utilizando la opción de Check-in express para tu estancia en nuestro hotel. Gran elección. Por favor, confirma que la información es correcta y cumplimenta todo lo necesario.",
+
+                    "arrival" : [" Nuestro horario de entrada es a las {horaEntrada} y la hora de salida es a las {horaSalida}.<br><br>",
+                                 " Por favor, indícanos a qué hora tienes previsto llegar al hotel.",
+                                 " Haremos todo lo posible para dejarlo todo preparado para ti.<br><br>",
+                                 "Recibirás una notificación cuando tengamos tu habitación preparada.<br><br>"
+
+                                 ],
+                     "foto" :   "Por favor toma una foto de tu documento de identidad.<br>",
+                     "Nationalityfirst" :"Por favor indica tu nacionalidad primero.",
+                    "card": "<div class='checkin-card' id='checkin-card'><div class='row uno'><div id='localizer' class='left'><span class='label'>Id Reserva: </span> <span class='value'><strong>{{localizadorHotel}}</strong></span></div> </div><div class='row dos'><div id='fechaEntrada' class='left'><span class='label'>Check-in: </span> <span class='value'>{{fechaEntrada}}</span></div><div id='noches' class='right'><span class='label'>Noches: </span> <span class='value'>{{noches}}</span></div></div><div class='row tres'><div id='habitacion' class='left'><span class='label'>Tipo Habitación: </span> <span class='value'>{{tipoHabitacion}}</span></div><div id='habitaciones' class='right'><span class='label'>Habitaciones: </span> <span class='value'>{{habitaciones}}</span></div> </div><div class='row cuatro'><div id='huespedes' class='left'><span class='label'>Huéspedes: </span> <span class='value'>{{personas}}</span></div><div id='precio' class='right'><span class='label'>Precio: </span> <span class='value'>{{precio}} {{moneda}}</span></div></div></div>",
+
+
+                    "acceptUpgrade": "Solicito el upgrade de habitación por {precio}{moneda}/noche + Impuestos ",
+                    "summary":"Estas a punto de enviar la información relativa a tu proceso de check-in express previsto para el próximo día {fechaEntrada} a las {horaPrevistaCheckin}. Revisa los upgrades o servicios adicionales que has seleccionado y solicita el check-in express."
+                },
+
+              "label" : {
+                          "nombre":{
+                                      "title":"Nombre",
+                                      "placeHolder":"Nombre"
+
+                          },
+                          "apellidos":{
+                                      "title":"Apellido",
+                                      "placeHolder":"Primer apellido"
+
+                          },
+                          "sexo":{
+                                  "title":"Sexo",
+                                  "placeHolder":"Hombre o Mujer"
+                          },
+                          "fechaNacimiento":{
+                                        "title":"Fecha nacimiento",
+                                        "placeHolder":"Fecha de nacimiento"
+                          },
+                          "documentoIdentidad":{
+                                        "title":"Num Id Nacional",
+                                        "placeHolder":"Identificador"
+                          },
+                          "tipoDocumentoIdentidad":{
+                                        "title":"Documento",
+                                        "placeHolder":"Tipo de documento",
+                                        "types":{
+                                                "dni":"DNI",
+                                                "passport":"Pasaporte",
+                                                "other":"Otro"
+                                        }
+                          },
+
+                          "mail":{
+                                        "title":"Dirección de correo",
+                                        "placeHolder":"Tu correo electrónico"
+                          },
+                          "tipoTarjetaCredito":{
+                                        "title":"Tipo de tarjeta de crédito",
+                                        "placeHolder":"Escoge el tipo de tarjeta de crédito"
+                          },
+                          "numeroTarjetaCredito":{
+                                        "title":"Nº de tarjeta de crédito",
+                                        "placeHolder":"XXXX-XXXX-XXXX-XXXX"
+                          },
+                          "codigoSeguridadTarjetaCredito":{
+                                        "title":"CVV",
+                                        "placeHolder":"XXX"
+                          },
+
+                          "fechaCaducidadTarjetaCredito":{
+                                        "title":"Fecha de expiración",
+                                        "placeHolder":"MM/YYYY"
+                          },
+
+                          "asignarTarjetaCreditoATodasLasHabitaciones":{
+                                        "title":"Asignar esta tarjeta de crédito para todas las habitaciones de la reserva"
+
+                          },
+                          "agree":{
+                                        "title":"Acepto"
+
+                          },
+                          "whyThisRoom":{
+                                        "title": "<b>¿Por qué esta habitación?</b><br>"
+                          },
+                          "nacionalidadDocumentoIdentidad":{
+                                        "title":"Nacionalidad",
+                                        "placeHolder":"Nacionalidad"
+                          },
+                          "fechaDocumentoIdentidad":{
+                                        "title":"Expedición",
+                                        "placeHolder":"Fecha expedición"
+                          },
+                          "horaPrevistaCheckin":{
+                                        "title":"Hora estimada de llegada",
+                                        "placeHolder":"Hora estimada de llegada"
+
+                          },
+                          "comentario":{
+                                          "title":"Peticiones especiales",
+                                          "placeHolder":"Anota aquí tus preferencias para la estancia.\nHaremos todo lo posible para cumplir con tus peticiones."
+                          },
+                          "rejectUpgrade": {
+                                            "title": "No, gracias"
+                          },
+                          "changes":{
+                                          "title":"Solicitamos una tarjeta como garantía de su estancia. Las reservas que se confirmen para esta estancia pueden ser cargadas a esta tarjeta de crédito a menos que cambies tu opción de pago en recepción."
+                          },
+                          "available": {
+                                          "title":"Las peticiones de upgrade se confirmaran según disponibilidad de las habitaciones."
+                          },
+                          "unavailable": {
+                                          "title": "Esta opción se encuentra deshabilitada en este momento. Unas horas antes de tu llegada al hotel recibirás una notificación con la invitación para poder realizar el check-in express."
+                          },
+                          "expired": {
+                                          "title": "La opción de check-in express ya no está disponible. Por favor pasa por recepción para realizar el check-in."
+                          },
+                          "realizado": {
+                                          "title": "Ya se ha realizado el proceso de check-in para esta reserva."
+                          },
+                          "noServices": {
+                                          "title":"No tiene servicios adicionales selecionados."
+                          },
+                          "order":{
+                                        "title":"Servicios adicionales"
+                          },
+                          "residencia":{
+                                        "title":"Residencia",
+                                        "placeHolder":"Residencia"
+                          },
+                          "address_street":{
+                                        "title":"Dirección"
+                          },
+                          "address_city":{
+                                        "title":"Ciudad"
+                          },
+                          "address_postalcode":{
+                                        "title":"Código Postal"
+                          },
+                          "address_country":{
+                                        "title":"País"
+                          }
+
+              }
+          },
+
+          "compras" : {
+              "title" : "Mis Reservas",
+              "detalle":"Detalle de su reserva",
+              "cancellation":{
+                              "confirm": {
+                                            "message":"¿Seguro que quieres cancelar tu petición de reserva {servicioNombre}?",
+                                            "yes":"Anular petición de reserva seleccionada",
+                                            "no":"Mantener esta petición de reserva"
+                                        },
+                              "error":"No es posible anular tu petición de reserva en este momento. Por favor inténtalo más tarde."
+
+              }
+          },
+          "mensajes" : {
+              "title" : "Notificaciones"
+          },
+          "notificaciones" : {
+              "title" : "Notificaciones"
+          },
+					"roomissue" : {
+							"title" : "Report Room Issue",
+							"select_category": "Please, select Category"
+					},
+        "registration" : {
+
+            "requiredTemplate":"El campo {field} es obligatorio",
+
+        		"label":{
+        	      "leisure":"Ocio",
+               "business":"Negocios",
+                 "family":"Familiar",
+          "reservationId":"Código Reserva",
+           "registerInfo":"Información de registro",
+                   "name":"Nombre",
+                "surname":"Apellido",
+               "surname2":"Apellido 2",
+                "address":"Dirección",
+                  "phone":"Telf Móvil",
+                   "mail":"Email",
+                 "gender":"Sexo",
+            "gender_male":"Hombre",
+          "gender_female":"Mujer",
+                  "birth":"F. Nacimiento",
+                "country":"País",
+             "travelType":"Tipo de viaje",
+                    "faq":"¿Para qué usamos tu información personal?",
+                "purpose":"Utilizamos los datos personales para generar recomendaciones personalizadas y para la validación de usuario",
+                   "city": "Ciudad"
+
+        		}
+        },
+
+        "validation": {
+            "messageTemplate" : [
+                                 "<p>Hola <strong>{nombreHuesped}</strong> hemos detectado que tu localizador <strong>{localizer}</strong> ha sido utilizado anteriormente desde otro dispositivo. Por motivos de seguridad, es necesario que rellenes los datos requeridos a continuación. Muchas gracias</p>"
+            ]
+          },
+
+         "mainMenu":{
+              "home":"Inicio",
+              "info":"Información",
+     "notifications":"Notificaciones",
+              "buys":"Mis Reservas",
+            "logoff":"Cambiar Id Reserva"
+         },
+
+    "reservation": {
+                        "confirm":"Por favor asegúrate de que los datos de tu reserva son correctos",
+                        "success":"Tu solicitud de reserva se ha enviado correctamente. En breve recibirás la confirmación de tu reserva",
+
+                        "error":{
+
+                                "dateRange":"Lo sentimos pero su estancia ha finalizado y no es posible realizar más reservas",
+                                "noPossible":"Lo sentimos pero no se ha podido confirmar tu reserva",
+                                "nullDate":"Fecha y hora son campos obligatorios",
+                                "checkoutYaRealizado":"No es posible reservar servicios una vez efectuado el check-out",
+                                "dateValid":"Lo sentimos pero ya no se admiten reservas para este servicio"
+
+                        },
+                        "label":{
+                           "descriptionPrefix":"<div class='descriptionPrefix'> Descripción</div>",
+
+                           "legal":"Por favor indícanos para cuando quieres reservar este servicio y para cuantas personas. Indica también si tienes alguna preferencia que debamos tener en cuenta.<br><br>Una vez enviada tu petición de reserva la gestionaremos para confirmártela lo antes posible.",
+                           "roomservice":"Por favor indícanos para cuando quieres que te sirvamos este servicio de habitaciones. Indica también si tienes alguna preferencia que debamos tener en cuenta.<br><br>Una vez enviada tu petición de reserva la gestionaremos para confirmártela lo antes posible.",
+
+                            "comments":{
+                                      "title":"Preferencias",
+                                      "placeHolder":"Introduce tus preferencias e intentaremos cumplirlas en la medida de lo posible"
+                            },
+
+                           "dateAndTime":{
+                                        "title":"Día y Hora",
+                                        "placeHolder":"Selecciona el día y hora"
+                                  },
+                           "dateAndTurn":{
+                                        "title":"Día y Turno",
+                                        "placeHolder":"Selecciona el día y turno"
+                                  },
+
+                            "date":{
+                                        "title":"Día",
+                                        "placeHolder":"Selecciona el día"
+                                  },
+                            "turn":{
+                                        "title":"Turno",
+                                        "placeHolder":"Selecciona el turno"
+                                    },
+                            "time": {
+                                        "title": "hora",
+                                        "placeHolder": "Seleccionar hora"
+                                    },
+                              "people":{
+                                            "title":"Personas",
+                                            "placeHolder":"Seleccione nº personas",
+                                            "suffix":"personas",
+                                            "suffixFirst":"persona"
+
+                                  },
+                              "cardHolder":{
+                                            "title":"Titular de la tarjeta"
+
+                                  },
+                              "mustAgreeTerms":"Para reservar debes aceptar los términos y condiciones.",
+                              "cardHolderEmpty":"El titular de la tarjeta es obligatorio",
+                              "guaranteeText":"Solicitamos una tarjeta para garantizar su reserva. Lo cobraremos sólo en caso de cancelación con penalización.",
+                              "chargeText":"La forma de pago será mediante pasarela de pago y serán aceptadas las tarjetas: AmericanExpress, Visa, MasterCard.",
+                              "acceptTerms":"<p style='font-size:14px;padding-left:30px;padding-top:10px;color:grey;'> He leído y acepto los <span id='termsOfService'><b>Términos y Condiciones</b>.</p>",
+                              "CancellationTermsTitle":"<p style='font-size:15px; color:#b59553;'> Políticas de Cancelación</p>",
+                              "pciCompliant":"Toda la información de su tarjeta de crédito se maneja de forma segura y nunca se almacena.",
+                              "noPaymentKeys":"Hay un problema con la pasarela de pagos. Por favor contacte con recepción, gracias."
+
+                          }
+
+      },
+
+
+
+ "restaurantReservation":{
+
+
+        },
+  "healthReservation":{
+                "label":{
+                            "info":"Datos de tu reserva",
+                        "comments":"Introduce tus comentarios",
+                      "dayAndHour":"Selecciona día y hora",
+                          "people":"personas",
+                     "firstPeople":"persona"
+
+                }
+        },
+ "activityReservation":{
+                "label":{
+                            "info":"Datos de tu reserva",
+                        "comments":"Introduce tus comentarios",
+                      "dayAndHour":"Selecciona día y hora",
+                          "people":"personas",
+                     "firstPeople":"persona"
+
+                }
+        },
+  "healthReservationSummary":{
+                "label":{
+                            "info":"Resumen de tu reserva"
+
+                }
+        }
+
+
+    },
+
+
+
+    "exception":{
+                  "error":{
+                            "mailNotFound":"No se ha encontrado ninguna reserva válida para el mail introducido"
+                  }
+    },
+
+    "common":{
+                "choosecountry":"Elige un país",
+                "chooseprovince":"Elige una provincia",
+                "logoff":"Estás seguro que quieres cambiar tu Id de Reserva? Se inhabilitará cualquier comunicación con el hotel hasta que no se introduzca de nuevo una Id de Reserva válida",
+                "reception":"Recepción",
+                "serviceIsUnavailable":"El servicio solicitado no está disponible",
+                "reservation":{
+                   "confirmed":"Confirmada",
+                   "cancelled":"Cancelada",
+                   "pending":"Pendiente"
+                },
+                "comments":"Comentarios",
+                "frondeskResponse":"Comentarios de recepción",
+                "error":"Ups!",
+                "nofoto":"No se ha seleccionado ninguna foto",
+                "errors":{
+                          "creditCardInvalid":"El número de tarjeta de crédito no es válido",
+                          "creditCardCVVInvalid":"El formato del código de seguridad (CVV) que ha introducido no es válido"
+
+                },
+
+                "confirm":"Confirmación",
+                "nights":"noches",
+                "free":"--",
+
+                "requestReceived":"Solicitud recibida",
+
+                "porDia": "por dia",
+                "hour":"hora",
+                "hours":"horas",
+
+                 "loading":"Cargando datos...",
+         "connectionError":"Sin conexión. Por favor inténtalo de nuevo más tarde.",
+              "connecting":"Conectando con el servidor...",
+              "sync":"Sincronizando con el servidor. Esta operación puede llevar varios minutos...",
+              "syncLoading":"Sincronizando contenido {percent}%",
+             "invalidUser":"Las credenciales no son válidas",
+     			"continue":"CONTINUAR",
+          "send":"ENVIAR",
+            "gender":"Sexo",
+     			  	 "man":"Hombre",
+     			   "woman":"Mujer",
+     			    "book":"RESERVAR",
+             "learn":"Saber más",
+                 "confirm":"Confirmar",
+                 "today":"Hoy",
+              "tomorrow":"Mañana",
+              "yesterday":"Ayer",
+                "dayNames":["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+              "monthNames":["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+              "dateFormat":{
+                       "long":"l j \\de F \\de Y",
+                      "short":"D d M" ,
+                    "compact":"d/m/Y"
+              },
+              "mandatoryFields":"Los siguientes campos son obligatorios:<br><strong><i>{{fields}}</i></strong> ",
+              "timeFormat":{
+                       "long":"H:i \\h\\o\\r\\a\\s",
+                      "short":"H:i",
+                    "compact":"G:i"
+              }
+
+     },
+     "buttons" : {
+         "modify":"Modificar",
+           "send":"Enviar",
+            "yes":"Sí",
+             "no":"No",
+             "ok":"Aceptar",
+        "cancel" : "Cancelar",
+        "save"   : "Guardar",
+        "done"   : "Hecho",
+        "addView": "Nuevo"
+    },
+    "misc" : {
+        "bottomTitle"   : "Barra inferior",
+        "loadLocaleMsg" : "Cargando...",
+        "back"          : "VOLVER"
+    },
+    "fields" : {
+        "name" : "Nombre",
+        "dateLabel" : "Fecha",
+        "datePlaceholder" : "Escoge la fecha"
+    },
+    "fieldsets" : {
+        "title" : "Título",
+        "instructions" : "Instrucciones"
+    },
+    "months" : {
+        "1"  : "Enero",
+        "2"  : "Febrero",
+        "3"  : "Marzo",
+        "4"  : "Abril",
+        "5"  : "Mayo",
+        "6"  : "Junio",
+        "7"  : "Julio",
+        "8"  : "Agosto",
+        "9"  : "Septiembre",
+        "10" : "Octubre",
+        "11" : "Noviembre",
+        "12" : "Diciembre"
+    }
+
+
+}

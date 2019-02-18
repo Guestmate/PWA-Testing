@@ -1,0 +1,655 @@
+{
+	"version" : "1",
+	"language" : "ca",
+	"view" : {
+			"roomissue" : {
+					"title" : "Report Room Issue",
+					"select_category" : "",
+					"picture_description": "Take a picture of the issue and give a short description. That woluld help our stuff to resolve it more quickly.",
+					"picture_placeholder": "Please describe your issue here",
+					"picture_send": "SEND"
+			},
+			"roommakeup": {
+					"title": "My Room",
+					"dontdisturb_title": "Request to not disturb",
+					"dontdisturb_description1": "Push to activate the option for non disturb and select until what time",
+					"dontdisturb_description2": "Our stuff will recive your request acordingly",
+					"dontdisturb_activated_until": "Currently activated until",
+					"cleanroom_title": "Request to clean room",
+					"cleanroom_description1": "Push to send a request for cleaning your room",
+					"cleanroom_description2": "Our stuff will recive your request acordingly"
+
+			},
+        "login" : {
+
+
+        		"label":{
+        					"reserva":{
+                              "title":"Id de Reserva:",
+                              "placeHolder":"<El teu Id>"
+                      },
+                  "mail":{
+                              "title":"Correu-e:",
+                              "placeHolder":"<El teu correu-e>"
+                      },
+        					   "tour":"Si no tens un id de reserva, si us plau introdueix el codi <b>000000</b> per accedir a la demo",
+        				      "login":"ACCÉS",
+                      "requestId":{
+                                  "button":"SOL.LICITAR ID",
+                                  "title":"Sol.licitar Id"
+                      },
+                      "back":"Entra la teva Id de reserva",
+                      "forgot": {
+                                 "title":"Has oblidat el teu Id de Reserva?",
+                                 "message":"T'hem enviat un email amb el teu Id de Reserva. Si us plau revisa la teva carpeta d'entrada <b>{mail}</b>."
+                                 },
+                        "legal":"Al registrar-me accepto les <br> <span id='termsOfService'><b>Condicions del Servei</b></span> i <span id='privacyPolicy'><b>Política de Privacitat</b></span>",
+
+                        "name":{
+                                      "title":"Nom:",
+                                      "placeHolder":"<El teu nom>"
+
+                          },
+                        "surname":{
+                                      "title":"Cognom:",
+                                      "placeHolder":"<El teu primer cognom>"
+
+                          },
+                        "locator":{
+                                      "title":"Localitzador:",
+                                      "placeHolder":"<El teu localitzador de reserva>"
+
+                          },
+                        "contactphone":{
+                                      "title":"Telèfon:",
+                                      "placeHolder":"<El teu telèfon de contacte>"
+
+                          },
+                        "nostay": {
+                                 "title":"No m'allotjo a l'hotel"
+                                  },
+                        "backview":"Tornar enrera",
+                        "newsletter":"Accepto rebre informació en el meu email",
+												"privacy":"He llegit i accepto la <span id='privacyPolicy'><b>política de privacitat</b>.</span>",
+												"privacyerrormessage": "Per registrar-se ha d'acceptar les condicions i la política de privacitat."
+        		      },
+
+        		 "error":{
+        		 		"credentials":"Si us plau introduex un Id de Reserva vàlid.",
+        		 		 "connection":"Sense connexió. Si us plau torna-ho a provar més tard.",
+                      "empty":"Si us plau introdueix un Id de Reserva vàlid.",
+                      "emptyMail":"Si us plau introdueix una adreça d'email vàlida.",
+                     "entityNotFound":"El codi de reserva no s'ha trobat."
+        		 		}
+        },
+        "privacyPolicy":{
+              "title":"Política de Privacitat",
+              "message":"En preparació ....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "termsOfService":{
+              "title":"Condicions de Servei",
+              "message":"En preparació....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "reception" : {
+                "message":"Hola {nombreHuesped},<br><br> benvingut al nostre Hotel!<br>El meu nom és {nombreRecepcionista}.Et convido a descobrir tots els serveis que pots gaudir en el nostre hotel.<br><br>Gràcies i gaudeix de la teva estada amb nosaltres!",
+
+             "label":{
+                      "check":"Pren-te un minut per comprovar les teves dades"
+             }
+        },
+
+        "main" : {
+            "welcome" : "Benvingut al nostre hotel {hotelName}",
+            "description" : "Disposes d'una reserva de {nightNumber} nits a partir de {startDate}",
+            "continue": "Continuar amb el registre"
+        },
+        "summary" : {
+
+            "label":{
+                   "info":"Informació de la teva reserva",
+              "localizer":"Localitzador",
+                 "dateIn":"Entrada",
+                 "nights":"Nits",
+                   "room":"Tipus Habitació",
+                 "people":"Persones"
+            },
+  "messageTemplate":[
+                     "<div id='summary-card'>",
+                        "<p>Hola <strong>{nombreHuesped}</strong>, a continuación te mostramos el detalle de la reserva correspondiente a tu localizador GuestPilot <strong>{localizer}</strong> y localizador de hotel <strong>{localizadorHotel}</strong>.</p>",
+                        "<p>Dispones de una habitación tipo <strong>{tipoHabitacion}</strong> para <strong>{personas}</strong> persona(s) en el hotel <strong>{nombreHotel}</strong>.</p>",
+                        "<p> La reserva es para <strong>{noches}</strong> noche(s) y la fecha prevista de entrada es para el próximo <strong>{entradaFormateada}</strong>.</p>",
+                        "<p>Pulsa sobre el botón continuar para completar tu proceso de registro. Gracias</p>",
+                      "</div>"
+                    ]
+        },
+
+
+        "hotelInfo":{
+
+                      "title":"Informació",
+                      "legal":"Si necessites alguna cosa no dubtis en contactar amb nosaltres. Estarem encantats d'ajudar-te. Si us plau envia'ns un missatge o truca'ns directament.",
+                      "help":"¿Et podem ajudar?",
+                      "emptyMsg":"Si us plau escriu el teu missatge i després prem sobre el botó <Enviar>",
+                      "successMsg":"Hem rebut el teu missatge correctament. Ens posarem en contacte amb tu el més aviat possible. Gràcies.",
+                      "placeHolder": " Escriu el teu missatge aquí",
+                      "messageTemplate":[
+                      ]
+
+          },
+          "restaurantCarousel" : {
+              "title" : "Restaurants"
+          },
+
+          "restaurantLearnMore" : {
+              "title" : "Restaurants"
+          },
+          "saludCarousel" : {
+              "title" : "Wellness"
+          },
+          "saludLearnMore" : {
+              "title" : "Wellness"
+          },
+          "actividadCarousel" : {
+              "title" : "Activitats"
+          },
+          "actividadLearnMore" : {
+              "title" : "Activitats"
+          },
+          "ofertaCarousel" : {
+              "title" : "Ofertes"
+          },
+          "ofertaLearnMore" : {
+              "title" : "Ofertes"
+          },
+
+          "servicioHabitacion" :{
+              "title" : "Servei d'habitacions",
+              "carrito":{
+                          "check":"Comprova i confirma la teva comanda",
+                          "order":"Comanda actual",
+                          "total":"Total",
+                          "empty":"La llista és buida"
+              },
+              "error": {
+                        "checkinNoRealizado":"Per accedir al servei d'habitacions cal haver fet primer el check-in i tenir l'habitació assignada.",
+                        "carritoVacio":"No has seleccionat encara cap producte. Abans de confirmar la teva petició selecciona les quantitats en la part inferior mitjançant (+) i (-). Consulta les diferents categories des del panell superior mitjançant (<) i (>)"
+              }
+          },
+          "checkout": {
+              "title": "Check-out express",
+              "request":"SOL.LICITAR CHECK-OUT",
+              "subtitle":{
+                          "requestInfo":"Dades de registre",
+                          "payment":"Dades de pagament",
+                          "checkoutUnavailable":"L'opció de Check-out express no està disponible."
+              },
+               "error": {
+                            "mustAgree":"Per poder realitzar el check-out express has d'acceptar les condicions."
+              },
+              "success": "La teva sol·licitud de check-out express s'ha enviat correctament.",
+              "label": {
+                      "unavailable": {
+                                "title":"L'opció de check-out express es troba <b> desactivada </b>. Hores abans de marxar de l'hotel rebràs una <b> notificació </b> informant-te de que l'opció de check-out express s'ha activat per sol.licitar el procés si ho desitges."
+                      },
+                      "expired": {
+                                "title":"L'opció de check-out express ja no està disponible. Passa per recepció per realitzar el checkout."
+                      },
+
+                      "realizado": {
+                                "title":"Ja s'ha realitzat el check-out per aquesta reserva."
+                      },
+
+                      "legal":{
+                              "title":"Utilitzant el servei de check-out express no es necessita revisar la factura. Simplement deixa la clau de l'habitació a recepció. Rebràs la teva factura per correu electrònic en les properes 48 hores."
+                      },
+                      "signature":{
+                              "title":"L'import de la factura final es carregarà en aquest número de targeta sense la necessitat de signatura per part del titular de la targeta."
+                      }
+              },
+              "template":{
+                      "welcome":"Hola {nombreHuesped}, <br>Estàs utilitzant el nostre servei de Check-out express. Gran elecció. Si us plau confirma que la informació és correcta i complimenta el que calgui."
+              }
+
+          },
+
+
+          "checkin" : {
+              "title" : "Check-in express",
+              "request":"SOL.LICITAR CHECK-IN",
+              "subtitle":{
+                            "requestInfo":"Dades de registre",
+                            "arrival":"Arribada estimada",
+                            "payment":"Dades de pagament",
+                            "roomUpgrade":"La teva millor opció d'upgrade",
+                            "servicesUpgrade":"Serveis auxiliars",
+                            "checkinSummary":"Resum",
+                            "checkinUnavailable":"El Check-in express no està disponible."
+
+                },
+                "error": {
+                            "mustAgree":"Per poder realitzar el check-in express has d'acceptar les condicions."
+                },
+                "success": "La teva sol·licitud de check-in express s'ha enviat correctament.",
+                "incomplete": "Si us plau emplena les dades per cada hoste de la reserva. <br> Selecciona '+' per obrir el següent formulari. Gràcies!",
+
+              "template":{
+
+                    "welcome" : "Hola {nombreHuesped},<br>Estàs utilitzant la opció de check-in express per la teva estada al nostre hotel. Gran elecció. Confirma si us plau que la informació és correcta i emplena tot el necessari.",
+                    "arrival" : [" El nostre horari d'entrada és a les {horaEntrada} i l'hora de sortida és a les {horaSalida}.<br><br>",
+                                 " Si us plau indica'ns a quina hora tens previst arribar a l'hotel.",
+                                 " Farem tot el possible per deixar-ho tot preparat per tu.<br><br>",
+                                 "Rebràs una notificació quan tinguis la teva habitació preparada.<br><br>"
+
+                                 ],
+                    "foto" :   "Si us plau fes una foto del teu document d'identitat.",
+                    "Nationalityfirst" :"Si su plau indica primer la teva nacionalitat.",
+
+
+                    "card": "<div class='checkin-card' id='checkin-card'><div class='row uno'><div id='localizer' class='left'><span class='label'>Id de Reserva: </span> <span class='value'><strong>{{localizadorHotel}}</strong></span></div></div><div class='row dos'><div id='fechaEntrada' class='left'><span class='label'>Data d'entrada: </span> <span class='value'>{{fechaEntrada}}</span></div><div id='noches' class='right'><span class='label'>Nits: </span> <span class='value'>{{noches}}</span></div></div><div class='row tres'><div id='habitacion' class='left'><span class='label'>Tipus d'Habitació: </span> <span class='value'>{{tipoHabitacion}}</span></div><div id='habitaciones' class='right'><span class='label'>Habitacions: </span> <span class='value'>{{habitaciones}}</span></div></div><div class='row cuatro'><div id='huespedes' class='left'><span class='label'>Hostes: </span> <span class='value'>{{personas}}</span></div><div id='precio' class='right'><span class='label'>Preu: </span> <span class='value'>{{precio}} {{moneda}}</span></div></div></div>",
+
+                    "acceptUpgrade": "Sol·licito l'upgrade d'habitació per {precio}{moneda}/nit + Impostos. ",
+                    "summary":"Estàs a punt d'enviar la teva petició de check-in express prevista per el proper dia {fechaEntrada} a les {horaPrevistaCheckin}. Revisa els upgrades o serveis addicionals que has seleccionat i sol·licita el check-in express."
+                },
+
+              "label" : {
+                          "nombre":{
+                                      "title":"Nom",
+                                      "placeHolder":"Nom"
+
+                          },
+                          "apellidos":{
+                                      "title":"Cognoms",
+                                      "placeHolder":"Cognoms"
+
+                          },
+                          "sexo":{
+                                  "title":"Sexe",
+                                  "placeHolder":"Home o Dona"
+                          },
+                          "fechaNacimiento":{
+                                        "title":"Data naixement",
+                                        "placeHolder":"Data naixement"
+                          },
+                          "documentoIdentidad":{
+                                        "title":"Núm Id Nacional",
+                                        "placeHolder":"Identificador"
+                          },
+                          "tipoDocumentoIdentidad":{
+                                        "title":"Document",
+                                        "placeHolder":"Tipus de document",
+                                        "types":{
+                                                "dni":"DNI",
+                                                "passport":"Passaport",
+                                                "other":"Altres"
+                                        }
+                          },
+
+                          "mail":{
+                                        "title":"Adreça de correu-e",
+                                        "placeHolder":"El teu correu-e"
+                          },
+                          "tipoTarjetaCredito":{
+                                        "title":"Tipus de targeta de crèdit",
+                                        "placeHolder":"Escull el tipus de targeta de crèdit"
+                          },
+                          "numeroTarjetaCredito":{
+                                        "title":"Número de targeta de crèdit",
+                                        "placeHolder":"XXXX-XXXX-XXXX-XXXX"
+                          },
+                          "codigoSeguridadTarjetaCredito":{
+                                        "title":"CVV",
+                                        "placeHolder":"XXX"
+                          },
+
+                          "fechaCaducidadTarjetaCredito":{
+                                        "title":"Data d'expiració",
+                                        "placeHolder":"MM/YYYY"
+                          },
+
+                          "asignarTarjetaCreditoATodasLasHabitaciones":{
+                                        "title":"Assignar aquesta targeta de crèdit per a totes les habitacions de la reserva."
+
+                          },
+                          "agree":{
+                                        "title":"Accepto"
+
+                          },
+                          "whyThisRoom":{
+                                        "title": "<b>¿Per què aquesta habitació?</b><br>"
+                          },
+                          "nacionalidadDocumentoIdentidad":{
+                                        "title":"Nacionalitat",
+                                        "placeHolder":"Nacionalitat"
+                          },
+                          "fechaDocumentoIdentidad":{
+                                        "title":"Expedició",
+                                        "placeHolder":"Data d'expedició"
+                          },
+                          "horaPrevistaCheckin":{
+                                        "title":"Hora estimada d'arribada",
+                                        "placeHolder":"Hora estimada d'arribada"
+
+                          },
+                          "comentario":{
+                                          "title":"Peticions especials",
+                                          "placeHolder":"Escriu aquí les teves preferències per l'estada.\nFarem tot el possible per complir amb les teves peticions."
+                          },
+                          "rejectUpgrade": {
+                                            "title": "No, gràcies"
+                          },
+                          "changes":{
+                                          "title":"Sol·licitem una targeta com a garantia de la seva estada. Les reserves que es confirmin durant l'estada poden ser carregades a aquesta targeta de crèdit a menys que canviïs la teva opció de pagament a recepció."
+                          },
+                          "available": {
+                                          "title":"Les peticions d'upgrade es confirmaran segons la disponibilitat d'habitacions."
+                          },
+                          "unavailable": {
+                                          "title": "Aquesta opció ara es troba deshabilitada. Unes hores abans de la teva arribada a l'hotel rebràs una notificació amb la invitació per poder realitzar el check-in express."
+                          },
+                          "expired": {
+                                          "title": "L'opció de check-in express ja no està disponible. Si us plau passa per recepció per a realitzar el check-in."
+                          },
+                          "realizado": {
+                                          "title": "Ja s'ha realitzat el procés de check-in per aquesta reserva."
+                          },
+                          "noServices": {
+                                          "title":"No té serveis addicionals seleccionats."
+                          },
+                          "order":{
+                                        "title":"Serveis addicionals"
+                          },
+                          "residencia":{
+                                        "title":"Residència",
+                                        "placeHolder":"Residència"
+                          },
+                          "address_street":{
+                                        "title":"Adreça"
+                          },
+                          "address_city":{
+                                        "title":"Ciutat"
+                          },
+                          "address_postalcode":{
+                                        "title":"Codi Postal"
+                          },
+                          "address_country":{
+                                        "title":"País"
+                          }
+
+
+              }
+          },
+
+          "compras" : {
+              "title" : "Les meves Reserves",
+              "detalle":"Detall de la seva reserva",
+              "cancellation":{
+                              "confirm": {
+                                            "message":"¿Segur que vols cancel·lar la teva petició de reserva {servicioNombre}?",
+                                            "yes":"Anul·lar petició de reserva seleccionada",
+                                            "no":"Mantenir aquesta petició de reserva"
+                                        },
+                              "error":"No és possible anul·lar la teva petició de reserva en aquest moment. Si us plau prova-ho més tard."
+
+              }
+          },
+          "mensajes" : {
+              "title" : "Notificacions"
+          },
+          "notificaciones" : {
+              "title" : "Notificacions"
+          },
+        "registration" : {
+
+            "requiredTemplate":"El camp {field} és obligatori",
+
+        		"label":{
+        	      "leisure":"Oci",
+               "business":"Negocis",
+                 "family":"Familiar",
+          "reservationId":"Codi de Reserva",
+           "registerInfo":"Informació de registre",
+                   "name":"Nom",
+                "surname":"1erCognom",
+               "surname2":"2onCognom",
+                "address":"Adreça",
+                  "phone":"Telf Mòbil",
+                   "mail":"Correu-e",
+                 "gender":"Sexe",
+            "gender_male":"Home",
+          "gender_female":"Dona",
+                  "birth":"D.naixement",
+                "country":"País",
+             "travelType":"Tipus de viatge",
+                    "faq":"¿Per què fem servir la teva informació personal?",
+                "purpose":"Utilitzem les dades personals per a generar recomanacions personalitzades i per a la validació d'usuari.",
+                   "city": "Ciutat"
+        		}
+        },
+
+        "validation": {
+            "messageTemplate" : [
+                                 "<p>Hola <strong>{nombreHuesped}</strong> hem detectat que el teu localitzador <strong>{localizer}</strong>.Per motius de seguretat cal que omplis les dades que es requereixen a continuació. Moltes gràcies</p>"
+            ]
+          },
+
+         "mainMenu":{
+              "home":"Inici",
+              "info":"Informació",
+     "notifications":"Notificacions",
+              "buys":"Les meves reserves",
+            "logoff":"Canviar Id reserva"
+         },
+
+    "reservation": {
+                        "confirm":"Si us plau assegura't que les dades de la teva reserva són correctes.",
+                        "success":"La teva sol·licitud de reserva s'ha enviat correctament. En breu rebràs la confirmació de la reserva.",
+
+                        "error":{
+
+                                "dateRange":"Malauradament la teva estada ha finalitzat i ja no és possible reservar més serveis.",
+                                "noPossible":"Ho sentim però no s'ha pogut realitzar la reserva.",
+                                "nullDate":"Data i hora són dades obligatòries",
+                                "checkoutYaRealizado":"No és possible reservar serveis un cop fet el check-out.",
+                                "dateValid":"Malauradament ja no s'admeten reserves per aquest servei."
+
+                        },
+                        "label":{
+                           "descriptionPrefix":"<div class='descriptionPrefix'> Descripció</div>",
+                           "legal":"Si us plau indica'ns per quan vols reservar aquest servei i per a quantes persones. Indica també si tens alguna preferència que haguem de tenir en compte.<br><br>Un cop enviada la teva petició de reserva la gestionarem per confirmar-t'ho el més aviat possible.",
+                           "roomservice":"Si us plau indica'ns quan vols que et servim aquest servei d'habitacions. Indica també si tens alguna preferència que haguem de tenir en compte.<br><br>Un cop enviada la teva petició de reserva la gestionarem per confirmar-t'ho el més aviat possible.",
+                            "comments":{
+                                      "title":"Preferències",
+                                      "placeHolder":"Introdueix les teves preferències i intentarem complir-les en la mesura del possible"
+                            },
+
+                           "dateAndTime":{
+                                        "title":"Dia i hora",
+                                        "placeHolder":"Selecciona el dia i l'hora"
+                                  },
+                           "dateAndTurn":{
+                                        "title":"Dia i torn",
+                                        "placeHolder":"Selecciona el dia i el torn"
+                                  },
+
+                            "date":{
+                                        "title":"Dia",
+                                        "placeHolder":"Selecciona el dia"
+                                  },
+                            "turn":{
+                                        "title":"Torn",
+                                        "placeHolder":"Selecciona el torn"
+                                },
+                            "time": {
+                                        "title": "Hora",
+                                        "placeHolder": "Selecciona hora"
+                                    },
+                              "people":{
+                                            "title":"Persones",
+                                            "placeHolder":"Selecciona núm persones",
+                                            "suffix":"persones",
+                                            "suffixFirst":"persona"
+
+                                  },
+                              "cardHolder":{
+                                            "title":"Titular de la targeta"
+
+                                  },
+                              "mustAgreeTerms":"Per reservar s'han d'acceptar els termes i condicions.",
+                              "cardHolderEmpty":"El titular de la targeta és obligatori",
+                              "guaranteeText":"Sol.licitem una targeta per garantitzar la reserva. Ho cobrarem només en cas de cancel.lació amb penalització.",
+                              "chargeText":"La forma de pagament será mitjançant pasarel.la de pagament i seran acceptades les targetes: AmericanExpress, Visa, MasterCard.",
+                              "acceptTerms":"<p style='font-size:14px;padding-left:30px;padding-top:10px;color:grey;'> He llegit i accepto els <span id='termsOfService'><b>Termes i Condicions</b>.</p>",
+                              "CancellationTermsTitle":"<p style='font-size:15px; color:#b59553;'> Polítiques de Cancel.lació</p>",
+                              "pciCompliant":"Tota la informació de la targeta de crèdit es controla de manera segura i mai no s'emmagatzema.",
+                              "noPaymentKeys":"Hi ha un problema amb la passarel·la de pagaments. Si us plau contacti amb recepció, gràcies."
+                          }
+
+      },
+
+
+
+ "restaurantReservation":{
+
+
+        },
+  "healthReservation":{
+                "label":{
+                            "info":"Dades de la teva reserva",
+                        "comments":"Introdueix els teus comentaris",
+                      "dayAndHour":"Selecciona dia i hora",
+                          "people":"persones",
+                     "firstPeople":"persona"
+
+                }
+        },
+ "activityReservation":{
+                "label":{
+                            "info":"Dades de la teva reserva",
+                        "comments":"Introdueix els teus comentaris",
+                      "dayAndHour":"Selecciona dia i hora",
+                          "people":"persones",
+                     "firstPeople":"persona"
+
+                }
+        },
+  "healthReservationSummary":{
+                "label":{
+                            "info":"Resum de la teva reserva"
+
+                }
+        }
+
+
+    },
+
+
+    "exception":{
+                  "error":{
+                            "mailNotFound":"No se ha encontrado ninguna reserva válida para el mail introducido"
+                  }
+    },
+
+    "common":{
+                "choosecountry":"Tria un país",
+                "chooseprovince":"Tria una província",
+                "logoff":"Estàs segur que vols canviar el teu Id de Reserva? S'inhabilitarà qualsevol comunicació amb l'hotel fins que no s'introdueixi de nou una Id de Reserva vàlida",
+                "reception":"Recepció",
+                "serviceIsUnavailable":"El servei sol·licitat no està disponible.",
+                "reservation":{
+                   "confirmed":"Confirmada",
+                   "cancelled":"Cancel.lada",
+                   "pending":"Pendent"
+                },
+                "comments":"Comentaris",
+                "frondeskResponse":"Comentaris de recepció",
+                "error":"Ups!",
+                "nofoto":"No s'ha seleccionat cap foto",
+                "errors":{
+                          "creditCardInvalid":"El número de targeta de crèdit no és vàlid.",
+                           "creditCardCVVInvalid":"El format del codi de seguretat (CVV) que ha introduït no és vàlid."
+                },
+
+                "confirm":"Confirmació",
+                "nights":"Nits",
+                "free":"--",
+
+                "requestReceived":"Sol·licitud rebuda",
+
+                "porDia": "per dia",
+                "hour":"hora",
+                "hours":"hores",
+
+                 "loading":"Carregant dades ...",
+         "connectionError":"Sense connexió. Si us plau torna-ho a provar més tard.",
+              "connecting":"Connectant amb el servidor ...",
+              "sync":"Sincronitzant amb el servidor. Aquesta operació pot portar alguns minuts ...",
+              "syncLoading":"Sincronitzant continguts {percent}%",
+             "invalidUser":"Les credencials no són vàlides",
+     			"continue":"CONTINUAR",
+          "send":"ENVIAR",
+            "gender":"Sexe",
+     			  	 "man":"Home",
+     			   "woman":"Dona",
+     			    "book":"RESERVAR",
+             "learn":"Saber més",
+                 "confirm":"Confirmar",
+                 "today":"Avui",
+              "tomorrow":"Demà",
+              "yesterday":"Ahir",
+                "dayNames":["Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"],
+              "monthNames":["Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"],
+              "dateFormat":{
+                       "long":"l j \\de F \\de Y",
+                      "short":"D d M" ,
+                    "compact":"d/m/Y"
+              },
+              "mandatoryFields":"Els següents camps són obligatoris:<br><strong><i>{{fields}}</i></strong> ",
+              "timeFormat":{
+                       "long":"H:i \\h\\o\\r\\a\\s",
+                      "short":"H:i",
+                    "compact":"G:i"
+              }
+
+     },
+     "buttons" : {
+         "modify":"Modificar",
+           "send":"Enviar",
+            "yes":"Si",
+             "no":"No",
+             "ok":"Acceptar",
+        "cancel" : "Cancel.lar",
+        "save"   : "Guardar",
+        "done"   : "Fet",
+        "addView": "Nou"
+    },
+    "misc" : {
+        "bottomTitle"   : "Barra inferior",
+        "loadLocaleMsg" : "Carregant...",
+        "back"          : "ENRERE"
+    },
+    "fields" : {
+        "name" : "Nom",
+        "dateLabel" : "Data",
+        "datePlaceholder" : "Escull la data"
+    },
+    "fieldsets" : {
+        "title" : "Títol",
+        "instructions" : "Instruccions"
+    },
+    "months" : {
+        "1"  : "Gener",
+        "2"  : "Febrer",
+        "3"  : "Març",
+        "4"  : "Abril",
+        "5"  : "Maig",
+        "6"  : "Juny",
+        "7"  : "Juliol",
+        "8"  : "Agost",
+        "9"  : "Setembre",
+        "10" : "Octubre",
+        "11" : "Novembre",
+        "12" : "Desembre"
+    }
+
+
+}

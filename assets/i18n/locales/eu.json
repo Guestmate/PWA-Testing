@@ -1,0 +1,638 @@
+{
+	"version" : "1",
+	"language" : "eu",
+	"view" : {
+        "login" : {
+
+
+        		"label":{
+        					"reserva":{
+                              "title":"Erreserbarako Id:",
+                              "placeHolder":"<Zure erreserbarako Id-a>"
+                      },
+                  "mail":{
+                              "title":"E-maila:",
+                              "placeHolder":"<Zure e-maila>"
+                      },
+        					   "tour":"Erreserbarako Id-a ez baduzu, 00000 kodea sartu DEMO sartzeko",
+        				      "login":"SARTZEKO",
+                      "requestId":{
+                                  "button":"ID ESKATU",
+                                  "title":"ID eskatu"
+                      },
+                      "back":"Zure erreserbarako ID-a sartu",
+                      "forgot": {
+                                 "title":"Zure erreserbarako ID-a ahaztu egin al duzu?",
+                                 "message":"Emaila bidali dizugu zure erreserbarako ID-arekin. Mesedez, begiratu zure sarrera karpeta <b>{mail}</b>."
+                                 },
+                      "legal":"Izena ematearekin batera <span id='termsOfService'><b> zerbitzuaren baldintzak</b></span> <br> zein <span id='privacyPolicy'><b>pribatutasun politika</b></span> onartzen ditut.",
+                      "name":{
+                                      "title":"Izen:",
+                                      "placeHolder":"<Zure izena>"
+
+                          },
+                        "surname":{
+                                      "title":"izena:",
+                                      "placeHolder":"<Zure izena>"
+
+                          },
+                        "locator":{
+                                      "title":"Localizador:",
+                                      "placeHolder":"<Zure erreserba erreferentzia>"
+
+                          },
+                        "contactphone":{
+                                      "title":"Telefono:",
+                                      "placeHolder":"<Zure harremanetarako telefono>"
+
+                          },
+                        "nostay": {
+                                 "title":"Ez dut hotelean egonaldia"
+                                  },
+                        "backview":"atzera egin",
+                        "newsletter":"Informazioa jasotzeko nire posta onartzen dut",
+												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
+												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+        					   
+        		      },
+        		 "error":{
+        		 		"credentials":"Mesedez, erreserbarako kode zuzena sartu.",
+        		 		 "connection":"Konekziorik gabe. Mesedez, beranduago saiatu.",
+                      "empty":"Mesedez, erreserbarako kode zuzena sartu.",
+                      "emptyMail":"Mesedez, e-mail heldide zuzen bat sartu.",
+                     "entityNotFound":"Ez da erreserbarako kodea aurkitu."
+        		 		}
+        },
+        "privacyPolicy":{
+              "title":"Pribatutasun Politika",
+              "message":"En preparación ....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "termsOfService":{
+              "title":"Zerbitzu baldintzak",
+              "message":"En preparación....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "reception" : {
+                "message":"Kaixo {nombreHuesped},<br><br>ongi etorri gure hotelera!<br>Dut izena {nombreRecepcionista} eta gure hotelean disfruta ditzakezun zerbitzu guztiak ezagutzera gonbidatzen zaitut.<br><br>Eskerrik asko eta egonaldiaz disfrutatu!",
+
+             "label":{
+                      "check":"Denbora apur bat hartu zure datuak egiaztatzeko"
+             }
+        },
+
+        "main" : {
+            "welcome" : "Bienvenido al hotel {hotelName}",
+            "description" : "Dispone de una reserva de {nightNumber} noche/s a partir de {startDate}",
+            "continue": "Continuar registro"
+        },
+        "summary" : {
+
+            "label":{
+                   "info":"Zure erreserbako informazioa",
+              "localizer":"Bilatzailea",
+                 "dateIn":"Sarrera",
+                 "nights":"Gauak",
+                   "room":"Gela mota",
+                 "people":"Pertsonak"
+            },
+  "messageTemplate":[
+                     "<div id='summary-card'>",
+                        "<p>Hola <strong>{nombreHuesped}</strong>, a continuación te mostramos el detalle de la reserva correspondiente a tu localizador GuestPilot <strong>{localizer}</strong> y localizador de hotel <strong>{localizadorHotel}</strong>.</p>",
+                        "<p>Dispones de una habitación tipo <strong>{tipoHabitacion}</strong> para <strong>{personas}</strong> persona(s) en el hotel <strong>{nombreHotel}</strong>.</p>",
+                        "<p> La reserva es para <strong>{noches}</strong> noche(s) y la fecha prevista de entrada es para el próximo <strong>{entradaFormateada}</strong>.</p>",
+                        "<p>Pulsa sobre el botón continuar para completar tu proceso de registro. Gracias</p>",
+                      "</div>"
+                    ]
+        },
+
+
+        "hotelInfo":{
+
+                      "title":"Informazioa",
+                      "legal":"Zerbait behar izanez gero, gurekin harremanetan jartzeko ez izan zalantzarik. Languntzeko pres izango gaituzu. Mesedez, bidal iezaguzu mezu bat, edota deitu zuzenean.",
+                      "help":"Lagutzarik behar?",
+                      "emptyMsg":"Mesedez, idatzi mezua eta sakatu botoia",
+                      "successMsg":"Zure mezua ondo jaso dugu. Ahal bezain azkarren jarriko gara harremanetan. Eskerrik asko.",
+                      "placeHolder": "Hemen idatzi zure mezua",
+                      "messageTemplate":[]
+
+          },
+          "restaurantCarousel" : {
+              "title" : "Jatetxeak"
+          },
+
+          "restaurantLearnMore" : {
+              "title" : "Jatetxeak"
+          },
+          "saludCarousel" : {
+              "title" : "Wellness"
+          },
+          "saludLearnMore" : {
+              "title" : "Wellness"
+          },
+          "actividadCarousel" : {
+              "title" : "Ekintzak"
+          },
+          "actividadLearnMore" : {
+              "title" : "Ekintzak"
+          },
+          "ofertaCarousel" : {
+              "title" : "Eskaintzak"
+          },
+          "ofertaLearnMore" : {
+              "title" : "Eskaintzak"
+          },
+
+          "servicioHabitacion" :{
+              "title" : "Gela zerbitzua",
+              "carrito":{
+                          "check":"Ziurtatu eta baieztatu zure eskaera",
+                          "order":"Oraingo eskaera",
+                          "total":"Guztira",
+                          "empty":"Zerrenda hutsik dago"
+              },
+              "error": {
+                        "checkinNoRealizado":"Gela zerbitzuan sartzeko check-ina eginda zein gela emanda izatea beharrezkoa da.",
+                        "carritoVacio":"Oraindik ez duzu produkturik aukeratu. Eskaera baieztatu baino lehen, behe aldean dauden (+) eta (-) botoien bidez, kopuruak aukeratu. Goiko taulatik,(<) eta (>) botoien bidez, maila desberdinak kontsultatu."
+              }
+          },
+          "checkout": {
+              "title": "Check-out express",
+              "request":"CHECK-OUT ESKATU",
+              "subtitle":{
+                          "requestInfo":"Erregistro datuak",
+                          "payment":"Ordainketa datuak",
+                          "checkoutUnavailable":"Check-out express aukera ez dago  erabilgarri"
+              },
+               "error": {
+                            "mustAgree":"Check-out express egin ahal izateko baldintzak onartu behar dituzu"
+              },
+              "success": "Zure check-out egiteko eskaera zuzen bidali da",
+              "label": {
+                      "unavailable": {
+                                "title":"Ez dago check-out egiteko aukerarik. Irteera baino ordu batzuk lehenago, check-out egiteko aukera prest dagoela esanez oharra jasoko duzu. Ondoren, nahi baduzu, check-out express egiteko aukera izango duzu."
+                      },
+                      "expired": {
+                                "title":"Check-out egiteko aukera jada ez dago. Harrera lekura joan, check-outa egiteko."
+                      },
+
+                      "realizado": {
+                                "title":"Erreserbarako honetarako check-outa jada eginda dago."
+                      },
+
+                      "legal":{
+                              "title":"Check-out express zerbitzua erabiliz gero ez duzu faktura berrikusteko beharra. Zure gelako giltza harrera lekuan utzi baino ez duzu egin behar. Hurrengo 48 ordutan, faktura jasoko duzu e-mail bidez."
+                      },
+                      "signature":{
+                              "title":"Fakturaren kopurua kontu korronte zenbaki honetan zordunduko da, txartelaren jabearen sinadurarik gabe."
+                      }
+              },
+              "template":{
+                      "welcome":"Kaixo {nombreHuesped}, <br> Gure check-out express zerbitzua erabiltzen ari zara. Aukera bikaina! Mesedez, egiaztatu hurrengo informazioa eta aldatu beharrezkoa den guztia."
+              }
+
+          },
+
+
+          "checkin" : {
+              "title" : "Check-in express",
+              "request":"CHECK-IN A ESKATU",
+              "subtitle":{
+                            "requestInfo":"Erregistroaren datuak",
+                            "arrival":"Iristeko gutxi gorabeherako ordua",
+                            "payment":"Ordainketa datuak",
+                            "roomUpgrade":"Upgrade aukerarik onena",
+                            "servicesUpgrade":"Zerbitzu osagarriak",
+                            "checkinSummary":"Laburpena",
+                            "checkinUnavailable":"Check-in express ez dago erabiltzeko moduan"
+
+                },
+                "error": {
+                            "mustAgree":"Check-in express egin ahal izateko baldintzak onartu behar dituzu."
+                },
+                "success": "Zure check-in express eskaera zuzen bidali da",
+                "incomplete": "Por favor cumplimenta los datos para cada huésped de la reserva.<br>Selecciona '+' para abrir el siguiente formulario. Gracias!",
+
+              "template":{
+
+                    "welcome" : "Kaixo {nombreHuesped}, <br> gure hoteleko egonaldirako check-in express aukera erabiltzen ari zara. Aukera bikaina. Mesedez, baieztatu hurrengo informazioa zuzena dela eta bete beharrezkoa den guztia.",
+                    "arrival" : ["Gure sartzeko ordua {horaEntrada}k dira eta ateratzeko ordua {horaSalida}k dira.<br><br>",
+                                 "Mesedez, esaguzu zein ordutan ailegatuko zaren hotelera.",
+                                 "HAhal dugun guztia egingo dugu zuk dena prest izateko.<br><br>",
+                                 "Abisua jasoko duzu zure logela prest dugunean.<br><br>"
+
+                                 ],
+                    "foto" :   "Hartu zure ID argazki bat.",
+                    "Nationalityfirst" :"Mesedez, aukeratu zure Nazionalitatea lehen.",
+
+
+                    "card": "<div class='checkin-card' id='checkin-card'> <div class='row uno'><div id='localizer' class='left'><span class='label'>Erreserba IDa: </span> <span class='value'><strong>{{localizadorHotel}}</strong></span></div></div><div class='row dos'> <div id='fechaEntrada' class='left'><span class='label'>Check-in: </span> <span class='value'>{{fechaEntrada}}</span></div><div id='noches' class='right'><span class='label'>Gauak: </span> <span class='value'>{{noches}}</span></div> </div><div class='row tres'><div id='habitacion' class='left'><span class='label'>Gela mota: </span> <span class='value'>{{tipoHabitacion}}</span></div> <div id='habitaciones' class='right'><span class='label'>Logelak: </span> <span class='value'>{{habitaciones}}</span></div></div><div class='row cuatro'> <div id='huespedes' class='left'><span class='label'>Apopiloak: </span> <span class='value'>{{personas}}</span></div><div id='precio' class='right'><span class='label'>Salneurria: </span> <span class='value'>{{precio}} {{moneda}}</span></div></div></div>",
+
+
+                    "acceptUpgrade": "Logela upgradea eskatzen dut {precio}{moneda}/gau + sergak",
+                    "summary":"Check-in express egiteko eskaera bildaltzear zaude. Eguna {fechaEntrada}{horaPrevistaCheckin}. Eskatutako upgrade-ak edo eskatu dituzun zerbitzu bereziak berrikusi eta Check-in express egiteko eskatu."
+                },
+
+              "label" : {
+                          "nombre":{
+                                      "title":"Izena",
+                                      "placeHolder":"Izena"
+
+                          },
+                          "apellidos":{
+                                      "title":"Abizena",
+                                      "placeHolder":"Abizanak"
+
+                          },
+                          "sexo":{
+                                  "title":"Sexua",
+                                  "placeHolder":"Gizonezkoa ala Emakumezkoa"
+                          },
+                          "fechaNacimiento":{
+                                        "title":"Jaiotze data",
+                                        "placeHolder":"Jaiotze data"
+                          },
+                          "documentoIdentidad":{
+                                        "title":"NAN zenbakia",
+                                        "placeHolder":"Identifikatzailea"
+                          },
+                          "tipoDocumentoIdentidad":{
+                                        "title":"Agiria",
+                                        "placeHolder":"Agiri mota",
+                                        "types":{
+                                                "dni":"NANa",
+                                                "passport":"Pasaportea",
+                                                "other":"Besterik"
+                                        }
+                          },
+
+                          "mail":{
+                                        "title":"E-maila helbidea",
+                                        "placeHolder":"Zure e-maila"
+                          },
+                          "tipoTarjetaCredito":{
+                                        "title":"Kreditu-txartela mota",
+                                        "placeHolder":"Kreditu-txartela mota aukeratu"
+                          },
+                          "numeroTarjetaCredito":{
+                                        "title":"Kreditu-txartelaren zenbakia",
+                                        "placeHolder":"XXXX-XXXX-XXXX-XXXX"
+                          },
+                          "codigoSeguridadTarjetaCredito":{
+                                        "title":"CVV",
+                                        "placeHolder":"XXX"
+                          },
+
+                          "fechaCaducidadTarjetaCredito":{
+                                        "title":"Azken epea",
+                                        "placeHolder":"H/U"
+                          },
+
+                          "asignarTarjetaCreditoATodasLasHabitaciones":{
+                                        "title":"Erreserbatutako logela guztietarako esleitu kreditu-txartel hau"
+
+                          },
+                          "agree":{
+                                        "title":"Onartzen dut"
+
+                          },
+                          "whyThisRoom":{
+                                        "title": "<b>Zergatik logela hau?</b><br>"
+                          },
+                          "nacionalidadDocumentoIdentidad":{
+                                        "title":"Nazionalitatea",
+                                        "placeHolder":"Nazionalitatea"
+                          },
+                          "fechaDocumentoIdentidad":{
+                                        "title":"Ematea",
+                                        "placeHolder":"Emate-data"
+                          },
+                          "horaPrevistaCheckin":{
+                                        "title":"Heltzeko gutxi beherako ordua",
+                                        "placeHolder":"Heltzeko gutxi beherako ordua"
+
+                          },
+                          "comentario":{
+                                          "title":"Eskakizun bereziak",
+                                          "placeHolder":"Idatzi hemen egonaldirako zure lehentasunak.Gure esku dagoen guztia egingo dugu zure eskaerak betetzeko."
+                          },
+                          "rejectUpgrade": {
+                                            "title": "Ez, eskerrik asko"
+                          },
+                          "changes":{
+                                          "title":"Zure egonaldia bermatzeko txartel bat eskatuko dugu.Egonaldi honetarako baieztatzen diren erreserbak kreditu-txartel honetan zordunduko dira, harrera lekuan ordainketa modua aldatzen ez duzun bitartean."
+                          },
+                          "available": {
+                                          "title":"Upgradeen eskaerak baiztatuko dira logelen erabilgarritasunaren arabera."
+                          },
+                          "unavailable": {
+                                          "title": "Momentu honetan aukera hau ez dabil. Hotelera ailegaitu baino ordu batzuk lehenago, e-maila jasoko duzu check-in express egiteko gonbidapenarekin."
+                          },
+                          "expired": {
+                                          "title": "Jada ez dago check-in express egiteko aukera . Harrera lekura joan, check-ina egiteko."
+                          },
+                          "realizado": {
+                                          "title": "Erreserba honetarako check-in prozesua eginda dago."
+                          },
+                          "noServices": {
+                                          "title":"Ez duzu zerbitzu gehigarririk aukeratuta."
+                          },
+                          "order":{
+                                        "title":"Zerbitzu gehigarriak"
+                          },
+                          "residencia":{
+                                        "title":"Egoitza",
+                                        "placeHolder":"Egoitza"
+                          },
+                          "address_street":{
+                                        "title":"Kalea helbidea"
+                          },
+                          "address_city":{
+                                        "title":"Hiria"
+                          },
+                          "address_postalcode":{
+                                        "title":"Posta kodea"
+                          },
+                          "address_country":{
+                                        "title":"Herrialde"
+                          }
+
+              }
+          },
+
+          "compras" : {
+              "title" : "Nire erreserbak",
+              "detalle":"Zure erreserbaren zehaztasuna",
+              "cancellation":{
+                              "confirm": {
+                                            "message":"Ziur al zaude zure erreserba eskaera ezeztatu nahi duzula {servicioNombre}?",
+                                            "yes":"Aukeratutako erreserba eskaera ezeztatu",
+                                            "no":"Erreserba eskaera hau mantendu"
+                                        },
+                              "error":"Momentu honetan ezin da zure erreserba ezeztatu. Mesedez, saiatu beranduago."
+
+              }
+          },
+          "mensajes" : {
+              "title" : "Jakinarazpenak"
+          },
+          "notificaciones" : {
+              "title" : "Jakinarazpenak"
+          },
+        "registration" : {
+
+            "requiredTemplate":"{field} hutsunea derrigorrezkoa da",
+
+        		"label":{
+        	      "leisure":"Aisialdia",
+               "business":"Negozioak",
+                 "family":"Senitartekoa",
+          "reservationId":"Erreserba kodea",
+           "registerInfo":"Erresgistro informazioa",
+                   "name":"Izena",
+                "surname":"Abizena",
+               "surname2":"2.Abizena",
+                "address":"Helbidea",
+                  "phone":"Telefono mugikorra",
+                   "mail":"Email",
+                 "gender":"Sexua",
+            "gender_male":"Gizonezkoa",
+          "gender_female":"Emakumezkoa",
+                  "birth":"Jaiotze data",
+                "country":"Herrialdea",
+             "travelType":"Bidaia mota",
+                    "faq":"Zertarako erabiltzen dugu zure informazio pertsonala?",
+                "purpose":"Datu-pertsonalak gomendio pertsonalizatuak emateko zein erabiltzailea balioztatzeko erabiltzen ditugu",
+                   "city":"Hiria"
+        		}
+        },
+
+        "validation": {
+            "messageTemplate" : [
+                                 "<p>Kaixo, konturatu gara zure bilatzailea lehenago  beste gailu batetik erabili dela. Segurtasuna dela eta, jarraian eskatzen diren datuak betetzea beharrezkoa da. Eskerrik asko.</p>"
+            ]
+          },
+
+         "mainMenu":{
+              "home":"Hasiera",
+              "info":"Informazioa",
+     "notifications":"Jakinarazpenak",
+              "buys":"Nire erreserbak",
+            "logoff":"Erreserbar IDa aldatu"
+         },
+
+    "reservation": {
+                        "confirm":"Mesedez, baieztatu zure datu pertsonalak zuzenak direla.",
+                        "success":"Zure erreserba eskaera zuzen egin da. Hemendik gutxira zure erreseba baieztapena jasoko duzu",
+
+                        "error":{
+
+                                "dateRange":"Sentitzen dugu baina zure egonaldia bukatu egin da eta ez dago erreserba gehiago egiterik",
+                                "noPossible":"Sentitzen dugu baina zure erreseba ezin izan da egin",
+                                "nullDate":"Data zein ordua hutsuneak derrigorrez bete behar dira",
+                                "checkoutYaRealizado":"Behin check-outa  eginda, ez dago erreserbak egiterik",
+                                "dateValid":"Sentitzen dugu , baina ez da posible erreserbak egin du zerbitzu honetarako"
+
+                        },
+                        "label":{
+                           "descriptionPrefix":"<div class='descriptionPrefix'> Deskribapena</div>",
+
+                           "legal":"Mesedez, esaguzu noizkoa den zerbitzu honen erreserba eta zenbat pertsonentzako. Aipatu kontuan izan beharreko lehentasunen bat duzun.<br><br>Behin erreserba eskaera bidalita, ahalik eta azkarren la egingo dugu baieztatzeko.",
+                           "roomservice":"Mesedez, esaguzu noizkoa den zerbitzu honen erreserba. Aipatu kontuan izan beharreko lehentasunen bat duzun.<br><br>Behin erreserba eskaera bidalita, ahalik eta azkarren la egingo dugu baieztatzeko.",
+
+                            "comments":{
+                                      "title":"Lehentasunak",
+                                      "placeHolder":"Lehentasunak aipatu eta ahal den neurrian, betetzen saiatuko gara"
+                            },
+
+                           "dateAndTime":{
+                                        "title":"Eguna eta ordua",
+                                        "placeHolder":"Aukeratu eguna eta ordua"
+                                  },
+                           "dateAndTurn":{
+                                        "title":"Eguna eta txanda",
+                                        "placeHolder":"Aukeratu eguna eta txanda"
+                                  },
+
+                            "date":{
+                                        "title":"Eguna",
+                                        "placeHolder":"Aukeratu eguna"
+                                  },
+                            "turn":{
+                                        "title":"Txanda",
+                                        "placeHolder":"Aukeratu txanda"
+                                    },
+                            "time": {
+                                        "title": "Ordua",
+                                        "placeHolder": "Aukeratu Ordua"
+                                    },
+                              "people":{
+                                            "title":"Pertsonak",
+                                            "placeHolder":"Aukeratu pertsona kopurua",
+                                            "suffix":"Pertsonak",
+                                            "suffixFirst":"Pertsona"
+
+                                  },
+                              "cardHolder":{
+                                            "title":"Titular de la tarjeta"
+
+                                  },
+                              "mustAgreeTerms":"Para reservar debes aceptar los términos y condiciones.",
+                              "cardHolderEmpty":"El titular de la tarjeta es obligatorio",
+                              "guaranteeText":"Solicitamos una tarjeta para garantizar su reserva. Lo cobraremos sólo en caso de cancelación con penalización.",
+                              "chargeText":"La forma de pago será mediante pasarela de pago y serán aceptadas las tarjetas: AmericanExpress, Visa, MasterCard.",
+                              "acceptTerms":"<p style='font-size:14px;padding-left:30px;padding-top:10px;color:grey;'> He leído y acepto los <span id='termsOfService'><b>Términos y Condiciones</b>.</p>",
+                              "CancellationTermsTitle":"<p style='font-size:15px; color:#b59553;'> Políticas de Cancelación</p>",
+                              "pciCompliant":"Toda la información de su tarjeta de crédito se maneja de forma segura y nunca se almacena.",
+                              "noPaymentKeys":"Hay un problema con la pasarela de pagos. Por favor contacte con recepción, gracias."
+                          }
+
+      },
+
+
+
+ "restaurantReservation":{
+
+
+        },
+  "healthReservation":{
+                "label":{
+                            "info":"Erreserba datuak",
+                        "comments":"Zure komentarioak aipatu",
+                      "dayAndHour":"Aukeratu eguna eta ordua",
+                          "people":"Pertsonak",
+                     "firstPeople":"Pertsona"
+
+                }
+        },
+ "activityReservation":{
+                "label":{
+                            "info":"Zure erreserba datuak",
+                        "comments":"Zure komentarioak aipatu",
+                      "dayAndHour":"Aukeratu eguna eta ordua",
+                          "people":"Pertsonak",
+                     "firstPeople":"Pertsona"
+
+                }
+        },
+  "healthReservationSummary":{
+                "label":{
+                            "info":"Erreserbaren laburpena"
+
+                }
+        }
+
+
+    },
+
+
+    "exception":{
+                  "error":{
+                            "mailNotFound":"No se ha encontrado ninguna reserva válida para el mail introducido"
+                  }
+    },
+
+
+    "common":{
+                "choosecountry":"Aukeratu herrialde bat",
+                "chooseprovince":"Aukeratu probintzia bat",
+                "logoff":"Ziur zure Erreserbaren ID aldatu nahi duzula?",
+                "reception":"Harrera",
+                "serviceIsUnavailable":"Eskatutako zerbitzua ez dago libre",
+                "reservation":{
+                   "confirmed":"Baieztatuta",
+                   "cancelled":"Ezeztatu",
+                   "pending":"Konfirmatu gabe"
+                },
+                "comments":"Iruzkinak",
+                "frondeskResponse":"Harrera iruzkinak",
+                "error":"Oops!",
+                "nofoto":"Ez dago irudia hautatutako",
+                "errors":{
+                          "creditCardInvalid":"Kreditu-txartelaren zenbakia formatua ez da onargarria",
+                           "creditCardCVVInvalid":"Aipatu duzun ziurtasun-kodearen formatoa ez da baliozkoa"
+                },
+
+                "confirm":"Baieztapena",
+                "nights":"Gauak",
+                "free":"--",
+
+                "requestReceived":"Solicitud recibida",
+
+                "porDia": "Eguneko",
+                "hour":"Ordua",
+                "hours":"Orduak",
+
+                 "loading":"Datuak kargatzen...",
+         "connectionError":"Konexiorik gabe. Mesedez, beranduago saiatu.",
+              "connecting":"Zerbidorearekin konektatzen...",
+              "sync":"Zerbidorearekin bat egiten. Lan honek minutu batzuk iraun ditzake...",
+              "syncLoading":"Edukia sinkronizatzen %{percent}",
+             "invalidUser":"Egiaztagiriak ez dira baliozkoak",
+     			"continue":"JARRAITU",
+          "send":"BIDALI",
+            "gender":"Sexua",
+     			  	 "man":"Gizonezkoa",
+     			   "woman":"Emakumezkoa",
+     			    "book":"ERRESERBATU",
+             "learn":"Gehiago jakin",
+                 "confirm":"Baieztatu",
+                 "today":"Gaur",
+              "tomorrow":"Bihar",
+              "yesterday":"Atzo",
+                "dayNames":["Igandea", "Astelehena", "Asteartea", "Asteazkena", "Osteguna", "Ostirala", "Larunbata"],
+              "monthNames":["Urtarrila", "Otsaila", "Martxoa", "Apirila", "Maiatza", "Ekaina", "Uztaila", "Abuztua", "Iraila", "Urria", "Azaroa", "Abendua"],
+              "dateFormat":{
+                       "long":"l j \\de F \\de Y",
+                      "short":"D d M" ,
+                    "compact":"E/H/U"
+              },
+              "mandatoryFields":"Hurrengo hutsuneak derrigorrezkoak dira: <br><strong><i>{{fields}}</i></strong> ",
+              "timeFormat":{
+                       "long":"H:i \\h\\o\\r\\a\\s",
+                      "short":"H:i",
+                    "compact":"G:i"
+              }
+
+     },
+     "buttons" : {
+         "modify":"Aldatu",
+           "send":"Bidali",
+            "yes":"Bai",
+             "no":"Ez",
+             "ok":"Onartu",
+        "cancel" : "Ezeztatu",
+        "save"   : "Gorde",
+        "done"   : "Eginda dago",
+        "addView": "Berria"
+    },
+    "misc" : {
+        "bottomTitle"   : "Beheko barra",
+        "loadLocaleMsg" : "Kargatzen...",
+        "back"          : "ATZERA"
+    },
+    "fields" : {
+        "name" : "Izena",
+        "dateLabel" : "Data",
+        "datePlaceholder" : "Data aukeratu"
+    },
+    "fieldsets" : {
+        "title" : "Izenburua",
+        "instructions" : "Argibideak"
+    },
+    "months" : {
+        "1"  : "Urtarrila",
+        "2"  : "Otsaila",
+        "3"  : "Martxoa",
+        "4"  : "Apirila",
+        "5"  : "Maiatza",
+        "6"  : "Ekaina",
+        "7"  : "Uztaila",
+        "8"  : "Abuztua",
+        "9"  : "Iraila",
+        "10" : "Urria",
+        "11" : "Azaroa",
+        "12" : "Abendua"
+    }
+
+
+}

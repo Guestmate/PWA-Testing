@@ -1,0 +1,632 @@
+{
+	"version" : "1",
+	"language" : "ru",
+	"view" : {
+        "login" : {
+
+
+        		"label":{
+        					"reserva":{
+                              "title":"IНомер брони:",
+                              "placeHolder":"<Ваш номер>"
+                      },
+                  "mail":{
+                              "title":"электронной почты:",
+                              "placeHolder":"<Ваш электронный>"
+                      },
+        					   "tour":"Если вы не имеете код действительный подтверждения, пожалуйста, введите <b>000000</b> чтобы получить демо-версию",
+        				      "login":"ВОЙТИ",
+                      "requestId":{
+                                  "button":"ЗАПРОС ID",
+                                  "title":"Запрос ID"
+                      },
+                      "back":"Возврат к брони",
+                      "forgot": {
+                                 "title":"Забыли бронирование Id?",
+                                 "message":"Мы отправили Вам письмо с Id номер бронирования, необходимо для получения доступа к приложению. Пожалуйста, проверьте ваш почтовый ящик <b>{mail}</b>."
+                                 },
+                        "legal":"С регистрации Я принимаю <br> <span id='termsOfService'><b>Условия предоставления услуг</b></span> и <span id='privacyPolicy'><b>Политикой конфиденциальности</b></span>",
+                        "name":{
+                                      "title":"имя:",
+                                      "placeHolder":"<ваше имя>"
+
+                          },
+                        "surname":{
+                                      "title":"фамилия:",
+                                      "placeHolder":"<ваша фамилия>"
+
+                          },
+                        "locator":{
+                                      "title":"локатор:",
+                                      "placeHolder":"<Локатор резервирования>"
+
+                          },
+                        "contactphone":{
+                                      "title":"Телефон:",
+                                      "placeHolder":"<Ваш контактный телефон>"
+
+                          },
+                        "nostay": {
+                                 "title":"Не останавливаясь в отеле"
+                                  },
+                        "backview":"возвращаться",
+                        "newsletter":"Я принимаю, чтобы получать информацию по электронной почте",
+												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
+												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+        		      },
+        		 "error":{
+        		 		"credentials":"PОшибка заезда. Пожалуйста, введите действительный идентификатор бронирования.",
+        		 		 "connection":"Подключение не удалось. Пожалуйста, попробуйте еще ​​раз позже.",
+                      "empty":"Пожалуйста, введите действительный идентификатор бронирования.",
+                      "emptyMail":"Пожалуйста, введите действительный адрес электронной почты.",
+                     "entityNotFound":"ID Бронирование не найден"
+        		 		}
+        },
+        "privacyPolicy":{
+              "title":"Политика конфиденциальности",
+              "message":"En preparación ....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "termsOfService":{
+              "title":"Условия предоставления услуг",
+              "message":"En preparación....lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+        },
+        "reception" : {
+                "message":"Привет {nombreHuesped}!,<br><br> Добро пожаловать в наш отель! Меня зовут {nombreRecepcionista}.Я приглашаю вас открыть для себя наши гостиничные услуги. <br><br>Спасибо и приятного пребывания с нами!",
+
+             "label":{
+                      "check":"Пожалуйста, найдите минутку, чтобы проверить свой ​​профиль"
+             }
+        },
+
+        "main" : {
+            "welcome" : "Bienvenido al hotel {hotelName}",
+            "description" : "Dispone de una reserva de {nightNumber} noche/s a partir de {startDate}",
+            "continue": "Continuar registro"
+        },
+        "summary" : {
+
+            "label":{
+                   "info":"Информация о бронирования",
+              "localizer":"Локатор",
+                 "dateIn":"Заезд",
+                 "nights":"Ночей",
+                   "room":"Категория номера",
+                 "people":"Гостей"
+            },
+  "messageTemplate":[
+                     "<div id='summary-card'>",
+                        "<p>Hola <strong>{nombreHuesped}</strong>, a continuación te mostramos el detalle de la reserva correspondiente a tu localizador GuestPilot <strong>{localizer}</strong> y localizador de hotel <strong>{localizadorHotel}</strong>.</p>",
+                        "<p>Dispones de una habitación tipo <strong>{tipoHabitacion}</strong> para <strong>{personas}</strong> persona(s) en el hotel <strong>{nombreHotel}</strong>.</p>",
+                        "<p> La reserva es para <strong>{noches}</strong> noche(s) y la fecha prevista de entrada es para el próximo <strong>{entradaFormateada}</strong>.</p>",
+                        "<p>Pulsa sobre el botón continuar para completar tu proceso de registro. Gracias</p>",
+                      "</div>"
+                    ]
+        },
+
+
+        "hotelInfo":{
+
+                      "title":"Консьерж",
+                      "legal":"Если Вам нужно что-нибудь, не стесняйтесь обращаться к нам. Мы будем рады Вам помочь. Пожалуйста, отправьте нам сообщение или позвоните нам.",
+                      "help":"Как мы можем Вам помочь?",
+                      "emptyMsg":"Пожалуйста, введите ваше сообщение и нажмите на кнопку ¨Послать¨",
+                      "successMsg":"Мы получили ваше сообщение правильно. Мы свяжемся с вами как можно скорее. Спасибо.",
+                      "placeHolder": "Введите ваше сообщение здесь",
+                      "messageTemplate":[]
+
+          },
+          "restaurantCarousel" : {
+              "title" : "Рестораны"
+          },
+
+          "restaurantLearnMore" : {
+              "title" : "Рестораны"
+          },
+          "saludCarousel" : {
+              "title" : "оздоровительный"
+          },
+          "saludLearnMore" : {
+              "title" : "оздоровительный"
+          },
+          "actividadCarousel" : {
+              "title" : "Mероприятия"
+          },
+          "actividadLearnMore" : {
+              "title" : "Mероприятия"
+          },
+          "ofertaCarousel" : {
+              "title" : "Оферты"
+          },
+          "ofertaLearnMore" : {
+              "title" : "Оферты"
+          },
+
+          "servicioHabitacion" :{
+              "title" : "Обслуживание номеров",
+              "carrito":{
+                          "check":"Проверьте и подтвердите свой заказ",
+                          "order":"Tекущая команда",
+                          "total":"Cу́мма",
+                          "empty":"Пустой заказ"
+              },
+              "error": {
+                        "checkinNoRealizado":"PЧтобы получить доступ к обслуживание, регистрация должна быть завершена.",
+                        "carritoVacio":"Вы не выбрали до сих пор не продукт. Прежде чем подтвердить ваш запрос, выберите суммы в нижней с помощью (+) и (-). Вы можете увидеть различных категорий от верхней панели с помощью (<) и (>)."
+              }
+          },
+          "checkout": {
+              "title": "Bыезд  eкспресс ",
+              "request":"ЗАПРОС ВЫЕЗД",
+              "subtitle":{
+                          "requestInfo":"Регистрационные данные",
+                          "payment":"Платежные реквизиты",
+                          "checkoutUnavailable":"Выезд экспресс не доступен."
+              },
+               "error": {
+                            "mustAgree":"Для того, чтобы сделать Выезд экспресс, необходимо принять условия."
+              },
+              "success": "Ваш запрос для Выезд экспрес был успешно отправлен",
+              "label": {
+                      "unavailable": {
+                                "title":"Параметр Выезд экспрес не доступен. Вы будете получать уведомление, когда параметр Выезд экспрес включен."
+                      },
+                      "expired": {
+                                "title":"Параметр Выезд экспрес не доступен.  Пожалуйста, свяжитесь co стойка администра́тора на выезд."
+                      },
+
+                      "realizado": {
+                                "title":"Мы уже сделали выезда для этой резервации."
+                      },
+
+                      "legal":{
+                              "title":"С помощью Выезд экспрес нет необходимости рассматривать счет-фактура в первую очередь. Просто оставьте ключи номер на  стойке администра́тора. Вы получите свой счет на этот адрес электронной почты в течение 48 часов."
+                      },
+                      "signature":{
+                              "title":"Сумма окончательный счет будет взиматься с этой карты, без необходимости для подписания владельцем."
+                      }
+              },
+              "template":{
+                      "welcome":"Привет {nombreHuesped}, <br>вы используете наш выезд экспресс.  Хороший выбор. Пожалуйста, подтвердите, что информация, приведенная ниже является правильным и при необходимости измените."
+              }
+
+          },
+
+
+          "checkin" : {
+              "title" : "Запрос заезда экспресс",
+              "request":"Запрос заезда",
+              "subtitle":{
+                            "requestInfo":"DРегистрационные данные",
+                            "arrival":"Время прибытия",
+                            "payment":"Данные платежа",
+                            "roomUpgrade":"Лучший вариант обновления",
+                            "servicesUpgrade":"Дополнительные услуги",
+                            "checkinSummary":"Резюме",
+                            "checkinUnavailable":"Заезд экспресс не доступен"
+
+                },
+                "error": {
+                            "mustAgree":"Для того, чтобы запросить Заезд экспресс, необходимо сначала принять условия."
+                },
+                "success": "Запрос заезда экспресс был  успешно отправлен",
+                "incomplete": "Пожалуйста, введите информацию для каждого гостя в резервации. Выберите «+», чтобы открыть новую форму. Спасибо!",
+
+              "template":{
+
+                    "welcome" : "Привет {nombreHuesped}, <br> Вы используете наш Заезд экспресс вариант для Вашего предстоящего пребывания. Хороший выбор. Пожалуйста, подтвердите, что информация, приведенная ниже является правильным и при необходимости измените.",
+                    "arrival" : [" Время заезда-в {horaEntrada} и время выезда на {horaSalida}.<br><br>",
+                                 " Пожалуйста, скажите нам в какое время вы планируете приехать в отеле.",
+                                 "Мы сделаем все возможное, чтобы все было готово для вас.<br><br>",
+                                 "Вы получите уведомление, когда ваш номер будет готов.<br><br>"
+
+                                 ],
+                    "foto" :   "Сфотографируйте Вашего паспорта.",
+                    "Nationalityfirst" :"Пожалуйста, сначала выберите Национальность.",
+                    "card": "<div class='checkin-card' id='checkin-card'> <div class='row uno'><div id='localizer' class='left'><span class='label'>Бронирование ID: </span> <span class='value'><strong>{{localizadorHotel}}</strong></span></div></div><div class='row dos'><div id='fechaEntrada' class='left'><span class='label'>Регистрация заезда: </span> <span class='value'>{{fechaEntrada}}</span></div><div id='noches' class='right'><span class='label'>Ночей: </span> <span class='value'>{{noches}}</span></div></div><div class='row tres'><div id='habitacion' class='left'><span class='label'>Тип номера: </span> <span class='value'>{{tipoHabitacion}}</span></div> <div id='habitaciones' class='right'><span class='label'>Номеров: </span> <span class='value'>{{habitaciones}}</span></div> </div><div class='row cuatro'><div id='huespedes' class='left'><span class='label'>Гостей: </span> <span class='value'>{{personas}}</span></div><div id='precio' class='right'><span class='label'>Цена: </span> <span class='value'>{{precio}} {{moneda}}</span></div> </div></div>",
+
+
+                    "acceptUpgrade": "Запрос обновления для {precio}{moneda} ночь + налог",
+                    "summary":"Вы собираетесь послать ваш запрос на заезд экспресс запланирован на следующий {fechaEntrada} в {horaPrevistaCheckin}. Пожалуйста, ознакомьтесь с выбранных обновления или дополнительные услуги и также просите заезд eкспресс."
+                },
+
+              "label" : {
+                          "nombre":{
+                                      "title":"Имя",
+                                      "placeHolder":"Имя"
+
+                          },
+                          "apellidos":{
+                                      "title":"Фамилия",
+                                      "placeHolder":"Фамилия"
+
+                          },
+                          "sexo":{
+                                  "title":"Пол",
+                                  "placeHolder":"Мужчина или женщина"
+                          },
+                          "fechaNacimiento":{
+                                        "title":"Дата рождения",
+                                        "placeHolder":"Дата рождения"
+                          },
+                          "documentoIdentidad":{
+                                        "title":"Идентификационный номер",
+                                        "placeHolder":"Идентификационный номер"
+                          },
+                          "tipoDocumentoIdentidad":{
+                                        "title":"Документ",
+                                        "placeHolder":"Тип документа",
+                                        "types":{
+                                                "dni":"УДОСТОВЕРЕНИЯ ЛИЧНОСТИ",
+                                                "passport":"Паспорт",
+                                                "other":"Другие"
+                                        }
+                          },
+
+                          "mail":{
+                                        "title":"Электронной почты",
+                                        "placeHolder":"Электронной почты"
+                          },
+                          "tipoTarjetaCredito":{
+                                        "title":"Тип кредитной карты",
+                                        "placeHolder":"Выберите тип кредитной карты"
+                          },
+                          "numeroTarjetaCredito":{
+                                        "title":"Номер кредитной карты",
+                                        "placeHolder":"XXXX-XXXX-XXXX-XXXX"
+                          },
+                          "codigoSeguridadTarjetaCredito":{
+                                        "title":"CVV",
+                                        "placeHolder":"XXX"
+                          },
+
+                          "fechaCaducidadTarjetaCredito":{
+                                        "title":"Дата окончания срока",
+                                        "placeHolder":"MM/YYYY"
+                          },
+
+                          "asignarTarjetaCreditoATodasLasHabitaciones":{
+                                        "title":"Назначьте этот номер кредитной карты для всех номеров в бронировании"
+
+                          },
+                          "agree":{
+                                        "title":"Принимаю"
+
+                          },
+                          "whyThisRoom":{
+                                        "title": "<b>Почему этот номер?</b><br>"
+                          },
+                          "nacionalidadDocumentoIdentidad":{
+                                        "title":"Гражданство",
+                                        "placeHolder":"Гражданство"
+                          },
+                          "fechaDocumentoIdentidad":{
+                                        "title":"Дата выпуска",
+                                        "placeHolder":"Дата выпуска"
+                          },
+                          "horaPrevistaCheckin":{
+                                        "title":"Расчетное время прибытия",
+                                        "placeHolder":"Расчетное время прибытия"
+
+                          },
+                          "comentario":{
+                                          "title":"Специальные запросы",
+                                          "placeHolder":"Введите здесь какие-то предпочтения для вашего пребывания. Мы сделаем все от нас зависящее, чтобы удовлетворить ваши запросы."
+                          },
+                          "rejectUpgrade": {
+                                            "title": "Нет, спасибо"
+                          },
+                          "changes":{
+                                          "title":"Мы запрашиваем карту в качестве гарантии вашего пребывания. Любое бронирование, подтверждено для этого пребывания, будет снята с этот номер кредитной карты,пока вы не измените ваш предпочтительный способ оплаты на стойке регистрации."
+                          },
+                          "available": {
+                                          "title":"Запросы обновлений будут подтверждены на основании наличия номеров."
+                          },
+                          "unavailable": {
+                                          "title": "Эта опция не доступна прямо сейчас. За несколько часов до вашего приезда вы будете получать уведомления с приглашение  заезд eкспресс."
+                          },
+                          "expired": {
+                                          "title": "Опция Заезд экспресс не доступна прямо сейчас. Пожалуйста, сделыте заезд eкспресс на стойке регистрации."
+                          },
+                          "realizado": {
+                                          "title": "Регистрация заезда для данного резервирования уже завершена."
+                          },
+                          "noServices": {
+                                          "title":"Нет выбраны дополнительные услуги."
+                          },
+                          "order":{
+                                        "title":"Дополнительные услуги"
+                          },
+                          "residencia":{
+                                        "title":"Резиденция",
+                                        "placeHolder":"Резиденция"
+                          },
+                          "address_street":{
+                                        "title":"Адрес"
+                          },
+                          "address_city":{
+                                        "title":"Сити"
+                          },
+                          "address_postalcode":{
+                                        "title":"Почтовый индекс"
+                          },
+                          "address_country":{
+                                        "title":"Страна"
+                          }
+
+              }
+          },
+
+          "compras" : {
+              "title" : "Мое Бронирование",
+              "detalle":"Ваши данные бронирования",
+              "cancellation":{
+                              "confirm": {
+                                            "message":"Вы уверены, что хотите отменить Ваш ​​запрос бронирования {servicioNombre}?",
+                                            "yes":"Отменить выбранный запрос бронирования",
+                                            "no":"Держите этот запрос бронирования"
+                                        },
+                              "error":"Не возможно отменить ваш запрос бронирования в это время. Пожалуйста, попробуйте еще раз позже."
+
+              }
+          },
+          "mensajes" : {
+              "title" : "Уведомления"
+          },
+          "notificaciones" : {
+              "title" : "Уведомления"
+          },
+        "registration" : {
+
+            "requiredTemplate":"Поле {field} является обязательным",
+
+        		"label":{
+        	      "leisure":"Досуг",
+               "business":"Бизнес",
+                 "family":"Ceмья",
+          "reservationId":"ID номер бронирования",
+           "registerInfo":"Регистрационные данные",
+                   "name":"Имя",
+                "surname":"Фамилия",
+               "surname2":"Фамилия 2",
+                "address":"Aдрес",
+                  "phone":"Телефон",
+                   "mail":"Электронная почта",
+                 "gender":"Пол",
+            "gender_male":"Mужчина",
+          "gender_female":"Женщина",
+                  "birth":"Дата рождения",
+                "country":"Страна",
+             "travelType":"Тип поездки",
+                    "faq":"Как мы используем вашу личную информацию?",
+                "purpose":"Мы используем личная информация для выбора персонализированные рекомендации и для целей проверки пользователя",
+                   "city": "Город"
+        		}
+        },
+
+        "validation": {
+            "messageTemplate" : [
+                                 "<p>Привет <strong>{nombreHuesped}</strong>! Мы обнаружили, что Ваш локатор был использован с ранее от другого устройства. По соображениям безопасности, пожалуйста выполнить необходимые данные ниже. Спасибо вам.</p>"
+            ]
+          },
+
+         "mainMenu":{
+              "home":"Hачало",
+              "info":"Информация",
+     "notifications":"Уведомления",
+              "buys":"Проверить бронь",
+            "logoff":"Изменить Бронирование"
+         },
+
+    "reservation": {
+                        "confirm":"Пожалуйста, убедитесь, что  информация бронирование  правильна.",
+                        "success":"Запрос Ваш бронь был отправлен успешно. Вскоре Вы получите подтверждение бронирования",
+
+                        "error":{
+
+                                "dateRange":"Извините но ваше пребывание закончилaсь и вы не можете забронировать услуги больше.",
+                                "noPossible":"Извините, но ваш бронь не может быть сделан.",
+                                "nullDate":"Дата и время являются обязательными.",
+                                "checkoutYaRealizado":"Бронирование услуг после регистрации отъезда не возможно.",
+                                "dateValid":"К сожалению , но это не возможно сделать предварительный заказ для этой службы."
+
+                        },
+                        "label":{
+                           "descriptionPrefix":"<div class='descriptionPrefix'>Описание</div>",
+                           "legal":"Пожалуйста, выберите когда и сколькоо людей хотят забронировать эту услугу. Также укажите любые предпочтения  мы должны рассмотреть. <br><br>После подачи запроса бронирования мы сделаем все возможное, чтобы подтвердить его как можно скорее.",
+                           "roomservice":"Просьба указать, когда служить обслуживание. Также укажите любые предпочтения  мы должны рассмотреть. <br><br>После подачи запроса бронирования мы сделаем все возможное, чтобы подтвердить его как можно скорее.",
+                            "comments":{
+                                      "title":"Особые запросы",
+                                      "placeHolder":"Введите ваши предпочтения и мы сделаем все возможное, чтобы выполнить их"
+                            },
+
+                           "dateAndTime":{
+                                        "title":"Дата и час",
+                                        "placeHolder":"Выберите дату и час"
+                                  },
+                           "dateAndTurn":{
+                                        "title":"Дата и поворот",
+                                        "placeHolder":"Выберите дату и поворот"
+                                  },
+
+                            "date":{
+                                        "title":"Дата",
+                                        "placeHolder":"Выберите дату"
+                                  },
+                            "turn":{
+                                        "title":"поворот",
+                                        "placeHolder":"Выберите поворот"
+                                  },
+                            "time": {
+                                    "title": "час",
+                                    "placeHolder": "Выберите час"
+                                },
+                              "people":{
+                                            "title":"Гостей",
+                                            "placeHolder":"Выберите число гостей",
+                                            "suffix":"Гостей",
+                                            "suffixFirst":"Гостей"
+
+                                  },
+                              "cardHolder":{
+                                            "title":"Держателю карты"
+
+                                  },
+                              "mustAgreeTerms":"Для бронирования вы должны принять Условия.",
+                              "cardHolderEmpty":"Владелец карточки является обязательным",
+                              "guaranteeText":"Мы запрашиваем кредитную карту, чтобы гарантировать ваше бронирование. Мы будем взимать плату только в случае отмены штрафов.",
+                              "chargeText":"Оплата производится через платежный шлюз и принимаются следующие карты: AmericanExpress, Visa, MasterCard.",
+                              "acceptTerms":"<p style='font-size:14px;padding-left:30px;padding-top:10px;color:grey;'> я согласен с <span id='termsOfService'><b>Условия и положения</b>.</p>",
+                              "CancellationTermsTitle":"<p style='font-size:15px; color:#b59553;'> Политика отмены</p>",
+                              "pciCompliant":"Вся информация о вашей кредитной карте обрабатывается безопасно и никогда не хранится.",
+                              "noPaymentKeys":"Проблема с платежным шлюзом. Пожалуйста, свяжитесь с Фрондеском, спасибо."
+                          }
+
+      },
+
+
+
+ "restaurantReservation":{
+
+
+        },
+  "healthReservation":{
+                "label":{
+                             "info":"Детали бронирования",
+                        "comments":"Пожалуйста, введите ваши комментарии здесь",
+                      "dayAndHour":"Выберите дату и час",
+                          "people":"Гостей",
+                     "firstPeople":"Гостей"
+
+                }
+        },
+ "activityReservation":{
+                "label":{
+                            "info":"Детали бронирования",
+                        "comments":"Пожалуйста, введите ваши комментарии здесь",
+                      "dayAndHour":"Выберите дату и час",
+                          "people":"Гостей",
+                     "firstPeople":"Гостей"
+
+                }
+        },
+  "healthReservationSummary":{
+                "label":{
+                            "info":"Резюме вашего бронирования"
+
+                }
+        }
+
+
+    },
+
+
+    "exception":{
+                  "error":{
+                            "mailNotFound":"No se ha encontrado ninguna reserva válida para el mail introducido"
+                  }
+    },
+
+    "common":{
+                "choosecountry":"Выберите страну",
+                "logoff":"Вы уверены, что хотите изменить свой Номер резервации?",
+                "reception":"Рецепция",
+
+                "serviceIsUnavailable":"Запрошенная услуга недоступна",
+                "reservation":{
+                   "confirmed":"Подтверждено",
+                   "cancelled":"Отменено",
+                   "pending":"В ожидании"
+                },
+                "comments":"Комментарии",
+                "frondeskResponse":"Комментарии Рецепция",
+                "error":"Ой!",
+                "nofoto":"Нет изображения выбран",
+                "errors":{
+                          "creditCardInvalid":"Номер кредитной карточки не действителен",
+                           "creditCardCVVInvalid":"Код CVV не действителен"
+                },
+
+                "confirm":"Подтверждение",
+                "nights":"Ночей",
+                "free":"--",
+
+                "requestReceived":"Запрос был получен",
+
+                "porDia": "за день",
+                "hour":"час",
+                "hours":"часы",
+
+                 "loading":"Загрузка данных ...",
+         "connectionError":"Нет сигнала. Пожалуйста, попробуйте еще раз позже.",
+              "connecting":"Подключение к серверу ...",
+              "sync":"Синхронизация с сервером. Эта операция может занять несколько минут ...",
+              "syncLoading":"Синхронизация содержимого {percent}%",
+             "invalidUser":"Полномочия не действительны",
+     			"continue":"ПРОДОЛЖИТЬ",
+          "send":"ПОСЛАТЬ",
+            "gender":"Пол ",
+     			  	 "man":"Мужчина",
+     			   "woman":"Женщина",
+     			    "book":"забронировать",
+             "learn":"Узнать больше",
+                 "confirm":"Подтверждение",
+                 "today":"Cегодня",
+              "tomorrow":"Завтра",
+              "yesterday":"Вчера",
+                "dayNames":["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"],
+              "monthNames":["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+              "dateFormat":{
+                       "long":"l j \\de F \\de Y",
+                      "short":"D d M" ,
+                    "compact":"Д/M/Г"
+              },
+              "mandatoryFields":"Следующие поля являются обязательными:<br><strong><i>{{fields}}</i></strong> ",
+              "timeFormat":{
+                       "long":"H:i \\h\\o\\r\\a\\s",
+                      "short":"H:i",
+                    "compact":"G:i"
+              }
+
+     },
+     "buttons" : {
+         "modify":"Изменить",
+           "send":"Послать",
+            "yes":"Да",
+             "no":"Нет",
+             "ok":"ОК",
+        "cancel" : "Отменить",
+        "save"   : "Сохранить",
+        "done"   : "Сделано",
+        "addView": "Добавить Фото"
+    },
+    "misc" : {
+        "bottomTitle"   : "Нижняя панель",
+        "loadLocaleMsg" : "Загрузка ...",
+        "back"          : "ВЕРНУТЬСЯ"
+    },
+    "fields" : {
+        "name" : "Имя",
+        "dateLabel" : "Дата",
+        "datePlaceholder" : "Выберите дата"
+    },
+    "fieldsets" : {
+        "title" : "Название",
+        "instructions" : "Инструкции"
+    },
+    "months" : {
+        "1"  : "Январь",
+        "2"  : "Февраль",
+        "3"  : "Март",
+        "4"  : "Апрель",
+        "5"  : "Май",
+        "6"  : "Июнь",
+        "7"  : "Июль",
+        "8"  : "Август",
+        "9"  : "Сентябрь",
+        "10" : "Октябрь",
+        "11" : "Ноябрь",
+        "12" : "Декабрь"
+    }
+
+
+}

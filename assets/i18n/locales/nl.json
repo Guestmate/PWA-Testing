@@ -1,0 +1,635 @@
+{
+	"version" : "1",
+	"language" : "nl",
+	"view" : {
+        "login" : {
+
+
+        		"label":{
+        					"reserva": {
+                              "title":"Reserveringsnummer:",
+                              "placeHolder":"<jouw id>"
+                     },
+                  "mail":{
+                              "title":"E-mailadres:",
+                              "placeHolder":"<Jouw e-mail>"
+                      },
+        					   "tour":"Als je niet beschikt over een geldige bevestigingscode, vul dan 000000 om een demo te krijgen",
+        				      "login":"INLOGGEN",
+                      "requestId":{
+                                  "button":"VERZOEK ID",
+                                  "title":"Verzoek ID"
+                      },
+                      "back":"Keer terug naar Inloggen",
+                      "forgot": {
+                                 "title":"Ben je je ID nummer vergeten?",
+                                 "message":"Wij hebben je een e-mail gezonden met het reserveringsnummer dat nodig is om toegang tot de app te krijgen. Kijk daarvoor in je <b>{mail}</b> inbox."
+                                 },
+
+                      "legal":"Door te registreren accepteer ik de <br> <span id='termsOfService'><b>Algemene Voorwaarden</b></span> en het <span id='privacyPolicy'><b>Privacybeleid</b></span>",
+                      "name":{
+                                      "title":"Naam:",
+                                      "placeHolder":"<uw naam>"
+
+                          },
+                        "surname":{
+                                      "title":"Achternaam:",
+                                      "placeHolder":"<uw achternaam>"
+
+                          },
+                        "locator":{
+                                      "title":"Boekingszoeker:",
+                                      "placeHolder":"<Uw boekingszoeker>"
+
+                          },
+                        "contactphone":{
+                                      "title":"telefoon:",
+                                      "placeHolder":"<uw contact telefoon>"
+
+                          },
+                        "nostay": {
+                                 "title":"Ik blijf niet in het hotel"
+                                  },
+                        "backview":"Ga terug",
+                        "newsletter":"Ik accepteer om informatie per email te ontvangenl",
+												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
+												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+        		        },
+        		 "error":{
+        		 		"credentials":"Inloggen is mislukt. Vul een geldig reserveringsnummer in.",
+        		 		 "connection":"Verbinding is mislukt. Probeer het later opnieuw.",
+                      "empty":"Vul een geldig reserveringnummer in.",
+                    "emptyMail":"Vul een geldig e-mailadres in.",
+                     "entityNotFound":"Je reserveringsnummer is niet gevonden."
+        		 		 }
+
+        },
+        "privacyPolicy":{
+              "title":"Privacybeleid",
+              "message":"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+
+        },
+        "termsOfService":{
+              "title":"Algemene Voorwaarden",
+              "message":"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+
+        },
+
+        "reception" : {
+                "message":"Hallo {nombreHuesped}, <br><br>Welkom in ons hotel! <br>Mijn naam is {nombreRecepcionista}.  Ik nodig je hierbij uit om onze hotelservices te ontdekken.<br><br>Bedankt en geniet van je verblijf bij ons!",
+
+           "label":{
+                      "check":"Neem een minuutje de tijd om je profiel te controleren"
+             }
+
+        },
+
+        "summary" : {
+
+                "label":{
+                               "info":"Informatie over je reservering",
+                          "localizer":"Locator",
+                             "dateIn":"Check-in",
+                             "nights":"Nachten",
+                               "room":"Kamertype",
+                             "people":"Mensen"
+                        },
+      "messageTemplate":[
+                    "<div id='summary-card'>",
+                        "<p>Hi <strong>{nombreHuesped}</strong>, next we show your reservation detail corresponding to your GuestPilot reservation Id <strong>{localizer}</strong> and hotel's reservation Id <strong>{localizadorHotel}</strong>.</p>",
+                        "<p>You have a <strong>{tipoHabitacion}</strong> room for <strong>{personas}</strong> pax in the <strong>{nombreHotel}</strong> hotel.</p>",
+                        "<p> Your reservation is for  <strong>{noches}</strong> night(s) and the start date is <strong>{entradaFormateada}</strong>.</p>",
+                        "<p>Please click on continue button in order to complete your registration process. Thank you</p>",
+                    "</div>"
+                    ]
+
+
+        },
+
+
+        "hotelInfo":{
+
+                      "title":"Conciërge",
+                      "legal":"Mocht je iets nodig hebben, aarzel dan niet om contact met ons op te nemen. We zullen je graag helpen. Stuur ons een bericht of bel ons rechtstreeks.",
+                      "help":"Kunnen wij je helpen?",
+                      "emptyMsg":"Typ je bericht en druk op de knop Verzenden",
+                      "successMsg":"We hebben je bericht goed ontvangen. We zullen zo spoedig mogelijk contact met je opnemen. Dank je wel.",
+                      "placeHolder": "Schrijf je bericht hier"
+
+         },
+          "restaurantCarousel" : {
+              "title" : "Restaurants"
+          },
+          "restaurantLearnMore" : {
+              "title" : "Restaurants"
+          },
+          "saludCarousel" : {
+              "title" : "Wellness"
+          },
+          "saludLearnMore" : {
+              "title" : "Wellness"
+          },
+          "actividadCarousel" : {
+              "title" : "Activiteiten"
+          },
+          "actividadLearnMore" : {
+              "title" : "Activiteiten"
+          },
+          "ofertaCarousel" : {
+              "title" : "Promoties"
+          },
+          "ofertaLearnMore" : {
+              "title" : "Promoties"
+          },
+          "servicioHabitacion" :{
+              "title" : "Room Service",
+              "carrito":{
+                          "check":"Controleer en bevestig je bestelling",
+                          "order":"Huidige bestelling",
+                          "total":"Totaal",
+                          "empty":"lege order"
+              },
+              "error": {
+                        "checkinNoRealizado":"Om toegang tot de roomservice te krijgen, moet de check-in worden voltooid.",
+                        "carritoVacio":"Er is nog geen product geselecteerd. Voor het controleren van je bestelling kun je eerst de producten uit het onderste gedeelte selecteren door op (+ / -) te klikken. Blader door de verschillende categorieën van het bovenste gedeelte door te klikken op (</>)"
+              }
+          },
+          "checkout": {
+              "title": "Check-out express",
+              "request":"VERZOEK CHECK-OUT",
+              "subtitle":{
+                          "requestInfo":"Jouw informatie",
+                          "payment":"betaalgegevens",
+                          "checkoutUnavailable":"Check-out express is niet beschikbaar."
+              },
+               "error": {
+                            "mustAgree":"Om Check-out express te gebruiken moet je de voorwaarden accepteren."
+              },
+              "success": "Je check-out verzoek is succesvol verzonden.",
+              "label": {
+                      "unavailable": {
+                                "title":"De optie Check-out express is niet beschikbaar. Je ontvangt een melding wanneer de check-out express optie beschikbaar is."
+                      },
+                      "expired": {
+                                "title":"De optie Check-out express is niet beschikbaar. Neem contact op met de receptie om uit te checken."
+                      },
+
+                      "realizado": {
+                                "title":"We hebben de check-out voor deze reservering al gedaan."
+                      },
+                      "legal":{
+                              "title":"Als je gebruik maakt van Check-out express is het niet nodig eerst je rekening te controleren. Lever alleen je sleutel in bij de receptie. Je ontvangt je rekening binnen 48 uur op dit e-mailadres."
+                      },
+                      "signature":{
+                              "title":"Je eindafrekening zal na het uitchecken ten laste worden gebracht van dit creditcardnummer zonder dat een handtekening van de kaarthouder nodig is."
+                      }
+              },
+              "template":{
+                      "welcome":"Hallo {nombreHuesped}, <br>je maakt gebruik van onze Check-out express. Goede keuze. Kun je bevestigen dat de informatie hieronder juist is en deze zo nodig aanvullen?"
+              }
+
+          },
+
+
+          "checkin" : {
+              "title" : "VERZOEK Check-in express",
+              "request":"VERZOEK CHECK-IN",
+              "subtitle":{
+                            "requestInfo":"Jouw informatie",
+                            "arrival":"Aankomsttijd",
+                            "payment":"betaalgegevens",
+                            "roomUpgrade":"Beste Upgrade Optie",
+                            "servicesUpgrade":"Ondersteunende diensten",
+                            "checkinSummary":"Overzicht",
+                            "checkinUnavailable":"Check-in express is niet beschikbaar."
+
+                },
+                "error": {
+                            "mustAgree":"Om Check-in express te verzoeken, dien je eerst de voorwaarden te accepteren."
+                },
+                "success": " Je check-in express verzoek is succesvol verzonden.",
+                "incomplete": "Please fill in the information for each guest in the reservation. <br>Select '+' to open a new form. Thank you!",
+
+              "template":{
+
+                   "welcome" : "Hallo {nombreHuesped}, <br> je maakt gebruik van onze Check-in express optie voor je aanstaande verblijf. Goede keuze. Kun je bevestigen dat de informatie hieronder juist is en deze indien nodig actualiseren?",
+
+                    "arrival" : [
+                                "Check-in tijd is om {horaEntrada} en check-out tijd is om {horaSalida}.<br><br>",
+                                "Laat ons weten hoe laat je verwacht aan te komen bij het hotel.",
+                                "We zullen ons best doen om alles voor je klaar te hebben.<br><br>",
+                                "Je ontvangt een melding wanneer je kamer klaar is.<br><br>"
+                                ],
+                    "foto" :   "Maak een foto van je paspoort.",
+                    "Nationalityfirst" :"Kies uw nationaliteit eerste.",
+
+
+                    "card": "<div class='checkin-card' id='checkin-card'> <div class='row uno'> <div id='localizer' class='left'><span class='label'>Reserveringsnummer: </span> <span class='value'><strong>{localizadorHotel}</strong></span></div> </div> <div class='row dos'><div id='fechaEntrada' class='left'><span class='label'>Check-in: </span> <span class='value'>{fechaEntrada}</span></div><div id='noches' class='right'><span class='label'>Nachten: </span> <span class='value'>{noches}</span></div> </div><div class='row tres'><div id='habitacion' class='left'><span class='label'>Kamertype: </span> <span class='value'>{tipoHabitacion}</span></div><div id='habitaciones' class='right'><span class='label'>kamers: </span> <span class='value'>{habitaciones}</span></div></div><div class='row cuatro'><div id='huespedes' class='left'><span class='label'>Gasten: </span> <span class='value'>{personas}</span></div> <div id='precio' class='right'><span class='label'>Prijs: </span> <span class='value'>{precio} {moneda}</span></div></div></div>",
+
+
+
+
+
+                    "acceptUpgrade": "Verzoek upgrade voor {precio}{moneda}/nacht + belasting",
+                    "summary":"Je gaat je Check-in express verzoek verzenden voor de volgende {fechaEntrada} at {horaPrevistaCheckin}.Check de geselecteerde upgrades of ondersteunende diensten en verzend je verzoek."
+
+                },
+
+              "label" : {
+                          "nombre":{
+                                      "title":"Naam",
+                                      "placeHolder":"Naam"
+
+                          },
+                          "apellidos":{
+                                      "title":"Achternaam",
+                                      "placeHolder":"Achternaam"
+
+                          },
+                          "sexo":{
+                                  "title":"Geslacht",
+                                  "placeHolder":"Man of vrouw"
+                          },
+                          "fechaNacimiento":{
+                                        "title":"Geboortedatum",
+                                        "placeHolder":"Birth date"
+                          },
+                          "documentoIdentidad":{
+                                        "title":"identiteitskaartnummer",
+                                        "placeHolder":"identiteitskaartnummer"
+                          },
+                          "tipoDocumentoIdentidad":{
+                                        "title":"Document",
+                                        "placeHolder":"Type document",
+                                        "types":{
+                                                "dni":"DNI",
+                                                "passport":"Paspoort",
+                                                "other":"Anders"
+                                        }
+                          },
+
+                          "mail":{
+                                        "title":"e-Mail",
+                                        "placeHolder":"e-Mail"
+                          },
+                          "tipoTarjetaCredito":{
+                                        "title":"creditcard type",
+                                        "placeHolder":"Kies uw type creditcard"
+                          },
+                          "numeroTarjetaCredito":{
+                                        "title":"Creditcardnummer",
+                                        "placeHolder":"XXXX-XXXX-XXXX-XXXX"
+                          },
+                          "codigoSeguridadTarjetaCredito":{
+                                        "title":"CVV",
+                                        "placeHolder":"XXX"
+                          },
+
+                          "fechaCaducidadTarjetaCredito":{
+                                        "title":"Vervaldatum",
+                                        "placeHolder":"MM/JJJJ"
+                          },
+
+                          "asignarTarjetaCreditoATodasLasHabitaciones":{
+                                        "title":"Dit creditcardnummer is van toepassing op alle kamers in de reservering."
+
+                          },
+                          "agree":{
+                                        "title":"Ik ben het eens"
+
+                          },
+                          "whyThisRoom":{
+                                        "title": "<b>Waarom deze kamer?</b><br>"
+                          },
+                          "nacionalidadDocumentoIdentidad":{
+                                        "title":"Nationaliteit",
+                                        "placeHolder":"Nationaliteit"
+                          },
+                          "fechaDocumentoIdentidad":{
+                                        "title":"Afgiftedatum",
+                                        "placeHolder":"Afgiftedatum"
+                          },
+                          "horaPrevistaCheckin":{
+                                        "title":"Geschatte aankomsttijd",
+                                        "placeHolder":"Geschatte aankomsttijd"
+
+                          },
+                          "comentario":{
+                                          "title":"Speciale verzoeken",
+                                          "placeHolder":"Typ hier je voorkeuren voor je verblijf. We zullen ons best doen om aan je wensen te voldoen."
+                          },
+                          "rejectUpgrade": {
+                                            "title": "Deze keer niet"
+                          },
+                          "changes":{
+                                          "title":"We vragen een kaart als garantie voor uw verblijf. Alle boekingen bevestigd voor dit verblijf zullen in rekening worden gebracht op dit creditcardnummer, tenzij je je betalingsvoorkeur bij de receptie verandert."
+                          },
+                          "available": {
+                                          "title":"Upgrade-verzoeken zullen worden bevestigd op basis van beschikbaarheid."
+                          },
+                          "unavailable": {
+                                          "title": "Deze optie is momenteel niet beschikbaar. Een paar uur voor aankomst ontvang je een uitnodiging voor de check-in express."
+                          },
+                          "expired": {
+                                          "title": "Check-in express is momenteel niet beschikbaar. Gelieve in te checken bij de receptie."
+                          },
+                          "realizado": {
+                                          "title": "Check-in voor deze reservering is al voltooid."
+                          },
+                          "noServices": {
+                                          "title":"Geen ondersteunende diensten gevraagd."
+                          },
+                          "order":{
+                                        "title":"Ondersteunende diensten"
+                          },
+                          "residencia":{
+                                        "title":"Residentie",
+                                        "placeHolder":"Residentie"
+                          },
+                          "address_street":{
+                                        "title":"Adres"
+                          },
+                          "address_city":{
+                                        "title":"Stad"
+                          },
+                          "address_postalcode":{
+                                        "title":"Postcode"
+                          },
+                          "address_country":{
+                                        "title":"Land"
+                          }
+
+              }
+          },
+
+          "compras" : {
+              "title" : "Mijn boekingen",
+              "detalle":"Jouw boekingsgegevens",
+              "cancellation":{
+                              "confirm":{
+                                        "message":"Jouw boekingsgegevens {servicioNombre} boeking wilt annuleren?",
+                                        "yes":"Annuleer geselecteerd reserveringsverzoek",
+                                        "no":"Bewaar dit reserveringsverzoek"
+                                },
+                              "error":"Het is niet mogelijk om je reserveringsverzoek op dit moment te annuleren. Probeer het later opnieuw."
+
+              }
+          },
+          "mensajes" : {
+              "title" : "Meldingen"
+          },
+          "notificaciones" : {
+              "title" : "Notifications"
+          },
+        "registration" : {
+           "requiredTemplate":"Het veld {field} is vereist.",
+        		"label":{
+                            "leisure":"Vrije tijd",
+                           "business":"Zakelijk",
+                             "family":"Familie",
+        			        "reservationId":"Reserveringsnummer",
+                       "registerInfo":"Registratiegegevens",
+                               "name":"Naam",
+                            "surname":"Achternaam",
+                           "surname2":"Achternaam",
+                            "address":"Adres",
+                              "phone":"Telefoonnummer",
+                               "mail":"E-mail",
+                             "gender":"Geslacht",
+                        "gender_male":"Mannelijk",
+                      "gender_female":"Vrouwelijk",
+                              "birth":"Geboortedatum",
+                            "country":"Land",
+                         "travelType":"Soort reis",
+                                "faq":"Hoe gebruiken we jouw persoonlijke informatie?",
+                            "purpose":"We maken gebruik van persoonlijke gegevens voor gepersonaliseerde aanbevelingen en voor gebruiker validatie doeleinden",
+                               "city": "Stad"
+
+
+        		}
+        },
+        "validation": {
+            "messageTemplate" : [
+                                 "<p>Hallo <strong>{nombreHuesped}</strong>, hebben we vastgesteld dat je locator eerder is gebruikt op een ander apparaat. Om veiligheidsredenen gelieve onderstaande gegevens in te vullen. Bij voorbaat dank.</p>"
+            ]
+          },
+
+        "mainMenu":{
+              "home":"Home",
+              "info":"Informatie",
+     "notifications":"Meldingen",
+              "buys":"Mijn boekingen",
+            "logoff":"Log Out"
+         },
+
+
+        "reservation": {
+                        "confirm":"Zorg ervoor dat je reserveringsgegevens correct zijn.",
+                        "success":"Je aanvraag is succesvol verzonden. Binnenkort zul je de boekingsbevestiging ontvangen.",
+                         "error":{
+                                "dateRange":"Sorry, maar je verblijf is voorbij en je kunt daarom geen diensten meer boeken.",
+                                "noPossible":"Sorry, maar je reservering kan niet worden gemaakt.",
+                                "nullDate":"Datum en tijd zijn vereist.",
+                                "checkoutYaRealizado":"Het is niet mogelijk om diensten te boeken na check-out.",
+                                "dateValid":"Sorry , maar het is niet mogelijk om te reserveren voor deze dienst."
+                        },
+                "label":{
+                       "descriptionPrefix":"<div class='descriptionPrefix'> Beschrijving</div>",
+                       "legal":"Selecteer voor wanneer en voor hoeveel personen je deze service wilt reserveren. Laat ons ook weten wat je voorkeuren zijn:.<br><br>Na het indienen van je reserveringsverzoek zullen wij ons best doen om dit zo snel mogelijk aan je te bevestigen.",
+                       "roomservice":"Selecteer voor wanneer je deze service wilt serveren. Laat ons ook weten wat je voorkeuren zijn:.<br><br>Na het indienen van je reserveringsverzoek zullen wij ons best doen om dit zo snel mogelijk aan je te bevestigen.",
+                       "comments":{
+                                      "title":"speciale verzoeken",
+                                      "placeHolder":"Geef je voorkeuren aan en we zullen ons best doen om ze te vervullen."
+                        },
+
+                       "dateAndTime":{
+                                      "title":"Datum en Tijd",
+                                "placeHolder":"Selecteer Datum en tijd"
+                          },
+                       "dateAndTurn":{
+                                      "title":"Datum & Tijd",
+                                "placeHolder":"Selecteer Datum & Tijd"
+                          },
+                       "date":{
+                                      "title":"Datum",
+                                "placeHolder":"Selecteer Datum"
+                          },
+                       "turn":{
+                                    "title":"Tijd",
+                                    "placeHolder":"Selecteer Tijd"
+                        },
+                        "time": {
+                                    "title": "Tijd",
+                                    "placeHolder": "Selecteer Tijd"
+                            },
+                       "people":{
+                                    "title":"Personen",
+                                    "placeHolder":"Selecteer het aantal personen",
+                                    "suffix":"pax",
+                                    "suffixFirst":"pax"
+
+                      },
+                        "cardHolder":{
+                                    "title":"Kaarthouder"
+
+                                  },
+                      "mustAgreeTerms":"Voor het reserveren moet u de Algemene Voorwaarden accepteren.",
+                      "cardHolderEmpty":"Kaarthouder is verplicht",
+                      "guaranteeText":"Wij verzoeken een creditcard om uw reservering te garanderen. Wij zullen het alleen in rekening brengen bij annulering met sancties.",
+                      "chargeText":"Betaling gebeurt via een betalingsgateway en de volgende kaarten worden geaccepteerd: AmericanExpress, Visa, MasterCard.",
+                      "acceptTerms":"<p style='font-size:14px;padding-left:30px;padding-top:10px;color:grey;'> ik aanvaard <span id='termsOfService'><b>Voorwaarden</b>.</p>",
+                      "CancellationTermsTitle":"<p style='font-size:15px; color:#b59553;'>Annuleringsbeleid</p>",
+                      "pciCompliant":"Al uw creditcardgegevens worden veilig behandeld en nooit opgeslagen.",
+                      "noPaymentKeys":"Er is een probleem met de betalingsgateway. Neem contact op met de Frondesk, dank u."
+                }
+
+
+         },
+
+        "restaurantReservation":{
+
+        },
+        "healthReservation":{
+                "label":{
+                            "info":"Jouw reserveringsgegevens",
+                        "comments":"Vul je commentaar hier in",
+                      "dayAndHour":"Selecteer een datum en tijd",
+                          "people":"pax",
+                     "firstPeople":"pax"
+
+                }
+        },
+        "activityReservation":{
+                "label":{
+                            "info":"Jouw reserveringsgegevens",
+                        "comments":"Vul je commentaar hier in",
+                      "dayAndHour":"Selecteer een datum en tijd",
+                          "people":"pax",
+                     "firstPeople":"pax"
+
+                }
+        },
+
+        "healthReservationSummary":{
+                "label":{
+                            "info":"Jouw reserveringsoverzicht"
+
+
+                }
+        }
+
+     },
+
+
+       "exception":{
+                  "error":{
+                            "mailNotFound":"No se ha encontrado ninguna reserva válida para el mail introducido"
+                  }
+    },
+
+     "common":{
+                "choosecountry":"Kies een land",
+                "chooseprovince":"Kies een regio",
+                "logoff":"Bent u zeker dat u uw reservering ID wijzigen?",
+                "reception":"Frontdesk",
+
+                "serviceIsUnavailable":"De gevraagde dienst is niet beschikbaar",
+                  "reservation":{
+                   "confirmed":"Bevestigd",
+                   "cancelled":"Geannuleerd",
+                   "pending":"In behandeling"
+                },
+                "comments":"Commentaren",
+                "frondeskResponse":"Frontdesk commentaar",
+                "error":"Oeps!",
+                "nofoto":"Geen beeld geselecteerd",
+                "errors":{
+                          "creditCardInvalid":"Creditcardnummer is niet geldig",
+                          "creditCardCVVInvalid":"CVV-code is niet geldig"
+                },
+                "confirm":"Bevestigen",
+                "nights":"Nachten",
+                "free":"--",
+
+
+                "requestReceived":"We hebben je verzoek ontvangen",
+
+                "porDia": "per dag",
+                "hour":"uur",
+                "hours":"uren",
+
+                 "loading":"Gegevens laden...",
+         "connectionError":"Er is geen signaal. Probeer het later opnieuw.",
+              "connecting":"Verbinding maken met de server...",
+              "sync":"Synchroniseren met de server. Dit kan enkele minuten duren ...",
+              "syncLoading":"Synchroniseren van de inhoud {percent}%",
+             "invalidUser":"ongeldige identificatie",
+     			"continue":"GA VERDER",
+          "send":"VERSTUUR",
+            "gender":"Geslacht",
+     			     "man":"Man",
+     			   "woman":"Vrouw",
+
+     			    "book":"RESERVEREN",
+
+             "learn":"Kom meer te weten",
+                 "confirm":"Bevestigen",
+                 "today":"Vandaag",
+              "tomorrow":"Morgen",
+             "yesterday":"Gisteren",
+                "dayNames":["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"],
+              "monthNames":["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
+              "dateFormat":{
+                             "long":"l, \\t\\he jS \\of F Y",
+                            "short":"D d M" ,
+                          "compact":"d/m/Y"
+              },
+              "mandatoryFields":"De volgende velden zijn verplicht: <br><strong><i>{{fields}}</i></strong>",
+              "timeFormat":{
+                       "long":"H:i \\h\\o\\u\\r\\s",
+                      "short":"h:i A",
+                    "compact":"g:i A"
+              }
+
+     },
+	 "buttons" : {
+         "modify":"Wijzigen",
+           "send":"Sturen",
+            "yes":"Ja",
+             "no":"Nee",
+             "ok":"Ok",
+        "cancel" : "Annuleer",
+        "save"   : "Save",
+        "done"   : "Gedaan",
+        "addView": "Toevoegen Bekijk"
+    },
+    "misc" : {
+        "bottomTitle"   : "Onderste Toolbar",
+        "loadLocaleMsg" : "Laden...",
+        "back"          : "TERUG"
+    },
+    "fields" : {
+        "name" : "Naam",
+        "dateLabel" : "Datum",
+        "datePlaceholder" : "Kies Datum"
+    },
+    "fieldsets" : {
+        "title" : "Fieldset Titel",
+        "instructions" : "Instructies"
+    },
+    "months" : {
+        "1"  : "Januari",
+        "2"  : "Februari",
+        "3"  : "Maart",
+        "4"  : "April",
+        "5"  : "Mei",
+        "6"  : "Juni",
+        "7"  : "Juli",
+        "8"  : "Augustus",
+        "9"  : "September",
+        "10" : "Oktober",
+        "11" : "November",
+        "12" : "December"
+    }
+
+}

@@ -1,0 +1,634 @@
+{
+	"version" : "1",
+	"language" : "zh",
+	"view" : {
+        "login" : {
+
+
+        		"label":{
+        					"reserva": {
+                              "title":"预订号:",
+                              "placeHolder":"<您的预订号>"
+                     },
+                  "mail":{
+                              "title":"电子邮箱地址:",
+                              "placeHolder":"<您的电子邮箱地址>"
+                      },
+        					   "tour":"如果您没有有效的确认码，请输入000000以获得演示",
+        				      "login":"登陆",
+                      "requestId":{
+                                  "button":"申请号",
+                                  "title":"申请号"
+                      },
+                      "back":"返回到登陆",
+                      "forgot": {
+                                 "title":"忘记了您的预订号?",
+                                 "message":"我们已向您发送了一封电子邮件，其中包含登陆应用程序所需的预订号。 请检查您的收件箱。"
+                                 },
+
+                      "legal":"注册时我接受<br> <span id='termsOfService'><b>服务条款</b></span>和<span id='privacyPolicy'><b>隐私政策</b></span>",
+                      "name":{
+                                      "title":"名称:",
+                                      "placeHolder":"<你的名字>"
+
+                          },
+                        "surname":{
+                                      "title":"姓:",
+                                      "placeHolder":"<你的姓氏>"
+
+                          },
+                        "locator":{
+                                      "title":"预订:",
+                                      "placeHolder":"<预订>"
+
+                          },
+                        "contactphone":{
+                                      "title":"电话号码:",
+                                      "placeHolder":"<您的联系电话号码>"
+
+                          },
+                        "nostay": {
+                                 "title":"我不住在酒店"
+                                  },
+                        "backview":"回去",
+                        "newsletter":"我接受通过电子邮件收到信息",
+												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
+												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+        		        },
+        		 "error":{
+        		 		"credentials":"登录失败。 请输入有效的预订号。",
+        		 		 "connection":"连接失败。 请稍后再试。",
+                      "empty":"请输入有效的预订号。",
+                    "emptyMail":"请输入有效的电子邮件地址。",
+                     "entityNotFound":"预订号未找到。"
+        		 		 }
+
+        },
+        "privacyPolicy":{
+              "title":"隐私政策",
+              "message":"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+
+        },
+        "termsOfService":{
+              "title":"服务条款",
+              "message":"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum "
+
+        },
+
+        "reception" : {
+                "message":"您好 {nombreHuesped}, <br><br>欢迎来到我们的酒店！<br>我的名字是 {nombreRecepcionista} 我邀请您体验我们的酒店服务。<br><br>感谢您，希望您在我们这里的住宿愉快！",
+
+           "label":{
+                      "check":"请花一分钟检查您的个人资料"
+             }
+
+        },
+
+        "summary" : {
+
+                "label":{
+                               "info":"您的预订信息",
+                          "localizer":"定位器",
+                             "dateIn":"入住",
+                             "nights":"夜晚数",
+                               "room":"房间类型",
+                             "people":"人数"
+                        },
+      "messageTemplate":[
+                    "<div id='summary-card'>",
+                        "<p>Hi <strong>{nombreHuesped}</strong>, next we show your reservation detail corresponding to your GuestPilot reservation Id <strong>{localizer}</strong> and hotel's reservation Id <strong>{localizadorHotel}</strong>.</p>",
+                        "<p>You have a <strong>{tipoHabitacion}</strong> room for <strong>{personas}</strong> pax in the <strong>{nombreHotel}</strong> hotel.</p>",
+                        "<p> Your reservation is for  <strong>{noches}</strong> night(s) and the start date is <strong>{entradaFormateada}</strong>.</p>",
+                        "<p>Please click on continue button in order to complete your registration process. Thank you</p>",
+                    "</div>"
+                    ]
+
+
+        },
+
+
+        "hotelInfo":{
+
+                      "title":"礼宾部",
+                      "legal":"如果您有任何需要，请随时与我们联系。我们将竭诚为您服务。请给我们留言或直接打电话给我们。",
+                      "help":"我们可以帮助您吗?",
+                      "emptyMsg":"请输入您的留言，然后按 发送 按钮",
+                      "successMsg":"我们已准确收到您的讯息。我们将尽快与您联系。谢谢。",
+                      "placeHolder": "在这里输入你的留言"
+
+         },
+          "restaurantCarousel" : {
+              "title" : "餐厅"
+          },
+          "restaurantLearnMore" : {
+              "title" : "餐厅"
+          },
+          "saludCarousel" : {
+              "title" : "健身"
+          },
+          "saludLearnMore" : {
+              "title" : "健身"
+          },
+          "actividadCarousel" : {
+              "title" : "活动"
+          },
+          "actividadLearnMore" : {
+              "title" : "活动"
+          },
+          "ofertaCarousel" : {
+              "title" : "促销"
+          },
+          "ofertaLearnMore" : {
+              "title" : "促销"
+          },
+          "servicioHabitacion" :{
+              "title" : "客房服务",
+              "carrito":{
+                          "check":"检查并确认您的订单",
+                          "order":"当前订单",
+                          "total":"总计",
+                          "empty":"空订单"
+              },
+              "error": {
+                        "checkinNoRealizado":"客人必须在办理入住手续后，才能使用客房服务。",
+                        "carritoVacio":"没有选择产品。 在检查您的订单之前，请首先在页面底部按（+/-）选择产品。 浏览不同类别，请从顶部面板按（</>）"
+              }
+          },
+          "checkout": {
+              "title": "快速结帐",
+              "request":"申请结帐",
+              "subtitle":{
+                          "requestInfo":"您的信息",
+                          "payment":"付款信息",
+                          "checkoutUnavailable":"快速结帐服务不可用"
+              },
+               "error": {
+                            "mustAgree":"你必须接受条款才能使用快速结帐服务。"
+              },
+              "success": "您的结帐请求已成功发送。",
+              "label": {
+                      "unavailable": {
+                                "title":" 快速结帐 选项不可用。快速结帐 选项启动时，您将收到通知。"
+                      },
+                      "expired": {
+                                "title":" 快速结帐 选项不可用。 请与前台联系以结帐。"
+                      },
+
+                      "realizado": {
+                                "title":"我们已经为此预订办理了结帐手续。"
+                      },
+                      "legal":{
+                              "title":"快速结帐无需检查帐单。您只需在前台留下房间钥匙。您将在48小时内通过此电子邮件地址收到您的帐单。"
+                      },
+                      "signature":{
+                              "title":"最终帐单将在客户退房后在此卡帐号上收费，而不需要持卡人签名。"
+                      }
+              },
+              "template":{
+                      "welcome":"您好 {nombreHuesped},<br>您正在使用我们的快速结帐服务。明智的选择。请确认以下信息是正确的，并填写必要信息。"
+              }
+
+          },
+
+
+          "checkin" : {
+              "title" : "申请快速入住",
+              "request":"申请入住",
+              "subtitle":{
+                            "requestInfo":"您的信息",
+                            "arrival":"抵达时间",
+                            "payment":"付款信息",
+                            "roomUpgrade":"最佳升级选项",
+                            "servicesUpgrade":"辅助服务",
+                            "checkinSummary":"小结",
+                            "checkinUnavailable":"快速入住服务不可用"
+
+                },
+                "error": {
+                            "mustAgree":"您必须先接受条款才能申请办理入住手续。"
+                },
+                "success": " 您的快速入住申请已成功发送.",
+                "incomplete": "请信息在保留每位客人填写。选择“+”，打开一个新的形式。谢谢！",
+
+              "template":{
+
+                   "welcome" : "您好 {nombreHuesped}, <br> 您正在使用我们的 快速入住 服务为您即将的入住办理手续。明智的选择。请确认以下信息是正确的，并更新必要的内容。",
+
+                    "arrival" : [
+                                "入住时间为 {horaEntrada} ，退房时间为 {horaSalida}.<br><br>",
+                                "请告诉我们您预计到达酒店的时间。",
+                                "我们将竭尽全力为您准备好一切。<br><br>",
+                                "您的房间准备就绪后，您会收到通知。<br><br>"
+                                ],
+                    "foto" :   "给您的护照拍一张照片.",
+                    "Nationalityfirst" :"请首先指明您的国籍.",
+                    "card":
+                                             "<div class='checkin-card' id='checkin-card'> <div class='row uno'> <div id='localizer' class='left'><span class='label'>预订号: </span> <span class='value'><strong>{{localizadorHotel}}</strong></span></div> </div> <div class='row dos'> <div id='fechaEntrada' class='left'><span class='label'>入住: </span> <span class='value'>{{fechaEntrada}}</span></div>  <div id='noches' class='right'><span class='label'>夜晚数: </span> <span class='value'>{{noches}}</span></div> </div> <div class='row tres'>   <div id='habitacion' class='left'><span class='label'>房间类型: </span> <span class='value'>{{tipoHabitacion}}</span></div>    <div id='habitaciones' class='right'><span class='label'>房间数: </span> <span class='value'>{{habitaciones}}</span></div> </div> <div class='row cuatro'>   <div id='huespedes' class='left'><span class='label'>客人数: </span> <span class='value'>{{personas}}</span></div>   <div id='precio' class='right'><span class='label'>价格: </span> <span class='value'>{{precio}} {{moneda}}</span></div></div></div>"
+                                ,
+
+
+
+
+                    "acceptUpgrade": "申请升级 {precio}{moneda}/晚+税",
+                    "summary":"您即将发送定于{fechaEntrada}日{horaPrevistaCheckin} 时的快速入住请求。请检查选定的升级或辅助服务，并申请办理入住手续。"
+
+                },
+
+              "label" : {
+                          "nombre":{
+                                      "title":"名字",
+                                      "placeHolder":"名字"
+
+                          },
+                          "apellidos":{
+                                      "title":"姓氏",
+                                      "placeHolder":"姓氏"
+
+                          },
+                          "sexo":{
+                                  "title":"性别",
+                                  "placeHolder":"男或女"
+                          },
+                          "fechaNacimiento":{
+                                        "title":"出生日期",
+                                        "placeHolder":"出生日期"
+                          },
+                          "documentoIdentidad":{
+                                        "title":"身份号码",
+                                        "placeHolder":"身份号码"
+                          },
+                          "tipoDocumentoIdentidad":{
+                                        "title":"文件",
+                                        "placeHolder":"文件类别",
+                                        "types":{
+                                                "dni":"身份证明",
+                                                "passport":"护照",
+                                                "other":"其它"
+                                        }
+                          },
+
+                          "mail":{
+                                        "title":"电子邮箱地址",
+                                        "placeHolder":"电子邮箱地址"
+                          },
+                          "tipoTarjetaCredito":{
+                                        "title":"信用卡类型",
+                                        "placeHolder":"请选择您的信用卡类型"
+                          },
+                          "numeroTarjetaCredito":{
+                                        "title":"信用卡号码",
+                                        "placeHolder":"XXXX-XXXX-XXXX-XXXX"
+                          },
+                          "codigoSeguridadTarjetaCredito":{
+                                        "title":"CVV",
+                                        "placeHolder":"XXX"
+                          },
+
+                          "fechaCaducidadTarjetaCredito":{
+                                        "title":"失效日期",
+                                        "placeHolder":"月份/年份"
+                          },
+
+                          "asignarTarjetaCreditoATodasLasHabitaciones":{
+                                        "title":"指定此信用卡号给此预订的所有客房"
+
+                          },
+                          "agree":{
+                                        "title":"我同意"
+
+                          },
+                          "whyThisRoom":{
+                                        "title": "<b>为什么是这间客房?</b><br>"
+                          },
+                          "nacionalidadDocumentoIdentidad":{
+                                        "title":"国籍",
+                                        "placeHolder":"国籍"
+                          },
+                          "fechaDocumentoIdentidad":{
+                                        "title":"签发日期",
+                                        "placeHolder":"签发日期"
+                          },
+                          "horaPrevistaCheckin":{
+                                        "title":"预计到达时间",
+                                        "placeHolder":"预计到达时间"
+
+                          },
+                          "comentario":{
+                                          "title":"特殊要求",
+                                          "placeHolder":"请在这里输入您对住宿的任何喜好。 我们将尽最大努力满足您的要求。"
+                          },
+                          "rejectUpgrade": {
+                                            "title": "这次不用"
+                          },
+                          "changes":{
+                                          "title":"我們要求一張卡作為您住宿的保證. 除非您在前台更改您的首选付款方式，任何确认过的住宿预订将从此信用卡号收费。"
+                          },
+                          "available": {
+                                          "title":"升级请求将根据其可用性进行确认。"
+                          },
+                          "unavailable": {
+                                          "title": "此选项目前不可用。在您抵达之前几小时，您将收到一份通知，邀请您办理入住手续。"
+                          },
+                          "expired": {
+                                          "title": "目前无法使用快速入住选项服务。 请在前台办理入住手续。"
+                          },
+                          "realizado": {
+                                          "title": "此预订的入住手续已完成。"
+                          },
+                          "noServices": {
+                                          "title":"没有任何辅助服务的要求。"
+                          },
+                          "order":{
+                                        "title":"辅助服务"
+                          },
+                          "residencia":{
+                                        "title":"住所",
+                                        "placeHolder":"住所"
+                          },
+                          "address_street":{
+                                        "title":"地址"
+                          },
+                          "address_city":{
+                                        "title":"市"
+                          },
+                          "address_postalcode":{
+                                        "title":"邮政编码"
+                          },
+                          "address_country":{
+                                        "title":"国家"
+                          }
+
+              }
+          },
+
+          "compras" : {
+              "title" : "我的预订",
+              "detalle":"您的预订细节",
+              "cancellation":{
+                              "confirm":{
+                                        "message":"您确定要取消您的 {servicioNombre} 预订请求吗？",
+                                        "yes":"取消选定的预订请求",
+                                        "no":"保留这个预订申请"
+                                },
+                              "error":"目前无法取消您的预订请求。请稍后再试。"
+
+              }
+          },
+          "mensajes" : {
+              "title" : "通知"
+          },
+          "notificaciones" : {
+              "title" : "通知"
+          },
+        "registration" : {
+           "requiredTemplate":"这一项 {field} 是必须填写的",
+        		"label":{
+                            "leisure":"休闲",
+                           "business":"商务",
+                             "family":"家庭",
+        			        "reservationId":"预订号",
+                       "registerInfo":"注册信息",
+                               "name":"姓名",
+                            "surname":"姓氏",
+                           "surname2":"第二姓氏",
+                            "address":"地址",
+                              "phone":"电话号码",
+                               "mail":"电子邮箱地址",
+                             "gender":"性别",
+                        "gender_male":"男",
+                      "gender_female":"女",
+                              "birth":"出生日期",
+                            "country":"国家",
+                         "travelType":"T旅行类型",
+                                "faq":"我们如何使用您的个人信息？",
+                            "purpose":"我们使用个人信息的目的是给予个性化选择的建议和用户验证",
+                               "city": "城市"
+
+
+        		}
+        },
+        "validation": {
+            "messageTemplate" : [
+                                 "<p>您好！我们检测到您的定位已在其他设备上被使用过。出于安全考虑，请填写以下必需信息。我们提前感谢您。</p>"
+            ]
+          },
+
+        "mainMenu":{
+              "home":"主页",
+              "info":"信息",
+     "notifications":"通知",
+              "buys":"我的预订",
+            "logoff":"更换预订号"
+         },
+
+
+        "reservation": {
+                        "confirm":"请确认您的预订信息是正确的。",
+                        "success":"您的预订申请已成功发送。 您很快就会收到预订确认信",
+                         "error":{
+                                "dateRange":"对不起，你的住宿期结束了，你不能再预订服务。",
+                                "noPossible":"抱歉，您的预订请求无法进行。",
+                                "nullDate":"日期和时间是必须填写的。",
+                                "checkoutYaRealizado":"无法在退房结帐后预订服务。",
+                                "dateValid":"很抱歉，您无法预订这项服务"
+                        },
+                "label":{
+                       "descriptionPrefix":"<div class='descriptionPrefix'>描述</div>",
+                       "legal":"请选择您要预订此服务的时间和人数。 也请输入我们应该考虑的您的任何喜好<br> <br>提交您的预订申请后，我们将尽快确认和回复您。",
+                       "roomservice":"请告诉我们何时您要我们为您提供这项客房服务。同时请输入我们需要考虑到的您的任何喜好。<br> <br>您的预定申请提交后,我们将尽全力在最短时间内和您确认。",
+                       "comments":{
+                                      "title":"特殊要求",
+                                      "placeHolder":"请填写您的喜好，我们将尽力满足"
+                        },
+
+                       "dateAndTime":{
+                                      "title":"日期和时间",
+                                "placeHolder":"选择日期和时间"
+                          },
+                       "dateAndTurn":{
+                                      "title":"日期和顺序",
+                                "placeHolder":"请选择日期和顺序"
+                          },
+                       "date":{
+                                      "title":"日期",
+                                "placeHolder":"请选择日期"
+                          },
+                        "turn":{
+                                    "title":"顺序",
+                                 "placeHolder":"请选择顺序"
+                        },
+                        "time": {
+                                "title": "时间",
+                                "placeHolder": "选择时间"
+                            },
+                       "people":{
+                                    "title":"人数",
+                                    "placeHolder":"请选择人数",
+                                    "suffix":"客人",
+                                    "suffixFirst":"客人"
+
+                      },
+                       "cardHolder":{
+                                    "title":"持卡人"
+
+                                  },
+                      "mustAgreeTerms":"进行预约时，您必须接受条款和条件.",
+                      "cardHolderEmpty":"持卡人是强制性的",
+                      "guaranteeText":"我们要求信用卡担保您的预订。 只有在取消罚款的情况下，我们才收取费用.",
+                      "chargeText":"付款方式是通过付款网关支付，以下卡将被接受：American Express，Visa，MasterCard.",
+                      "acceptTerms":"<p style='font-size:14px;padding-left:30px;padding-top:10px;color:grey;'> 我同意 <span id='termsOfService'><b>条款和条件</b>.</p>",
+                      "CancellationTermsTitle":"<p style='font-size:15px; color:#b59553;'> 取消政策</p>",
+                      "pciCompliant":"您的所有信用卡信息被安全地处理，永远不会被存储.",
+                      "noPaymentKeys":"支付网关有问题。 请联系弗龙德斯克，谢谢。"
+                }
+
+
+         },
+
+        "restaurantReservation":{
+
+        },
+        "healthReservation":{
+                "label":{
+                            "info":"您的预订细节",
+                        "comments":"请在此输入您的意见",
+                      "dayAndHour":"请选择日期和时间",
+                          "people":"客人",
+                     "firstPeople":"客人"
+
+                }
+        },
+        "activityReservation":{
+                "label":{
+                            "info":"您的预订细节",
+                        "comments":"请在此输入您的意见",
+                      "dayAndHour":"请选择日期和时间",
+                          "people":"客人",
+                     "firstPeople":"客人"
+
+                }
+        },
+
+        "healthReservationSummary":{
+                "label":{
+                            "info":"您的预订汇总"
+
+
+                }
+        }
+
+     },
+
+       "exception":{
+                  "error":{
+                            "mailNotFound":"无法找到此电子邮件的有效预订"
+                  }
+    },
+
+
+     "common":{
+                "choosecountry":"请选择国家",
+                "chooseprovince":"请选择地区",
+                "logoff":"您确定要更改预订号吗？ 在新的有效预订号被输入之前，您将无法与酒店进行任何通信",
+                "reception":"前台",
+
+                "serviceIsUnavailable":"申请的服务无法使用",
+                  "reservation":{
+                   "confirmed":"已确认",
+                   "cancelled":"已取消",
+                   "pending":"待定"
+                },
+                "comments":"注释",
+                "frondeskResponse":"接待评论",
+                "error":"糟糕！",
+                "nofoto":"未选择图片。",
+                "errors":{
+                          "creditCardInvalid":"信用卡号无效",
+                          "creditCardCVVInvalid":"CVV代码无效"
+                },
+                "confirm":"确认",
+                "nights":"夜晚数",
+                "free":"--",
+
+
+                "requestReceived":"已收到的申请",
+
+                "porDia": "每天",
+                "hour":"小时",
+                "hours":"小时数",
+
+                 "loading":"正在加载数据...",
+         "connectionError":"没有信号。 请稍后再试。",
+              "connecting":"正在连接服务器...",
+              "sync":"正与服务器同步。 此操作可能需要几分钟的时间...",
+              "syncLoading":"同步内容 {percent}%",
+             "invalidUser":"无效证件",
+     			"continue":"继续",
+          "send":"发送",
+            "gender":"性别",
+     			     "man":"男",
+     			   "woman":"女",
+
+     			    "book":"预约",
+
+             "learn":"了解更多",
+                 "confirm":"确认",
+                 "today":"今天",
+              "tomorrow":"明天",
+             "yesterday":"昨天",
+                "dayNames":["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+              "monthNames":["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+              "dateFormat":{
+                             "long":"l, \\t\\he jS \\of F Y",
+                            "short":"D d M" ,
+                          "compact":"d/m/Y"
+              },
+              "mandatoryFields":"以下项目必须填写: <br><strong><i>{{fields}}</i></strong>",
+              "timeFormat":{
+                       "long":"H:i \\h\\o\\u\\r\\s",
+                      "short":"h:i A",
+                    "compact":"g:i A"
+              }
+
+     },
+	 "buttons" : {
+         "modify":"修改",
+           "send":"发送",
+            "yes":"是",
+             "no":"否",
+             "ok":"好",
+        "cancel" : "取消",
+        "save"   : "保存",
+        "done"   : "完成",
+        "addView": "添加视图"
+    },
+    "misc" : {
+        "bottomTitle"   : "底部工具栏",
+        "loadLocaleMsg" : "载入中...",
+        "back"          : "返回"
+    },
+    "fields" : {
+        "name" : "名称",
+        "dateLabel" : "日期",
+        "datePlaceholder" : "选择日期"
+    },
+    "fieldsets" : {
+        "title" : "字段集标题",
+        "instructions" : "说明"
+    },
+    "months" : {
+        "1"  : "一月",
+        "2"  : "二月",
+        "3"  : "三月",
+        "4"  : "四月",
+        "5"  : "五月",
+        "6"  : "六月",
+        "7"  : "七月",
+        "8"  : "八月",
+        "9"  : "九月",
+        "10" : "十月",
+        "11" : "十一月",
+        "12" : "十二月"
+    }
+
+}
