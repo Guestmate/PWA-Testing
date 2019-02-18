@@ -2005,7 +2005,7 @@ var ReservationServiceProvider = /** @class */ (function () {
 
 var map = {
 	"../pages/activities-booking/activities-booking.module": [
-		784,
+		771,
 		2
 	],
 	"../pages/activities-details/activities-details.module": [
@@ -2017,7 +2017,7 @@ var map = {
 		33
 	],
 	"../pages/activity-payment/activity-payment.module": [
-		771,
+		772,
 		32
 	],
 	"../pages/amenities/amenities.module": [
@@ -2041,7 +2041,7 @@ var map = {
 		29
 	],
 	"../pages/checkout-payment/checkout-payment.module": [
-		772,
+		773,
 		28
 	],
 	"../pages/confirm-order/confirm-order.module": [
@@ -2057,15 +2057,15 @@ var map = {
 		40
 	],
 	"../pages/login/login.module": [
-		773,
+		774,
 		39
 	],
 	"../pages/my-bookings/my-bookings.module": [
-		774,
+		775,
 		38
 	],
 	"../pages/no-stay-in-hotel/no-stay-in-hotel.module": [
-		775,
+		776,
 		25
 	],
 	"../pages/notification-details/notification-details.module": [
@@ -2073,7 +2073,7 @@ var map = {
 		24
 	],
 	"../pages/notifications/notifications.module": [
-		776,
+		777,
 		37
 	],
 	"../pages/passport-picture/passport-picture.module": [
@@ -2081,11 +2081,11 @@ var map = {
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		777,
+		778,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		778,
+		779,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2097,7 +2097,7 @@ var map = {
 		19
 	],
 	"../pages/reception/reception.module": [
-		770,
+		758,
 		36
 	],
 	"../pages/registration/registration.module": [
@@ -2105,71 +2105,71 @@ var map = {
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
-		779,
+		780,
 		1
 	],
 	"../pages/restaurant-details/restaurant-details.module": [
-		758,
+		759,
 		18
 	],
 	"../pages/restaurant-payment/restaurant-payment.module": [
-		780,
+		781,
 		17
 	],
 	"../pages/restaurants/restaurants.module": [
-		759,
+		760,
 		16
 	],
 	"../pages/room-issue-details/room-issue-details.module": [
-		760,
+		761,
 		15
 	],
 	"../pages/room-issue/room-issue.module": [
-		761,
+		762,
 		14
 	],
 	"../pages/room-makeup-details/room-makeup-details.module": [
-		762,
+		763,
 		13
 	],
 	"../pages/room-makeup/room-makeup.module": [
-		763,
+		764,
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
-		781,
+		782,
 		11
 	],
 	"../pages/room-service/room-service.module": [
-		764,
+		765,
 		10
 	],
 	"../pages/room-upgrade/room-upgrade.module": [
-		765,
+		766,
 		9
 	],
 	"../pages/service-upgrade/service-upgrade.module": [
-		766,
+		767,
 		8
 	],
 	"../pages/terms-and-conditions/terms-and-conditions.module": [
-		767,
+		768,
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		782,
+		783,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
-		768,
+		769,
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		783,
+		784,
 		5
 	],
 	"../pages/wellness/wellness.module": [
-		769,
+		770,
 		4
 	]
 };
@@ -2946,7 +2946,7 @@ var RoommakeupServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_room_model__ = __webpack_require__(399);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_room_model__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__device_service_device_service__ = __webpack_require__(12);
@@ -3482,87 +3482,6 @@ var HotelInfoPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomissueServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/*
-  Generated class for the ActivityServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var RoomissueServiceProvider = /** @class */ (function () {
-    function RoomissueServiceProvider(http, constant, communicationProvider, deviceProvider) {
-        this.http = http;
-        this.constant = constant;
-        this.communicationProvider = communicationProvider;
-        this.deviceProvider = deviceProvider;
-        console.log('Hello RoomissueServiceProvider Provider');
-    }
-    RoomissueServiceProvider.prototype.sendRoomissueData = function (type, image, comments, reservationId) {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var service = 'CREATE_ROOMISSUE'; // service type
-            var url = _this.constant.URL_TRANSACTION_SERVER;
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('type', type); // params
-            Params = Params.append('comments', comments);
-            Params = Params.append('image', image);
-            Params = Params.append('reservaId', reservationId);
-            Params = Params.append('uuid', _this.deviceProvider.uuid);
-            _this.communicationProvider.post(url, Params, observer, service); // http get service call
-        });
-    };
-    RoomissueServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__["a" /* CommunicationServiceProvider */], __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__["a" /* DeviceServiceProvider */]])
-    ], RoomissueServiceProvider);
-    return RoomissueServiceProvider;
-}());
-
-//# sourceMappingURL=roomissue-service.js.map
-
-/***/ }),
-
-/***/ 399:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpgradeRoomData; });
-var UpgradeRoomData = /** @class */ (function () {
-    function UpgradeRoomData() {
-    }
-    return UpgradeRoomData;
-}());
-
-//# sourceMappingURL=upgrade-room-model.js.map
-
-/***/ }),
-
-/***/ 400:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReceptionPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
@@ -3708,6 +3627,87 @@ var ReceptionPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=reception.js.map
+
+/***/ }),
+
+/***/ 399:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomissueServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/*
+  Generated class for the ActivityServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var RoomissueServiceProvider = /** @class */ (function () {
+    function RoomissueServiceProvider(http, constant, communicationProvider, deviceProvider) {
+        this.http = http;
+        this.constant = constant;
+        this.communicationProvider = communicationProvider;
+        this.deviceProvider = deviceProvider;
+        console.log('Hello RoomissueServiceProvider Provider');
+    }
+    RoomissueServiceProvider.prototype.sendRoomissueData = function (type, image, comments, reservationId) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var service = 'CREATE_ROOMISSUE'; // service type
+            var url = _this.constant.URL_TRANSACTION_SERVER;
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('type', type); // params
+            Params = Params.append('comments', comments);
+            Params = Params.append('image', image);
+            Params = Params.append('reservaId', reservationId);
+            Params = Params.append('uuid', _this.deviceProvider.uuid);
+            _this.communicationProvider.post(url, Params, observer, service); // http get service call
+        });
+    };
+    RoomissueServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__["a" /* CommunicationServiceProvider */], __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__["a" /* DeviceServiceProvider */]])
+    ], RoomissueServiceProvider);
+    return RoomissueServiceProvider;
+}());
+
+//# sourceMappingURL=roomissue-service.js.map
+
+/***/ }),
+
+/***/ 400:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpgradeRoomData; });
+var UpgradeRoomData = /** @class */ (function () {
+    function UpgradeRoomData() {
+    }
+    return UpgradeRoomData;
+}());
+
+//# sourceMappingURL=upgrade-room-model.js.map
 
 /***/ }),
 
@@ -5087,7 +5087,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__providers_rooms_service_rooms_service__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__providers_upgrade_room_service_upgrade_room_service__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__providers_booking_service_booking_service__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__providers_roomissue_service_roomissue_service__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__providers_roomissue_service_roomissue_service__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__providers_roommakeup_service_roommakeup_service__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__providers_amenities_service_amenities_service__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__providers_notification_notification__ = __webpack_require__(44);
@@ -5195,6 +5195,7 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/passport-picture/passport-picture.module#PassportPicturePageModule', name: 'PassportPicturePage', segment: 'passport-picture', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-details/promotions-details.module#PromotionsDetailsPageModule', name: 'PromotionsDetailsPage', segment: 'promotions-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions/promotions.module#PromotionsPageModule', name: 'PromotionsPage', segment: 'promotions', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/reception/reception.module#ReceptionPageModule', name: 'ReceptionPage', segment: 'reception', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-details/restaurant-details.module#RestaurantDetailsPageModule', name: 'RestaurantDetailsPage', segment: 'restaurant-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue-details/room-issue-details.module#RoomissueDetailsPageModule', name: 'RoomissueDetailsPage', segment: 'room-issue-details', priority: 'low', defaultHistory: [] },
@@ -5207,7 +5208,7 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness/wellness.module#WellnessPageModule', name: 'WellnessPage', segment: 'wellness', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/reception/reception.module#ReceptionPageModule', name: 'ReceptionPage', segment: 'reception', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
@@ -5221,7 +5222,6 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
@@ -6098,7 +6098,7 @@ var PreEnteredFormData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 716:
+/***/ 713:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6114,7 +6114,7 @@ var ActivityData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 717:
+/***/ 714:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6130,7 +6130,7 @@ var Restaurant = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 718:
+/***/ 715:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6146,7 +6146,7 @@ var Wellness = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 719:
+/***/ 716:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6162,7 +6162,7 @@ var PromotionsData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 720:
+/***/ 717:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6265,7 +6265,7 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_registration_registration__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_reception_reception__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_reception_reception__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__model_reservation_model__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_hotel_model__ = __webpack_require__(188);
@@ -6845,16 +6845,16 @@ var CheckinServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_common_service_common_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_activity_service_activity_service__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__model_activity_model__ = __webpack_require__(716);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__model_activity_model__ = __webpack_require__(713);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_restaurant_service_restaurant_service__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__model_restaurant_model__ = __webpack_require__(717);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__model_restaurant_model__ = __webpack_require__(714);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_wellness_service_wellness_service__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__model_wellness_model__ = __webpack_require__(718);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__model_wellness_model__ = __webpack_require__(715);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_promotions_service_promotions_service__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_promotions_model__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_promotions_model__ = __webpack_require__(716);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_file_transfer__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_file__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__model_room_service_model__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__model_room_service_model__ = __webpack_require__(717);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_rooms_service_rooms_service__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_room_service_extra_room_service_extra__ = __webpack_require__(189);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7086,7 +7086,7 @@ var HomePage = /** @class */ (function () {
             }
         }
         else {
-            if (this.hotel.objHotel.checkinService) {
+            if (this.hotel.objHotel.checkinService && !(this.platForm.is('ios') || this.platForm.is('android'))) {
                 if (checkId == "checkout" && this.disableCheckout)
                     disabled = true;
                 serviceButtons.push({ iconClass: checkCls, id: checkId, ui: 'circleItems', service: checkService, disabled: disabled, hasChild: false });
