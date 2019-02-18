@@ -2101,7 +2101,7 @@ var map = {
 		36
 	],
 	"../pages/registration/registration.module": [
-		785,
+		784,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
@@ -2165,7 +2165,7 @@ var map = {
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		784,
+		785,
 		5
 	],
 	"../pages/wellness/wellness.module": [
@@ -5224,8 +5224,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -6482,7 +6482,7 @@ var MyApp = /** @class */ (function () {
                     console.log('ONESIGNAL:::::::', OneSignalWeb);
                     OneSignalWeb.push(["init", {
                             appId: "3ae88d10-d238-4705-963d-7c56fd3861d1",
-                            autoRegister: false,
+                            autoRegister: true,
                             allowLocalhostAsSecureOrigin: true,
                             notifyButton: {
                                 enable: false
