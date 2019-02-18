@@ -2005,7 +2005,7 @@ var ReservationServiceProvider = /** @class */ (function () {
 
 var map = {
 	"../pages/activities-booking/activities-booking.module": [
-		771,
+		772,
 		2
 	],
 	"../pages/activities-details/activities-details.module": [
@@ -2017,7 +2017,7 @@ var map = {
 		33
 	],
 	"../pages/activity-payment/activity-payment.module": [
-		772,
+		771,
 		32
 	],
 	"../pages/amenities/amenities.module": [
@@ -2049,11 +2049,11 @@ var map = {
 		27
 	],
 	"../pages/forgot-id/forgot-id.module": [
-		753,
+		752,
 		26
 	],
 	"../pages/hotel-info/hotel-info.module": [
-		752,
+		753,
 		40
 	],
 	"../pages/login/login.module": [
@@ -5192,8 +5192,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/checkin-summary/checkin-summary.module#CheckinSummaryPageModule', name: 'CheckinSummaryPage', segment: 'checkin-summary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-basicinfo/checkout-basicinfo.module#CheckoutBasicinfoPageModule', name: 'CheckoutBasicinfoPage', segment: 'checkout-basicinfo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/confirm-order/confirm-order.module#ConfirmOrderPageModule', name: 'ConfirmOrderPage', segment: 'confirm-order', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/hotel-info/hotel-info.module#HotelInfoPageModule', name: 'HotelInfoPage', segment: 'hotel-info', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forgot-id/forgot-id.module#ForgotIdPageModule', name: 'ForgotIdPage', segment: 'forgot-id', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/hotel-info/hotel-info.module#HotelInfoPageModule', name: 'HotelInfoPage', segment: 'hotel-info', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification-details/notification-details.module#NotificationDetailsPageModule', name: 'NotificationDetailsPage', segment: 'notification-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/passport-picture/passport-picture.module#PassportPicturePageModule', name: 'PassportPicturePage', segment: 'passport-picture', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-details/promotions-details.module#PromotionsDetailsPageModule', name: 'PromotionsDetailsPage', segment: 'promotions-details', priority: 'low', defaultHistory: [] },
@@ -5211,8 +5211,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness/wellness.module#WellnessPageModule', name: 'WellnessPage', segment: 'wellness', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
