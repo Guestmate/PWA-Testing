@@ -2085,7 +2085,7 @@ var map = {
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		781,
+		780,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		780,
+		781,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -5220,8 +5220,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
@@ -6321,6 +6321,7 @@ var MyApp = /** @class */ (function () {
         this.oneSignal = oneSignal;
         this.device = device;
         this.globalization = globalization;
+        this.platform = platform;
         this.ionicApp = ionicApp;
         this.statusBar = statusBar;
         this.splashScreen = splashScreen;
@@ -6449,32 +6450,59 @@ var MyApp = /** @class */ (function () {
     }
     MyApp.prototype.regPushNotification = function () {
         var _this = this;
-        var OneSignalWeb = window['OneSignal'] || [];
-        console.log('ONESIGNAL:::::::', OneSignalWeb);
         if (this.deviceServiceProvider.Online) {
             if (!this.NotificationService.Registered) {
-                this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
-                this.oneSignal.startInit(this.constant.PUSH_KEY);
-                //this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
-                this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
-                this.oneSignal.handleNotificationReceived().subscribe(function (jsonData) {
-                    console.log("******Notification received********");
-                    console.log(jsonData);
-                    _this.NotificationService.dispatchMessage(jsonData);
-                });
-                this.oneSignal.handleNotificationOpened().subscribe(function (jsonData) {
-                    console.log("*************Notification Opened*************");
-                    console.log(jsonData);
-                    _this.NotificationService.dispatchMessage(jsonData);
-                });
-                this.oneSignal.getIds().then(function (ids) {
-                    console.log("The notification token is: " + JSON.stringify(ids));
-                    //this.NotificationService.Registered=true;
-                    _this.NotificationService.RegId = ids.userId;
-                    _this.NotificationService.NotificationProviderId = ids.pushToken;
-                    _this.NotificationService.sendDeviceData();
-                });
-                this.oneSignal.endInit();
+                if (this.platform.is('ios') || this.platform.is('android')) {
+                    this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
+                    this.oneSignal.startInit(this.constant.PUSH_KEY);
+                    //this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+                    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
+                    this.oneSignal.handleNotificationReceived().subscribe(function (jsonData) {
+                        console.log("******Notification received********");
+                        console.log(jsonData);
+                        _this.NotificationService.dispatchMessage(jsonData);
+                    });
+                    this.oneSignal.handleNotificationOpened().subscribe(function (jsonData) {
+                        console.log("*************Notification Opened*************");
+                        console.log(jsonData);
+                        _this.NotificationService.dispatchMessage(jsonData);
+                    });
+                    this.oneSignal.getIds().then(function (ids) {
+                        console.log("The notification token is: " + JSON.stringify(ids));
+                        //this.NotificationService.Registered=true;
+                        _this.NotificationService.RegId = ids.userId;
+                        _this.NotificationService.NotificationProviderId = ids.pushToken;
+                        _this.NotificationService.sendDeviceData();
+                    });
+                    this.oneSignal.endInit();
+                }
+                else {
+                    //PWA Notifications
+                    var OneSignalWeb = window['OneSignal'] || [];
+                    console.log('ONESIGNAL:::::::', OneSignalWeb);
+                    OneSignalWeb.push(["init", {
+                            appId: "3ae88d10-d238-4705-963d-7c56fd3861d1",
+                            autoRegister: false,
+                            allowLocalhostAsSecureOrigin: true,
+                            notifyButton: {
+                                enable: false
+                            }
+                        }]);
+                    console.log('OneSignal Initialized');
+                    OneSignalWeb.push(function () {
+                        console.log('Register For Push');
+                        OneSignalWeb.push(["registerForPushNotifications"]);
+                    });
+                    OneSignalWeb.push(function () {
+                        // Occurs when the user's subscription changes to a new value.
+                        OneSignalWeb.on('subscriptionChange', function (isSubscribed) {
+                            console.log("The user's subscription state is now:", isSubscribed);
+                            OneSignalWeb.getUserId().then(function (userId) {
+                                console.log("User ID is", userId);
+                            });
+                        });
+                    });
+                }
             }
             else {
                 console.log("Notification id already registered...");
