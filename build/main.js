@@ -2101,7 +2101,7 @@ var map = {
 		36
 	],
 	"../pages/registration/registration.module": [
-		783,
+		785,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
@@ -2137,15 +2137,15 @@ var map = {
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
-		784,
+		783,
 		11
 	],
 	"../pages/room-service/room-service.module": [
-		766,
+		765,
 		10
 	],
 	"../pages/room-upgrade/room-upgrade.module": [
-		765,
+		766,
 		9
 	],
 	"../pages/service-upgrade/service-upgrade.module": [
@@ -2165,7 +2165,7 @@ var map = {
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		785,
+		784,
 		5
 	],
 	"../pages/wellness/wellness.module": [
@@ -5205,8 +5205,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup-details/room-makeup-details.module#RoommakeupDetailsPageModule', name: 'RoommakeupDetailsPage', segment: 'room-makeup-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/room-upgrade/room-upgrade.module#RoomUpgradePageModule', name: 'RoomUpgradePage', segment: 'room-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service/room-service.module#RoomServicePageModule', name: 'RoomServicePage', segment: 'room-service', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/room-upgrade/room-upgrade.module#RoomUpgradePageModule', name: 'RoomUpgradePage', segment: 'room-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/service-upgrade/service-upgrade.module#ServiceUpgradePageModule', name: 'ServiceUpgradePage', segment: 'service-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
@@ -5223,9 +5223,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -6449,6 +6449,8 @@ var MyApp = /** @class */ (function () {
     }
     MyApp.prototype.regPushNotification = function () {
         var _this = this;
+        var OneSignalWeb = window['OneSignal'] || [];
+        console.log('ONESIGNAL:::::::', OneSignalWeb);
         if (this.deviceServiceProvider.Online) {
             if (!this.NotificationService.Registered) {
                 this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
