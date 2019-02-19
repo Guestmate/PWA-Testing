@@ -6,7 +6,7 @@
 
 'use strict';
 importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
-//importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
+importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
 //importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
 importScripts('./build/sw-toolbox.js');
 
