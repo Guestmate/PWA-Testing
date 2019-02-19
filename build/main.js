@@ -2081,11 +2081,11 @@ var map = {
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		781,
+		782,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		783,
+		781,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		782,
+		783,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -2786,12 +2786,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var ONESIGNAL_APP_ID = '3ae88d10-d238-4705-963d-7c56fd3861d1';
 var GOOGLE_PROJECT_ID = 'GOOGLE_PROJECT_ID';
 var OneSignalService = /** @class */ (function () {
-    function OneSignalService(platform, OneSignalCordova, NotificationService) {
+    function OneSignalService(platform, OneSignalCordova, NotificationService, constant) {
         this.platform = platform;
         this.OneSignalCordova = OneSignalCordova;
         this.NotificationService = NotificationService;
+        this.constant = constant;
         this.initialized = false;
-        this.constant = new __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */]();
         this.WebPushSDK = {
             loaded: false,
             src: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
@@ -2825,9 +2825,10 @@ var OneSignalService = /** @class */ (function () {
                     // El SDK de WebPush ya ha sido cargado y ahora debemos inicializarlo
                     // normalmente.
                     var OneSignalBrowser = window['OneSignal'] || [];
+                    console.log(_this.constant);
                     OneSignalBrowser.push(function () {
                         OneSignalBrowser.init({
-                            appId: this.constant.PUSH_KEY
+                            appId: __WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].pushKey
                         });
                     });
                     _this.initialized = true;
@@ -2848,7 +2849,7 @@ var OneSignalService = /** @class */ (function () {
             }
             _this.platform.ready().then(function () {
                 _this.OneSignalCordova.setLogLevel({ logLevel: 6, visualLevel: 0 });
-                _this.OneSignalCordova.startInit(_this.constant.PUSH_KEY);
+                _this.OneSignalCordova.startInit(__WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].pushKey);
                 //this.OneSignalCordova.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
                 _this.OneSignalCordova.inFocusDisplaying(_this.OneSignalCordova.OSInFocusDisplayOption.Notification);
                 _this.OneSignalCordova.handleNotificationReceived().subscribe(function (jsonData) {
@@ -2902,7 +2903,8 @@ var OneSignalService = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1__ionic_native_onesignal__["a" /* OneSignal */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_notification_notification__["a" /* NotificationProvider */]])
+            __WEBPACK_IMPORTED_MODULE_4__providers_notification_notification__["a" /* NotificationProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */]])
     ], OneSignalService);
     return OneSignalService;
 }());
@@ -5776,9 +5778,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
@@ -6817,7 +6819,8 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ENV; });
 var ENV = {
     mode: 'Development',
-    isBrowser: true
+    isBrowser: true,
+    pushKey: '3ae88d10-d238-4705-963d-7c56fd3861d1'
 };
 //# sourceMappingURL=environment.dev.js.map
 
