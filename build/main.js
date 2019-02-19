@@ -2005,171 +2005,171 @@ var ReservationServiceProvider = /** @class */ (function () {
 
 var map = {
 	"../pages/activities-booking/activities-booking.module": [
-		771,
+		770,
 		2
 	],
 	"../pages/activities-details/activities-details.module": [
-		745,
+		744,
 		34
 	],
 	"../pages/activities/activities.module": [
-		746,
+		745,
 		33
 	],
 	"../pages/activity-payment/activity-payment.module": [
-		773,
+		772,
 		32
 	],
 	"../pages/amenities/amenities.module": [
-		747,
+		746,
 		31
 	],
 	"../pages/checkin-arrivaltime/checkin-arrivaltime.module": [
-		748,
+		747,
 		30
 	],
 	"../pages/checkin-basicinfo/checkin-basicinfo.module": [
-		786,
+		785,
 		3
 	],
 	"../pages/checkin-summary/checkin-summary.module": [
-		749,
+		748,
 		41
 	],
 	"../pages/checkout-basicinfo/checkout-basicinfo.module": [
-		750,
+		749,
 		29
 	],
 	"../pages/checkout-payment/checkout-payment.module": [
-		775,
+		774,
 		28
 	],
 	"../pages/confirm-order/confirm-order.module": [
-		751,
+		750,
 		27
 	],
 	"../pages/forgot-id/forgot-id.module": [
-		753,
+		752,
 		26
 	],
 	"../pages/hotel-info/hotel-info.module": [
-		752,
+		751,
 		40
 	],
 	"../pages/login/login.module": [
-		772,
+		771,
 		39
 	],
 	"../pages/my-bookings/my-bookings.module": [
-		776,
+		775,
 		38
 	],
 	"../pages/no-stay-in-hotel/no-stay-in-hotel.module": [
-		778,
+		777,
 		25
 	],
 	"../pages/notification-details/notification-details.module": [
-		754,
+		753,
 		24
 	],
 	"../pages/notifications/notifications.module": [
-		774,
+		773,
 		37
 	],
 	"../pages/passport-picture/passport-picture.module": [
-		755,
+		754,
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		779,
+		778,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		781,
+		780,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
-		756,
+		755,
 		20
 	],
 	"../pages/promotions/promotions.module": [
-		757,
+		756,
 		19
 	],
 	"../pages/reception/reception.module": [
-		758,
+		757,
 		36
 	],
 	"../pages/registration/registration.module": [
-		785,
+		784,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
-		777,
+		776,
 		1
 	],
 	"../pages/restaurant-details/restaurant-details.module": [
-		759,
+		758,
 		18
 	],
 	"../pages/restaurant-payment/restaurant-payment.module": [
-		782,
+		781,
 		17
 	],
 	"../pages/restaurants/restaurants.module": [
-		762,
+		761,
 		16
 	],
 	"../pages/room-issue-details/room-issue-details.module": [
-		760,
+		759,
 		15
 	],
 	"../pages/room-issue/room-issue.module": [
-		761,
+		760,
 		14
 	],
 	"../pages/room-makeup-details/room-makeup-details.module": [
-		763,
+		762,
 		13
 	],
 	"../pages/room-makeup/room-makeup.module": [
-		764,
+		763,
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
-		783,
+		782,
 		11
 	],
 	"../pages/room-service/room-service.module": [
-		765,
+		764,
 		10
 	],
 	"../pages/room-upgrade/room-upgrade.module": [
-		766,
+		765,
 		9
 	],
 	"../pages/service-upgrade/service-upgrade.module": [
-		767,
+		766,
 		8
 	],
 	"../pages/terms-and-conditions/terms-and-conditions.module": [
-		768,
+		767,
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		780,
+		779,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
-		769,
+		768,
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		784,
+		783,
 		5
 	],
 	"../pages/wellness/wellness.module": [
-		770,
+		769,
 		4
 	]
 };
@@ -2722,7 +2722,7 @@ var RegistrationServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 390:
+/***/ 389:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2732,7 +2732,7 @@ var RegistrationServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_service_model__ = __webpack_require__(394);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_service_model__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__device_service_device_service__ = __webpack_require__(12);
@@ -2791,7 +2791,7 @@ var AncillaryServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 392:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2936,7 +2936,7 @@ var RoommakeupServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 393:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2946,7 +2946,7 @@ var RoommakeupServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_room_model__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_room_model__ = __webpack_require__(399);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__device_service_device_service__ = __webpack_require__(12);
@@ -3004,7 +3004,7 @@ var UpgradeRoomServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 394:
+/***/ 393:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3027,7 +3027,7 @@ var UpgradeServiceData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 395:
+/***/ 394:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3099,7 +3099,7 @@ var AmenitiesServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 396:
+/***/ 395:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3289,7 +3289,7 @@ var CheckinSummaryPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 397:
+/***/ 396:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3481,7 +3481,7 @@ var HotelInfoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 398:
+/***/ 397:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3633,7 +3633,7 @@ var ReceptionPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 399:
+/***/ 398:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3699,7 +3699,7 @@ var RoomissueServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 400:
+/***/ 399:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3714,7 +3714,7 @@ var UpgradeRoomData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 401:
+/***/ 400:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3965,7 +3965,7 @@ var NotificationsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 402:
+/***/ 401:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3978,7 +3978,7 @@ var NotificationsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(720);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__ = __webpack_require__(78);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4089,7 +4089,7 @@ var CheckoutServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 403:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4103,7 +4103,7 @@ var CheckoutServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants_constants__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_storage__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(721);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4509,7 +4509,7 @@ var MyBookingsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 404:
+/***/ 403:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4576,7 +4576,7 @@ var NostayServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 405:
+/***/ 404:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4591,7 +4591,7 @@ var GuestData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 406:
+/***/ 405:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4607,7 +4607,7 @@ var GuestData = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__model_guest_data_model__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__model_guest_data_model__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_guest_service_guest_service__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_storage__ = __webpack_require__(34);
@@ -4953,7 +4953,7 @@ var RegistrationPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 407:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5021,13 +5021,13 @@ var AutoCompleteSpainProvincesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 408:
+/***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(412);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -5035,7 +5035,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 413:
+/***/ 412:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5048,11 +5048,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__interceptor_http_interceptor__ = __webpack_require__(740);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(741);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__interceptor_http_interceptor__ = __webpack_require__(739);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(740);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngx_translate_core__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_http_loader__ = __webpack_require__(742);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_http_loader__ = __webpack_require__(741);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_tools_tools__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_globalization__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_device_service_device_service__ = __webpack_require__(12);
@@ -5060,17 +5060,17 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_auto_complete_country_auto_complete_country__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_http__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_unique_device_id__ = __webpack_require__(743);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_unique_device_id__ = __webpack_require__(742);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_login_service_login_service__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_country_service_country_service__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_searchpipe_searchpipe__ = __webpack_require__(744);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_searchpipe_searchpipe__ = __webpack_require__(743);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_home_service_home_service__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_nostay_service_nostay_service__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_nostay_service_nostay_service__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_storage__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_login_login__ = __webpack_require__(156);
@@ -5079,26 +5079,25 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__providers_common_service_common_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36_ngx_stripe__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_checkin_service_checkin_service__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__ionic_native_camera__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_ancillary_service_ancillary_service__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__ionic_native_camera__ = __webpack_require__(390);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__providers_ancillary_service_ancillary_service__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__ionic_native_device__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__providers_restaurant_service_restaurant_service__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__providers_wellness_service_wellness_service__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__providers_promotions_service_promotions_service__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__providers_rooms_service_rooms_service__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__providers_upgrade_room_service_upgrade_room_service__ = __webpack_require__(393);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__providers_upgrade_room_service_upgrade_room_service__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__providers_booking_service_booking_service__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__providers_roomissue_service_roomissue_service__ = __webpack_require__(399);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__providers_roommakeup_service_roommakeup_service__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__providers_amenities_service_amenities_service__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__providers_roomissue_service_roomissue_service__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__providers_roommakeup_service_roommakeup_service__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__providers_amenities_service_amenities_service__ = __webpack_require__(394);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__providers_notification_notification__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__ionic_native_onesignal__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ionic_native_http__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__ionic_native_file_transfer__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__ionic_native_file__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__providers_room_service_extra_room_service_extra__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__ionic_native_http__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ionic_native_file_transfer__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__ionic_native_file__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__providers_room_service_extra_room_service_extra__ = __webpack_require__(189);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5158,7 +5157,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
+//import { OneSignal } from '@ionic-native/onesignal';
 
 
 
@@ -5292,12 +5291,12 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_47__providers_upgrade_room_service_upgrade_room_service__["a" /* UpgradeRoomServiceProvider */],
                 __WEBPACK_IMPORTED_MODULE_48__providers_booking_service_booking_service__["a" /* BookingServiceProvider */],
                 __WEBPACK_IMPORTED_MODULE_52__providers_notification_notification__["a" /* NotificationProvider */],
-                __WEBPACK_IMPORTED_MODULE_53__ionic_native_onesignal__["a" /* OneSignal */],
-                __WEBPACK_IMPORTED_MODULE_55__ionic_native_file_transfer__["a" /* FileTransfer */],
-                __WEBPACK_IMPORTED_MODULE_56__ionic_native_file__["a" /* File */],
-                __WEBPACK_IMPORTED_MODULE_57__providers_room_service_extra_room_service_extra__["a" /* RoomServiceExtraProvider */],
-                __WEBPACK_IMPORTED_MODULE_57__providers_room_service_extra_room_service_extra__["a" /* RoomServiceExtraProvider */],
-                __WEBPACK_IMPORTED_MODULE_54__ionic_native_http__["a" /* HTTP */]
+                //OneSignal,
+                __WEBPACK_IMPORTED_MODULE_54__ionic_native_file_transfer__["a" /* FileTransfer */],
+                __WEBPACK_IMPORTED_MODULE_55__ionic_native_file__["a" /* File */],
+                __WEBPACK_IMPORTED_MODULE_56__providers_room_service_extra_room_service_extra__["a" /* RoomServiceExtraProvider */],
+                __WEBPACK_IMPORTED_MODULE_56__providers_room_service_extra_room_service_extra__["a" /* RoomServiceExtraProvider */],
+                __WEBPACK_IMPORTED_MODULE_53__ionic_native_http__["a" /* HTTP */]
             ]
         })
     ], AppModule);
@@ -5689,14 +5688,14 @@ var NotificationProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_appdata_model__ = __webpack_require__(711);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_appdata_model__ = __webpack_require__(710);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__constants_constants__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__activity_service_activity_service__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__checkin_service_checkin_service__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__rooms_service_rooms_service__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_pre_entered_form_data_model__ = __webpack_require__(712);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_pre_entered_form_data_model__ = __webpack_require__(711);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6052,7 +6051,7 @@ var CommonServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 711:
+/***/ 710:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6079,7 +6078,7 @@ var AppData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 712:
+/***/ 711:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6101,7 +6100,7 @@ var PreEnteredFormData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 713:
+/***/ 712:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6117,7 +6116,7 @@ var ActivityData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 714:
+/***/ 713:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6133,7 +6132,7 @@ var Restaurant = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 715:
+/***/ 714:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6149,7 +6148,7 @@ var Wellness = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 716:
+/***/ 715:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6165,7 +6164,7 @@ var PromotionsData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 717:
+/***/ 716:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6186,7 +6185,7 @@ var RoomService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 721:
+/***/ 720:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6201,7 +6200,7 @@ var CheckOutData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 722:
+/***/ 721:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6217,7 +6216,7 @@ var BookingData = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 740:
+/***/ 739:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6250,7 +6249,7 @@ var InterceptedHttp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 741:
+/***/ 740:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6267,19 +6266,18 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_registration_registration__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_reception_reception__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_registration_registration__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_reception_reception__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__model_reservation_model__ = __webpack_require__(187);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_hotel_model__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_onesignal__ = __webpack_require__(389);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_notification_notification__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_my_bookings_my_bookings__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_notifications_notifications__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_hotel_info_hotel_info__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_checkin_summary_checkin_summary__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_notification_notification__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_my_bookings_my_bookings__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_notifications_notifications__ = __webpack_require__(400);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_hotel_info_hotel_info__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_checkin_summary_checkin_summary__ = __webpack_require__(395);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6308,17 +6306,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
+//import { OneSignal } from '@ionic-native/onesignal';
 
 
 
 
 
 var MyApp = /** @class */ (function () {
-    function MyApp(NotificationService, oneSignal, device, globalization, platform, ionicApp, statusBar, splashScreen, translate, toolsProvider, constant, deviceServiceProvider, nativeStorage, reservationPvdr, events, hotelPvdr) {
+    function MyApp(NotificationService, //private oneSignal: OneSignal,
+        device, globalization, platform, ionicApp, statusBar, splashScreen, translate, toolsProvider, constant, deviceServiceProvider, nativeStorage, reservationPvdr, events, hotelPvdr) {
         var _this = this;
         this.NotificationService = NotificationService;
-        this.oneSignal = oneSignal;
         this.device = device;
         this.globalization = globalization;
         this.platform = platform;
@@ -6429,10 +6427,10 @@ var MyApp = /** @class */ (function () {
                 else if (_this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */] && _this.nav.getActive().instance.menuCtrl.isOpen()) {
                     _this.nav.getActive().instance.menuCtrl.close();
                 }
-                else if (_this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_22__pages_notifications_notifications__["a" /* NotificationsPage */] || _this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_21__pages_my_bookings_my_bookings__["a" /* MyBookingsPage */] || _this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_23__pages_hotel_info_hotel_info__["a" /* HotelInfoPage */]) {
+                else if (_this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_21__pages_notifications_notifications__["a" /* NotificationsPage */] || _this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_20__pages_my_bookings_my_bookings__["a" /* MyBookingsPage */] || _this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_22__pages_hotel_info_hotel_info__["a" /* HotelInfoPage */]) {
                     _this.nav.popToRoot({ animate: true, animation: 'transition', duration: 500, direction: 'back' });
                 }
-                else if (_this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_24__pages_checkin_summary_checkin_summary__["a" /* CheckinSummaryPage */] && _this.deviceServiceProvider.btnCheckInEnabled) {
+                else if (_this.nav.getActive().component == __WEBPACK_IMPORTED_MODULE_23__pages_checkin_summary_checkin_summary__["a" /* CheckinSummaryPage */] && _this.deviceServiceProvider.btnCheckInEnabled) {
                     _this.alert = null;
                 }
                 else if (_this.nav.canGoBack()) {
@@ -6449,33 +6447,32 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp.prototype.regPushNotification = function () {
-        var _this = this;
         if (this.deviceServiceProvider.Online) {
             if (!this.NotificationService.Registered) {
                 if (!('serviceWorker' in navigator)) {
                     console.log('ENTRO MOBILE');
-                    this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
-                    this.oneSignal.startInit(this.constant.PUSH_KEY);
-                    //this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
-                    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
-                    this.oneSignal.handleNotificationReceived().subscribe(function (jsonData) {
-                        console.log("******Notification received********");
-                        console.log(jsonData);
-                        _this.NotificationService.dispatchMessage(jsonData);
-                    });
-                    this.oneSignal.handleNotificationOpened().subscribe(function (jsonData) {
-                        console.log("*************Notification Opened*************");
-                        console.log(jsonData);
-                        _this.NotificationService.dispatchMessage(jsonData);
-                    });
-                    this.oneSignal.getIds().then(function (ids) {
-                        console.log("The notification token is: " + JSON.stringify(ids));
-                        _this.NotificationService.Registered = true;
-                        _this.NotificationService.RegId = ids.userId;
-                        _this.NotificationService.NotificationProviderId = ids.pushToken;
-                        _this.NotificationService.sendDeviceData();
-                    });
-                    this.oneSignal.endInit();
+                    //this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
+                    //this.oneSignal.startInit(this.constant.PUSH_KEY);
+                    ////this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+                    //this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
+                    //this.oneSignal.handleNotificationReceived().subscribe((jsonData) => {
+                    //  console.log("******Notification received********");
+                    //  console.log(jsonData);
+                    //  this.NotificationService.dispatchMessage(jsonData);
+                    //});
+                    //this.oneSignal.handleNotificationOpened().subscribe((jsonData) => {
+                    //  console.log("*************Notification Opened*************");
+                    //  console.log(jsonData);
+                    //  this.NotificationService.dispatchMessage(jsonData);
+                    //});
+                    //this.oneSignal.getIds().then((ids) => {
+                    //  console.log("The notification token is: " + JSON.stringify(ids));
+                    //  this.NotificationService.Registered=true;
+                    //  this.NotificationService.RegId = ids.userId;
+                    //  this.NotificationService.NotificationProviderId = ids.pushToken;
+                    //  this.NotificationService.sendDeviceData();
+                    //});
+                    //this.oneSignal.endInit();
                 }
                 else {
                     console.log('ENTRO PWA');
@@ -6602,7 +6599,7 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/app/app.html"*/'<div *ngIf="showSplash" class="splash">\n  <img src="assets/svg/rings.svg" />\n</div>\n<ion-menu type="push"  side="right"  swipeEnabled="false"  [content]="mycontent" class="home_menu">\n\n          <ion-item tappable (click)="doAction(\'home\')"  class="home_menu_home">\n                {{"view.mainMenu.home" | translate}}\n          </ion-item>\n\n          <ion-item tappable (click)="doAction(\'info\')" class="home_menu_info">\n                {{"view.mainMenu.info" | translate}}\n          </ion-item>\n          <ion-item tappable (click)="doAction(\'notifications\')" class="home_menu_notification">\n                <span class="x-badge" *ngIf="NotificationService.messageNotifications">{{NotificationService.messageNotifications}}</span>\n                {{"view.mainMenu.notifications" | translate}}\n          </ion-item>\n          <ion-item tappable (click)="doAction(\'bookings\')" class="home_menu_bookings">\n                  <span class="x-badge" *ngIf="NotificationService.reservationNotifications">{{NotificationService.reservationNotifications}}</span>\n                {{"view.mainMenu.buys" | translate}}\n          </ion-item>\n\n          <ion-item tappable (click)="doAction(\'facebook\')" class="home_menu_facebook">\n                Facebook\n          </ion-item>\n\n          <ion-item tappable (click)="doAction(\'twitter\')" class="home_menu_twitter">\n                Twitter\n          </ion-item>\n          <ion-item tappable (click)="doAction(\'website\')" class="home_menu_website">\n                Website\n          </ion-item>\n          <ion-item tappable (click)="doAction(\'logout\')" class="home_menu_logout">\n                {{"view.mainMenu.logoff" | translate}}\n          </ion-item>\n\n</ion-menu>\n<ion-nav [root]="rootPage" #mycontent></ion-nav>\n'/*ion-inline-end:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_20__providers_notification_notification__["a" /* NotificationProvider */], __WEBPACK_IMPORTED_MODULE_19__ionic_native_onesignal__["a" /* OneSignal */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_19__providers_notification_notification__["a" /* NotificationProvider */],
             __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__["a" /* Device */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__["a" /* Globalization */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicApp */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_4__ngx_translate_core__["c" /* TranslateService */],
             __WEBPACK_IMPORTED_MODULE_6__providers_tools_tools__["a" /* ToolsProvider */], __WEBPACK_IMPORTED_MODULE_8__constants_constants__["a" /* Constant */],
@@ -6617,7 +6614,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 744:
+/***/ 743:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6891,16 +6888,16 @@ var CheckinServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_common_service_common_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_activity_service_activity_service__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__model_activity_model__ = __webpack_require__(713);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__model_activity_model__ = __webpack_require__(712);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_restaurant_service_restaurant_service__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__model_restaurant_model__ = __webpack_require__(714);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__model_restaurant_model__ = __webpack_require__(713);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_wellness_service_wellness_service__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__model_wellness_model__ = __webpack_require__(715);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__model_wellness_model__ = __webpack_require__(714);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_promotions_service_promotions_service__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_promotions_model__ = __webpack_require__(716);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__model_promotions_model__ = __webpack_require__(715);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_file_transfer__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_file__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__model_room_service_model__ = __webpack_require__(717);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__model_room_service_model__ = __webpack_require__(716);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_rooms_service_rooms_service__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_room_service_extra_room_service_extra__ = __webpack_require__(189);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -8171,5 +8168,5 @@ var HomePage = /** @class */ (function () {
 
 /***/ })
 
-},[408]);
+},[407]);
 //# sourceMappingURL=main.js.map
