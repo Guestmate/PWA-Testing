@@ -2045,7 +2045,7 @@ var map = {
 		28
 	],
 	"../pages/confirm-order/confirm-order.module": [
-		753,
+		754,
 		27
 	],
 	"../pages/forgot-id/forgot-id.module": [
@@ -2053,7 +2053,7 @@ var map = {
 		26
 	],
 	"../pages/hotel-info/hotel-info.module": [
-		754,
+		753,
 		40
 	],
 	"../pages/login/login.module": [
@@ -2796,6 +2796,7 @@ var OneSignalService = /** @class */ (function () {
             loaded: false,
             src: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
         };
+        console.log(constant);
     }
     OneSignalService.prototype.init = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -5749,8 +5750,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/checkin-arrivaltime/checkin-arrivaltime.module#CheckinArrivaltimePageModule', name: 'CheckinArrivaltimePage', segment: 'checkin-arrivaltime', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-summary/checkin-summary.module#CheckinSummaryPageModule', name: 'CheckinSummaryPage', segment: 'checkin-summary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-basicinfo/checkout-basicinfo.module#CheckoutBasicinfoPageModule', name: 'CheckoutBasicinfoPage', segment: 'checkout-basicinfo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/confirm-order/confirm-order.module#ConfirmOrderPageModule', name: 'ConfirmOrderPage', segment: 'confirm-order', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hotel-info/hotel-info.module#HotelInfoPageModule', name: 'HotelInfoPage', segment: 'hotel-info', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/confirm-order/confirm-order.module#ConfirmOrderPageModule', name: 'ConfirmOrderPage', segment: 'confirm-order', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/forgot-id/forgot-id.module#ForgotIdPageModule', name: 'ForgotIdPage', segment: 'forgot-id', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification-details/notification-details.module#NotificationDetailsPageModule', name: 'NotificationDetailsPage', segment: 'notification-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/passport-picture/passport-picture.module#PassportPicturePageModule', name: 'PassportPicturePage', segment: 'passport-picture', priority: 'low', defaultHistory: [] },
