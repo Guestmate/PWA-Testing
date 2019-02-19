@@ -2021,11 +2021,11 @@ var map = {
 		32
 	],
 	"../pages/amenities/amenities.module": [
-		750,
+		749,
 		31
 	],
 	"../pages/checkin-arrivaltime/checkin-arrivaltime.module": [
-		749,
+		750,
 		30
 	],
 	"../pages/checkin-basicinfo/checkin-basicinfo.module": [
@@ -2061,11 +2061,11 @@ var map = {
 		39
 	],
 	"../pages/my-bookings/my-bookings.module": [
-		780,
+		778,
 		38
 	],
 	"../pages/no-stay-in-hotel/no-stay-in-hotel.module": [
-		779,
+		780,
 		25
 	],
 	"../pages/notification-details/notification-details.module": [
@@ -2081,11 +2081,11 @@ var map = {
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		783,
+		781,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		781,
+		782,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2105,7 +2105,7 @@ var map = {
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
-		778,
+		779,
 		1
 	],
 	"../pages/restaurant-details/restaurant-details.module": [
@@ -2117,7 +2117,7 @@ var map = {
 		17
 	],
 	"../pages/restaurants/restaurants.module": [
-		766,
+		764,
 		16
 	],
 	"../pages/room-issue-details/room-issue-details.module": [
@@ -2129,11 +2129,11 @@ var map = {
 		14
 	],
 	"../pages/room-makeup-details/room-makeup-details.module": [
-		764,
+		765,
 		13
 	],
 	"../pages/room-makeup/room-makeup.module": [
-		765,
+		766,
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		782,
+		783,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -2828,7 +2828,11 @@ var OneSignalService = /** @class */ (function () {
                     console.log('OneSignalBrowser', OneSignalBrowser);
                     OneSignalBrowser.push(function () {
                         OneSignalBrowser.init({
-                            appId: __WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].pushKey
+                            appId: __WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].pushKey,
+                            autoRegister: false,
+                            notifyButton: {
+                                enable: true,
+                            },
                         });
                         console.log('ENTRO:::::', OneSignalBrowser);
                         OneSignalBrowser.registerForPushNotifications();
@@ -4286,88 +4290,6 @@ var CheckoutServiceProvider = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NostayServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/*
-  Generated class for the NostayServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var NostayServiceProvider = /** @class */ (function () {
-    function NostayServiceProvider(http, constant, deviceProvider, communication) {
-        this.http = http;
-        this.constant = constant;
-        this.deviceProvider = deviceProvider;
-        this.communication = communication;
-        console.log('Hello NostayServiceProvider Provider');
-    }
-    NostayServiceProvider.prototype.fnNoStayLoginProceed = function (name, surname, email, newsletter, contactphone) {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var url = _this.constant.URL_TRANSACTION_SERVER + '/online/huesped/registro/loginnostay';
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('name', name);
-            Params = Params.append('surname', surname);
-            Params = Params.append('email', email);
-            Params = Params.append('newsletter', newsletter);
-            Params = Params.append('contactphone', contactphone);
-            Params = Params.append('bundle', _this.constant.APP_DOMAIN);
-            Params = Params.append('uuid', _this.deviceProvider.uuid);
-            _this.communication.post(url, Params, observer);
-        });
-    };
-    NostayServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__["a" /* CommunicationServiceProvider */]])
-    ], NostayServiceProvider);
-    return NostayServiceProvider;
-}());
-
-//# sourceMappingURL=nostay-service.js.map
-
-/***/ }),
-
-/***/ 405:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuestData; });
-var GuestData = /** @class */ (function () {
-    function GuestData() {
-    }
-    return GuestData;
-}());
-
-//# sourceMappingURL=guest-data-model.js.map
-
-/***/ }),
-
-/***/ 406:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyBookingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
@@ -4784,6 +4706,88 @@ var MyBookingsPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 405:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NostayServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/*
+  Generated class for the NostayServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var NostayServiceProvider = /** @class */ (function () {
+    function NostayServiceProvider(http, constant, deviceProvider, communication) {
+        this.http = http;
+        this.constant = constant;
+        this.deviceProvider = deviceProvider;
+        this.communication = communication;
+        console.log('Hello NostayServiceProvider Provider');
+    }
+    NostayServiceProvider.prototype.fnNoStayLoginProceed = function (name, surname, email, newsletter, contactphone) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var url = _this.constant.URL_TRANSACTION_SERVER + '/online/huesped/registro/loginnostay';
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('name', name);
+            Params = Params.append('surname', surname);
+            Params = Params.append('email', email);
+            Params = Params.append('newsletter', newsletter);
+            Params = Params.append('contactphone', contactphone);
+            Params = Params.append('bundle', _this.constant.APP_DOMAIN);
+            Params = Params.append('uuid', _this.deviceProvider.uuid);
+            _this.communication.post(url, Params, observer);
+        });
+    };
+    NostayServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__["a" /* CommunicationServiceProvider */]])
+    ], NostayServiceProvider);
+    return NostayServiceProvider;
+}());
+
+//# sourceMappingURL=nostay-service.js.map
+
+/***/ }),
+
+/***/ 406:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuestData; });
+var GuestData = /** @class */ (function () {
+    function GuestData() {
+    }
+    return GuestData;
+}());
+
+//# sourceMappingURL=guest-data-model.js.map
+
+/***/ }),
+
 /***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4800,7 +4804,7 @@ var MyBookingsPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__model_guest_data_model__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__model_guest_data_model__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_guest_service_guest_service__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_storage__ = __webpack_require__(34);
@@ -5629,7 +5633,7 @@ var NotificationProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_home_service_home_service__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_nostay_service_nostay_service__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_nostay_service_nostay_service__ = __webpack_require__(405);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_storage__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_login_login__ = __webpack_require__(156);
@@ -5748,8 +5752,8 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/activities-details/activities-details.module#ActivitiesDetailsPageModule', name: 'ActivitiesDetailsPage', segment: 'activities-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/checkin-arrivaltime/checkin-arrivaltime.module#CheckinArrivaltimePageModule', name: 'CheckinArrivaltimePage', segment: 'checkin-arrivaltime', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/amenities/amenities.module#AmenitiesPageModule', name: 'AmenitiesPage', segment: 'amenities', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/checkin-arrivaltime/checkin-arrivaltime.module#CheckinArrivaltimePageModule', name: 'CheckinArrivaltimePage', segment: 'checkin-arrivaltime', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-summary/checkin-summary.module#CheckinSummaryPageModule', name: 'CheckinSummaryPage', segment: 'checkin-summary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-basicinfo/checkout-basicinfo.module#CheckoutBasicinfoPageModule', name: 'CheckoutBasicinfoPage', segment: 'checkout-basicinfo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/confirm-order/confirm-order.module#ConfirmOrderPageModule', name: 'ConfirmOrderPage', segment: 'confirm-order', priority: 'low', defaultHistory: [] },
@@ -5763,9 +5767,9 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/restaurant-details/restaurant-details.module#RestaurantDetailsPageModule', name: 'RestaurantDetailsPage', segment: 'restaurant-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue-details/room-issue-details.module#RoomissueDetailsPageModule', name: 'RoomissueDetailsPage', segment: 'room-issue-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue/room-issue.module#RoomissuePageModule', name: 'RoomissuePage', segment: 'room-issue', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup-details/room-makeup-details.module#RoommakeupDetailsPageModule', name: 'RoommakeupDetailsPage', segment: 'room-makeup-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service/room-service.module#RoomServicePageModule', name: 'RoomServicePage', segment: 'room-service', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-upgrade/room-upgrade.module#RoomUpgradePageModule', name: 'RoomUpgradePage', segment: 'room-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/service-upgrade/service-upgrade.module#ServiceUpgradePageModule', name: 'ServiceUpgradePage', segment: 'service-upgrade', priority: 'low', defaultHistory: [] },
@@ -5777,12 +5781,12 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
@@ -6470,7 +6474,7 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_notification_notification__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_my_bookings_my_bookings__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_my_bookings_my_bookings__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_notifications_notifications__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_hotel_info_hotel_info__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_checkin_summary_checkin_summary__ = __webpack_require__(397);
