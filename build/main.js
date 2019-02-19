@@ -2005,7 +2005,7 @@ var ReservationServiceProvider = /** @class */ (function () {
 
 var map = {
 	"../pages/activities-booking/activities-booking.module": [
-		771,
+		779,
 		2
 	],
 	"../pages/activities-details/activities-details.module": [
@@ -2017,7 +2017,7 @@ var map = {
 		33
 	],
 	"../pages/activity-payment/activity-payment.module": [
-		773,
+		772,
 		32
 	],
 	"../pages/amenities/amenities.module": [
@@ -2041,7 +2041,7 @@ var map = {
 		29
 	],
 	"../pages/checkout-payment/checkout-payment.module": [
-		775,
+		781,
 		28
 	],
 	"../pages/confirm-order/confirm-order.module": [
@@ -2057,15 +2057,15 @@ var map = {
 		40
 	],
 	"../pages/login/login.module": [
-		772,
+		771,
 		39
 	],
 	"../pages/my-bookings/my-bookings.module": [
-		776,
+		773,
 		38
 	],
 	"../pages/no-stay-in-hotel/no-stay-in-hotel.module": [
-		778,
+		775,
 		25
 	],
 	"../pages/notification-details/notification-details.module": [
@@ -2073,7 +2073,7 @@ var map = {
 		24
 	],
 	"../pages/notifications/notifications.module": [
-		774,
+		780,
 		37
 	],
 	"../pages/passport-picture/passport-picture.module": [
@@ -2081,11 +2081,11 @@ var map = {
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		779,
+		776,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		780,
+		777,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2101,11 +2101,11 @@ var map = {
 		36
 	],
 	"../pages/registration/registration.module": [
-		784,
+		785,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
-		777,
+		774,
 		1
 	],
 	"../pages/restaurant-details/restaurant-details.module": [
@@ -2137,7 +2137,7 @@ var map = {
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
-		783,
+		784,
 		11
 	],
 	"../pages/room-service/room-service.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		781,
+		778,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -2165,7 +2165,7 @@ var map = {
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		785,
+		783,
 		5
 	],
 	"../pages/wellness/wellness.module": [
@@ -3718,381 +3718,6 @@ var UpgradeRoomData = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_notification_notification__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_hotel_service_hotel_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(34);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-/**
- * Generated class for the NotificationsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var NotificationsPage = /** @class */ (function () {
-    function NotificationsPage(menuCtrl, hotelService, constant, toolsProvider, notificationModel, navCtrl, navParams, loadingCtrl, nativeStorage) {
-        var _this = this;
-        this.menuCtrl = menuCtrl;
-        this.hotelService = hotelService;
-        this.constant = constant;
-        this.toolsProvider = toolsProvider;
-        this.notificationModel = notificationModel;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.loadingCtrl = loadingCtrl;
-        this.nativeStorage = nativeStorage;
-        this.notificationsList = []; // to store notification list
-        this.storedData = []; // local storage data
-        this.hideBackButton = false;
-        this.menuCtrl.close();
-        //get notification data from local storage
-        this.nativeStorage.getItem('notificationData').then(function (notificationData) {
-            if (notificationData != undefined) {
-                var data = notificationData.data;
-                _this.storedData = data.filter(function (x) { return x.type == "message"; });
-            }
-        });
-    }
-    //after page load
-    NotificationsPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.hideBackButton = false;
-        this.showLoading();
-        this.notificationModel.fetchNotifications().subscribe(function (data) {
-            if (data.success) {
-                _this.notificationModel.modelNotification = data.response;
-                // store temp array
-                var tempArray = _this.notificationModel.modelNotification;
-                var itemArray = [];
-                var notifictnIds1_1 = [];
-                var notifictnIds2 = [];
-                var dataArray = [];
-                var storeIds = [];
-                for (var _i = 0, tempArray_1 = tempArray; _i < tempArray_1.length; _i++) {
-                    var item = tempArray_1[_i];
-                    itemArray = item;
-                    itemArray.read = 0;
-                    dataArray.push(itemArray);
-                    notifictnIds2.push(item.id);
-                }
-                //check for local storage notifications
-                if (_this.storedData && _this.storedData.length > 0) {
-                    for (var _a = 0, _b = _this.storedData; _a < _b.length; _a++) {
-                        var res = _b[_a];
-                        storeIds[res.notificationID] = res.read;
-                        notifictnIds1_1.push(res.notificationID);
-                    }
-                    if (storeIds.length > 0) {
-                        var tempData = dataArray;
-                        dataArray = [];
-                        for (var _c = 0, tempData_1 = tempData; _c < tempData_1.length; _c++) {
-                            var list = tempData_1[_c];
-                            var listArray = [];
-                            listArray = list;
-                            if (storeIds[list.id] != undefined) {
-                                listArray.read = storeIds[list.id];
-                            }
-                            dataArray.push(listArray);
-                        }
-                    }
-                    // store new data into local storage if any
-                    var difference = notifictnIds2.filter(function (x) { return !notifictnIds1_1.includes(x); });
-                    if (difference.length > 0) {
-                        var newData = [];
-                        var _loop_1 = function (id) {
-                            x = dataArray.filter(function (x) { return x.id == id; });
-                            newData.push(x);
-                        };
-                        var x;
-                        for (var _d = 0, difference_1 = difference; _d < difference_1.length; _d++) {
-                            var id = difference_1[_d];
-                            _loop_1(id);
-                        }
-                        _this.notificationModel.storeNotificationData("message", newData);
-                    }
-                }
-                else {
-                    // store into local storage
-                    if (data.response.length > 0) {
-                        _this.notificationModel.storeNotificationData("message", _this.notificationModel.modelNotification);
-                    }
-                }
-                _this.notificationsList = dataArray;
-                _this.notificationModel.modelNotification = _this.notificationsList;
-            }
-            _this.loading.dismiss();
-        });
-        this.notificationModel.currentPageName = "NotificationsPage";
-    };
-    // page leave
-    NotificationsPage.prototype.ionViewWillLeave = function () {
-        this.notificationModel.currentPageName = "";
-        this.hideBackButton = true;
-    };
-    NotificationsPage.prototype.ionViewWillEnter = function () {
-        this.hideBackButton = false;
-    };
-    //Loader
-    NotificationsPage.prototype.showLoading = function () {
-        this.loading = this.loadingCtrl.create({
-            spinner: 'crescent'
-        });
-        this.loading.present();
-    };
-    //booking date formatting
-    NotificationsPage.prototype.formatBookingDate = function (values) {
-        var today = new Date(), reservaDate = new Date(this.toolsProvider.formatDate(values.fecha).split(" ")[0]), date = '';
-        var dateDiff = this.date_diff_indays(today, reservaDate);
-        var dateTextTranslate = this.toolsProvider.fnLanguageTranslate(["common.today", "common.tomorrow"]); // language translation
-        var todayText = '';
-        var tomorrowText = '';
-        dateTextTranslate.subscribe(function (value) {
-            todayText = value["common.today"];
-            tomorrowText = value["common.tomorrow"];
-        });
-        if (dateDiff == 0) {
-            date = todayText;
-        }
-        else if (dateDiff == 1) {
-            date = tomorrowText;
-        }
-        else {
-            var dayName = this.toolsProvider.getShortDayName(reservaDate.getDay());
-            var monthName = this.toolsProvider.getShortMonthName(reservaDate.getMonth());
-            var dateFormat = dayName + ' ' + reservaDate.getDate() + ' ' + monthName;
-            date = dateFormat;
-        }
-        if (values.modoReserva == 'T')
-            date += ' ' + values.turno;
-        else if (values.modoReserva == 'C')
-            date += ' ' + reservaDate.getHours() + ':' + reservaDate.getMinutes();
-        return date;
-    };
-    //got to notification details page
-    NotificationsPage.prototype.goToDetails = function (i, notification) {
-        // set item as read
-        if (notification.read == 0) {
-            this.notificationModel.notificationRead(notification.id, "message");
-        }
-        this.notificationModel.modelNotification[i].read = 1;
-        this.notificationsList[i].read = 1;
-        this.navCtrl.push("NotificationDetailsPage", { item: notification }, { animate: true, animation: 'transition', duration: 500, direction: 'forward' });
-    };
-    //difference between two days
-    NotificationsPage.prototype.date_diff_indays = function (date1, date2) {
-        return Math.floor((Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate()) - Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate())) / (1000 * 60 * 60 * 24));
-    };
-    //format date for display
-    NotificationsPage.prototype.formatDate = function (inputDate) {
-        var dateTextTranslate = this.toolsProvider.fnLanguageTranslate(["common.yesterday", "common.dateFormat.short"]); // language translation
-        var yesterdayText = '';
-        dateTextTranslate.subscribe(function (value) {
-            yesterdayText = value["common.yesterday"];
-        });
-        var today = new Date(), dateToCheck = new Date(this.toolsProvider.formatDate(inputDate).split(" ")[0]), date = '';
-        var diffWithToday = this.date_diff_indays(today, dateToCheck);
-        var yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        var diffWithYesterday = this.date_diff_indays(yesterday, dateToCheck);
-        if (diffWithToday == 0) {
-            date = this.toolsProvider.formatTimeToShort(inputDate);
-        }
-        else if (diffWithYesterday == 0) {
-            date = yesterdayText;
-        }
-        else {
-            var dayName = this.toolsProvider.getShortDayName(dateToCheck.getDay());
-            var monthName = this.toolsProvider.getShortMonthName(dateToCheck.getMonth());
-            var dateFormat = dayName + ' ' + dateToCheck.getDate() + ' ' + monthName;
-            date = dateFormat;
-        }
-        return date;
-    };
-    //text for display getRemitente
-    NotificationsPage.prototype.getRemitente = function (remitente, tipo) {
-        var receptionTextTranslate = this.toolsProvider.fnLanguageTranslate(["common.reception"]); // language translation
-        var receptionText = '';
-        receptionTextTranslate.subscribe(function (value) {
-            receptionText = value["common.reception"];
-        });
-        if (!remitente || remitente == undefined) {
-            switch (tipo) {
-                case this.constant.TIPO_MENSAJE.NOTIFICACION_APERTURA_CHECKIN:
-                case this.constant.TIPO_MENSAJE.NOTIFICACION_APERTURA_CHECKOUT:
-                case this.constant.TIPO_MENSAJE.CHECKIN:
-                case this.constant.TIPO_MENSAJE.CHECKOUT:
-                    remitente = receptionText;
-                    break;
-                case this.constant.TIPO_MENSAJE.MENSAJE_PLANIFICADO: remitente = this.hotelService.objHotel.hotelName;
-            }
-        }
-        return remitente;
-    };
-    //function to go to previous page
-    NotificationsPage.prototype.fnBack = function () {
-        this.navCtrl.popToRoot({ animate: true, animation: 'transition', duration: 500, direction: 'back' });
-    };
-    NotificationsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-notifications',template:/*ion-inline-start:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/pages/notifications/notifications.html"*/'<!--\n  Generated template for the NotificationsPage page.\n\n  See http://ionicframework.com/docs/componentions/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header class="header_menu nobrdr_menu_hdr">\n  <ion-navbar>\n    <ion-title>{{\'view.mensajes.title\' | translate}}</ion-title>\n    <button (click)=\'fnBack()\' class="hdr_back_btn_wrpr" *ngIf="!hideBackButton">\n      <i class="icon-arrow-left2"></i>\n    </button>\n    <ion-buttons end>\n      <button ion-button menuToggle hidden="false" class="main_menu">\n        <i class="icon-Menu"></i>\n        <span class="x-badge" *ngIf="*ngIf="!hideBackButton"" ></span>\n      </button>\n    </ion-buttons>\n  </ion-navbar> -->\n\n\n  <ion-header class="header_menu">\n    <ion-navbar  style="border-bottom: solid thin rgba(255, 0, 0, 0) !important;">\n      <ion-title>{{\'view.mensajes.title\' | translate}}</ion-title>\n      <button (click)=\'fnBack()\' class="hdr_back_btn_wrpr" *ngIf="!hideBackButton">\n        <i class="icon-arrow-left2"></i>\n      </button>\n      <ion-buttons end>\n        <button ion-button menuToggle hidden="false" class="main_menu">\n          <i class="icon-Menu"></i>\n          <span class="x-badge" *ngIf="notificationModel.hasNotifications" ></span>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content id="homecontent" class="home_container" no-bounce>\n\n  <ion-list class="notification_list">\n    <ion-item *ngFor="let notification of notificationsList; let i=index" text-wrap (click)="goToDetails(i,notification)" [class.unread]="notification.read==0">\n      <div id="notification.id" class="row">\n        <span class="icon"></span>\n        <div class="notification_bloks">\n          <h3>{{notification.titulo}}</h3>\n          <div class="time_wrpr">\n            <label class="time">{{getRemitente(notification.remitente,notification.tipo)}}</label>\n            <label class="time_frmt"> {{this.formatDate(notification.fecha)}}</label>\n          </div>\n        </div>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/pages/notifications/notifications.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_5__providers_hotel_service_hotel_service__["a" /* HotelServiceProvider */], __WEBPACK_IMPORTED_MODULE_4__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__["a" /* ToolsProvider */], __WEBPACK_IMPORTED_MODULE_2__providers_notification_notification__["a" /* NotificationProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__["a" /* NativeStorage */]])
-    ], NotificationsPage);
-    return NotificationsPage;
-}());
-
-//# sourceMappingURL=notifications.js.map
-
-/***/ }),
-
-/***/ 402:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(721);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__ = __webpack_require__(78);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-var CheckoutServiceProvider = /** @class */ (function () {
-    function CheckoutServiceProvider(http, communication, constant, reservation, deviceProvider, checkinProvider) {
-        this.http = http;
-        this.communication = communication;
-        this.constant = constant;
-        this.reservation = reservation;
-        this.deviceProvider = deviceProvider;
-        this.checkinProvider = checkinProvider;
-        this.CheckoutObj = [];
-        console.log('Hello CheckoutServiceProvider Provider');
-        this.objCheckOut = new __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__["a" /* CheckOutData */]();
-        this.CheckoutObj = {
-            codigoSeguridadTarjetaCredito: null,
-            fechaCaducidadTarjetaCredito: null,
-            numeroTarjetaCredito: null,
-            principal: {},
-            tipoTarjetaCredito: null,
-            titularTarjeta: null,
-            tokenTarjeta: null
-        };
-    }
-    CheckoutServiceProvider.prototype.sendCheckOutData = function () {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].create(function (observer) {
-            if (_this.objCheckOut != null) {
-                //this.CheckoutObj.id = null;
-                //this.CheckoutObj.reservaId = this.reservation.objReservation.reservationId;
-                _this.CheckoutObj.tipoTarjetaCredito = _this.objCheckOut.cardType;
-                _this.CheckoutObj.numeroTarjetaCredito = _this.objCheckOut.cardNumber;
-                _this.CheckoutObj.codigoSeguridadTarjetaCredito = _this.objCheckOut.cvv;
-                _this.CheckoutObj.fechaCaducidadTarjetaCredito = _this.objCheckOut.cardExpirationDate;
-                _this.CheckoutObj.titularTarjeta = _this.objCheckOut.cardHolder;
-                _this.CheckoutObj.tokenTarjeta = _this.objCheckOut.Token;
-                // this.CheckoutObj.agreeCheckboxField = true;
-                var itemArray = {};
-                //itemArray.reservaId = this.reservation.objReservation.reservationId;
-                //itemArray.id = null;
-                itemArray.nombre = _this.objCheckOut.guestData.nombre;
-                itemArray.apellidos = _this.objCheckOut.guestData.apellidos;
-                itemArray.fechaNacimiento = _this.objCheckOut.guestData.fechaNacimiento;
-                itemArray.sexo = _this.objCheckOut.guestData.sexo;
-                itemArray.documentoIdentidad = _this.objCheckOut.guestData.documentoIdentidad;
-                itemArray.tipoDocumentoIdentidad = _this.objCheckOut.guestData.tipoDocumentoIdentidad;
-                itemArray.fechaDocumentoIdentidad = _this.objCheckOut.guestData.fechaDocumentoIdentidad;
-                itemArray.nacionalidadDocumentoIdentidad = _this.objCheckOut.guestData.nacionalidadDocumentoIdentidad;
-                itemArray.mail = _this.objCheckOut.guestData.mail;
-                itemArray.principal = true;
-                // itemArray.datosHuespedId = null;
-                // itemArray.ciudadResidencia = null;
-                // itemArray.codigoPaisResidencia = null;
-                itemArray.residencia = _this.objCheckOut.guestData.residencia;
-                // itemArray.newsletter = true;
-                // itemArray.telefono = null;
-                itemArray.pictureFront = _this.objCheckOut.guestData.pictureFront;
-                itemArray.addressStreet = _this.objCheckOut.guestData.addressStreet;
-                itemArray.addressPostalCode = _this.objCheckOut.guestData.addressPostalCode;
-                itemArray.addressCity = _this.objCheckOut.guestData.addressCity;
-                itemArray.addressCountry = _this.objCheckOut.guestData.addressCountry;
-                // itemArray.huespedYaRegistrado = false;
-                // itemArray.formularioRegistroEnviado = null;
-                // itemArray.tipoViajeReservaYaDefinido = false;
-                // itemArray.numeroHabitacion = null;
-                // itemArray.nombreHuesped = this.reservation.objReservation.guestName;
-                // itemArray.nombreHotel = this.reservation.objReservation.hotelName;
-                // itemArray.entrada = null;
-                // itemArray.noches = this.reservation.objReservation.nights;
-                // itemArray.personas = this.reservation.objReservation.noOfPersons;
-                // itemArray.tipoHabitacion = this.reservation.objReservation.roomType;
-                // itemArray.huespedYaCheckInRealizado = this.reservation.objReservation.alreadyCheckIn;
-                // itemArray.huespedYaCheckOutRealizado = false;
-                // itemArray.localizadorHotel = this.reservation.objReservation.hotelLocation;
-                // itemArray.precio = this.reservation.objReservation.price;
-                _this.CheckoutObj.principal = itemArray;
-            }
-            var url = _this.constant.URL_TRANSACTION_SERVER + '/online/checkout?uuid=' + _this.deviceProvider.uuid + '&reservaId=' + _this.reservation.objReservation.reservationId;
-            _this.communication.post(url, _this.CheckoutObj, observer); // http get service call
-        });
-    };
-    CheckoutServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__["a" /* CommunicationServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__["a" /* ReservationServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__["a" /* CheckinServiceProvider */]])
-    ], CheckoutServiceProvider);
-    return CheckoutServiceProvider;
-}());
-
-//# sourceMappingURL=checkout-service.js.map
-
-/***/ }),
-
-/***/ 403:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyBookingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
@@ -4103,7 +3728,7 @@ var CheckoutServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants_constants__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_storage__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(721);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4509,7 +4134,7 @@ var MyBookingsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 404:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4576,7 +4201,7 @@ var NostayServiceProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 405:
+/***/ 403:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4588,6 +4213,381 @@ var GuestData = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=guest-data-model.js.map
+
+/***/ }),
+
+/***/ 404:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_notification_notification__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_hotel_service_hotel_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(34);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+/**
+ * Generated class for the NotificationsPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var NotificationsPage = /** @class */ (function () {
+    function NotificationsPage(menuCtrl, hotelService, constant, toolsProvider, notificationModel, navCtrl, navParams, loadingCtrl, nativeStorage) {
+        var _this = this;
+        this.menuCtrl = menuCtrl;
+        this.hotelService = hotelService;
+        this.constant = constant;
+        this.toolsProvider = toolsProvider;
+        this.notificationModel = notificationModel;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.loadingCtrl = loadingCtrl;
+        this.nativeStorage = nativeStorage;
+        this.notificationsList = []; // to store notification list
+        this.storedData = []; // local storage data
+        this.hideBackButton = false;
+        this.menuCtrl.close();
+        //get notification data from local storage
+        this.nativeStorage.getItem('notificationData').then(function (notificationData) {
+            if (notificationData != undefined) {
+                var data = notificationData.data;
+                _this.storedData = data.filter(function (x) { return x.type == "message"; });
+            }
+        });
+    }
+    //after page load
+    NotificationsPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.hideBackButton = false;
+        this.showLoading();
+        this.notificationModel.fetchNotifications().subscribe(function (data) {
+            if (data.success) {
+                _this.notificationModel.modelNotification = data.response;
+                // store temp array
+                var tempArray = _this.notificationModel.modelNotification;
+                var itemArray = [];
+                var notifictnIds1_1 = [];
+                var notifictnIds2 = [];
+                var dataArray = [];
+                var storeIds = [];
+                for (var _i = 0, tempArray_1 = tempArray; _i < tempArray_1.length; _i++) {
+                    var item = tempArray_1[_i];
+                    itemArray = item;
+                    itemArray.read = 0;
+                    dataArray.push(itemArray);
+                    notifictnIds2.push(item.id);
+                }
+                //check for local storage notifications
+                if (_this.storedData && _this.storedData.length > 0) {
+                    for (var _a = 0, _b = _this.storedData; _a < _b.length; _a++) {
+                        var res = _b[_a];
+                        storeIds[res.notificationID] = res.read;
+                        notifictnIds1_1.push(res.notificationID);
+                    }
+                    if (storeIds.length > 0) {
+                        var tempData = dataArray;
+                        dataArray = [];
+                        for (var _c = 0, tempData_1 = tempData; _c < tempData_1.length; _c++) {
+                            var list = tempData_1[_c];
+                            var listArray = [];
+                            listArray = list;
+                            if (storeIds[list.id] != undefined) {
+                                listArray.read = storeIds[list.id];
+                            }
+                            dataArray.push(listArray);
+                        }
+                    }
+                    // store new data into local storage if any
+                    var difference = notifictnIds2.filter(function (x) { return !notifictnIds1_1.includes(x); });
+                    if (difference.length > 0) {
+                        var newData = [];
+                        var _loop_1 = function (id) {
+                            x = dataArray.filter(function (x) { return x.id == id; });
+                            newData.push(x);
+                        };
+                        var x;
+                        for (var _d = 0, difference_1 = difference; _d < difference_1.length; _d++) {
+                            var id = difference_1[_d];
+                            _loop_1(id);
+                        }
+                        _this.notificationModel.storeNotificationData("message", newData);
+                    }
+                }
+                else {
+                    // store into local storage
+                    if (data.response.length > 0) {
+                        _this.notificationModel.storeNotificationData("message", _this.notificationModel.modelNotification);
+                    }
+                }
+                _this.notificationsList = dataArray;
+                _this.notificationModel.modelNotification = _this.notificationsList;
+            }
+            _this.loading.dismiss();
+        });
+        this.notificationModel.currentPageName = "NotificationsPage";
+    };
+    // page leave
+    NotificationsPage.prototype.ionViewWillLeave = function () {
+        this.notificationModel.currentPageName = "";
+        this.hideBackButton = true;
+    };
+    NotificationsPage.prototype.ionViewWillEnter = function () {
+        this.hideBackButton = false;
+    };
+    //Loader
+    NotificationsPage.prototype.showLoading = function () {
+        this.loading = this.loadingCtrl.create({
+            spinner: 'crescent'
+        });
+        this.loading.present();
+    };
+    //booking date formatting
+    NotificationsPage.prototype.formatBookingDate = function (values) {
+        var today = new Date(), reservaDate = new Date(this.toolsProvider.formatDate(values.fecha).split(" ")[0]), date = '';
+        var dateDiff = this.date_diff_indays(today, reservaDate);
+        var dateTextTranslate = this.toolsProvider.fnLanguageTranslate(["common.today", "common.tomorrow"]); // language translation
+        var todayText = '';
+        var tomorrowText = '';
+        dateTextTranslate.subscribe(function (value) {
+            todayText = value["common.today"];
+            tomorrowText = value["common.tomorrow"];
+        });
+        if (dateDiff == 0) {
+            date = todayText;
+        }
+        else if (dateDiff == 1) {
+            date = tomorrowText;
+        }
+        else {
+            var dayName = this.toolsProvider.getShortDayName(reservaDate.getDay());
+            var monthName = this.toolsProvider.getShortMonthName(reservaDate.getMonth());
+            var dateFormat = dayName + ' ' + reservaDate.getDate() + ' ' + monthName;
+            date = dateFormat;
+        }
+        if (values.modoReserva == 'T')
+            date += ' ' + values.turno;
+        else if (values.modoReserva == 'C')
+            date += ' ' + reservaDate.getHours() + ':' + reservaDate.getMinutes();
+        return date;
+    };
+    //got to notification details page
+    NotificationsPage.prototype.goToDetails = function (i, notification) {
+        // set item as read
+        if (notification.read == 0) {
+            this.notificationModel.notificationRead(notification.id, "message");
+        }
+        this.notificationModel.modelNotification[i].read = 1;
+        this.notificationsList[i].read = 1;
+        this.navCtrl.push("NotificationDetailsPage", { item: notification }, { animate: true, animation: 'transition', duration: 500, direction: 'forward' });
+    };
+    //difference between two days
+    NotificationsPage.prototype.date_diff_indays = function (date1, date2) {
+        return Math.floor((Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate()) - Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate())) / (1000 * 60 * 60 * 24));
+    };
+    //format date for display
+    NotificationsPage.prototype.formatDate = function (inputDate) {
+        var dateTextTranslate = this.toolsProvider.fnLanguageTranslate(["common.yesterday", "common.dateFormat.short"]); // language translation
+        var yesterdayText = '';
+        dateTextTranslate.subscribe(function (value) {
+            yesterdayText = value["common.yesterday"];
+        });
+        var today = new Date(), dateToCheck = new Date(this.toolsProvider.formatDate(inputDate).split(" ")[0]), date = '';
+        var diffWithToday = this.date_diff_indays(today, dateToCheck);
+        var yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        var diffWithYesterday = this.date_diff_indays(yesterday, dateToCheck);
+        if (diffWithToday == 0) {
+            date = this.toolsProvider.formatTimeToShort(inputDate);
+        }
+        else if (diffWithYesterday == 0) {
+            date = yesterdayText;
+        }
+        else {
+            var dayName = this.toolsProvider.getShortDayName(dateToCheck.getDay());
+            var monthName = this.toolsProvider.getShortMonthName(dateToCheck.getMonth());
+            var dateFormat = dayName + ' ' + dateToCheck.getDate() + ' ' + monthName;
+            date = dateFormat;
+        }
+        return date;
+    };
+    //text for display getRemitente
+    NotificationsPage.prototype.getRemitente = function (remitente, tipo) {
+        var receptionTextTranslate = this.toolsProvider.fnLanguageTranslate(["common.reception"]); // language translation
+        var receptionText = '';
+        receptionTextTranslate.subscribe(function (value) {
+            receptionText = value["common.reception"];
+        });
+        if (!remitente || remitente == undefined) {
+            switch (tipo) {
+                case this.constant.TIPO_MENSAJE.NOTIFICACION_APERTURA_CHECKIN:
+                case this.constant.TIPO_MENSAJE.NOTIFICACION_APERTURA_CHECKOUT:
+                case this.constant.TIPO_MENSAJE.CHECKIN:
+                case this.constant.TIPO_MENSAJE.CHECKOUT:
+                    remitente = receptionText;
+                    break;
+                case this.constant.TIPO_MENSAJE.MENSAJE_PLANIFICADO: remitente = this.hotelService.objHotel.hotelName;
+            }
+        }
+        return remitente;
+    };
+    //function to go to previous page
+    NotificationsPage.prototype.fnBack = function () {
+        this.navCtrl.popToRoot({ animate: true, animation: 'transition', duration: 500, direction: 'back' });
+    };
+    NotificationsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-notifications',template:/*ion-inline-start:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/pages/notifications/notifications.html"*/'<!--\n  Generated template for the NotificationsPage page.\n\n  See http://ionicframework.com/docs/componentions/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<!-- <ion-header class="header_menu nobrdr_menu_hdr">\n  <ion-navbar>\n    <ion-title>{{\'view.mensajes.title\' | translate}}</ion-title>\n    <button (click)=\'fnBack()\' class="hdr_back_btn_wrpr" *ngIf="!hideBackButton">\n      <i class="icon-arrow-left2"></i>\n    </button>\n    <ion-buttons end>\n      <button ion-button menuToggle hidden="false" class="main_menu">\n        <i class="icon-Menu"></i>\n        <span class="x-badge" *ngIf="*ngIf="!hideBackButton"" ></span>\n      </button>\n    </ion-buttons>\n  </ion-navbar> -->\n\n\n  <ion-header class="header_menu">\n    <ion-navbar  style="border-bottom: solid thin rgba(255, 0, 0, 0) !important;">\n      <ion-title>{{\'view.mensajes.title\' | translate}}</ion-title>\n      <button (click)=\'fnBack()\' class="hdr_back_btn_wrpr" *ngIf="!hideBackButton">\n        <i class="icon-arrow-left2"></i>\n      </button>\n      <ion-buttons end>\n        <button ion-button menuToggle hidden="false" class="main_menu">\n          <i class="icon-Menu"></i>\n          <span class="x-badge" *ngIf="notificationModel.hasNotifications" ></span>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content id="homecontent" class="home_container" no-bounce>\n\n  <ion-list class="notification_list">\n    <ion-item *ngFor="let notification of notificationsList; let i=index" text-wrap (click)="goToDetails(i,notification)" [class.unread]="notification.read==0">\n      <div id="notification.id" class="row">\n        <span class="icon"></span>\n        <div class="notification_bloks">\n          <h3>{{notification.titulo}}</h3>\n          <div class="time_wrpr">\n            <label class="time">{{getRemitente(notification.remitente,notification.tipo)}}</label>\n            <label class="time_frmt"> {{this.formatDate(notification.fecha)}}</label>\n          </div>\n        </div>\n      </div>\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/pages/notifications/notifications.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_5__providers_hotel_service_hotel_service__["a" /* HotelServiceProvider */], __WEBPACK_IMPORTED_MODULE_4__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__["a" /* ToolsProvider */], __WEBPACK_IMPORTED_MODULE_2__providers_notification_notification__["a" /* NotificationProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__["a" /* NativeStorage */]])
+    ], NotificationsPage);
+    return NotificationsPage;
+}());
+
+//# sourceMappingURL=notifications.js.map
+
+/***/ }),
+
+/***/ 405:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__ = __webpack_require__(78);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+var CheckoutServiceProvider = /** @class */ (function () {
+    function CheckoutServiceProvider(http, communication, constant, reservation, deviceProvider, checkinProvider) {
+        this.http = http;
+        this.communication = communication;
+        this.constant = constant;
+        this.reservation = reservation;
+        this.deviceProvider = deviceProvider;
+        this.checkinProvider = checkinProvider;
+        this.CheckoutObj = [];
+        console.log('Hello CheckoutServiceProvider Provider');
+        this.objCheckOut = new __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__["a" /* CheckOutData */]();
+        this.CheckoutObj = {
+            codigoSeguridadTarjetaCredito: null,
+            fechaCaducidadTarjetaCredito: null,
+            numeroTarjetaCredito: null,
+            principal: {},
+            tipoTarjetaCredito: null,
+            titularTarjeta: null,
+            tokenTarjeta: null
+        };
+    }
+    CheckoutServiceProvider.prototype.sendCheckOutData = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].create(function (observer) {
+            if (_this.objCheckOut != null) {
+                //this.CheckoutObj.id = null;
+                //this.CheckoutObj.reservaId = this.reservation.objReservation.reservationId;
+                _this.CheckoutObj.tipoTarjetaCredito = _this.objCheckOut.cardType;
+                _this.CheckoutObj.numeroTarjetaCredito = _this.objCheckOut.cardNumber;
+                _this.CheckoutObj.codigoSeguridadTarjetaCredito = _this.objCheckOut.cvv;
+                _this.CheckoutObj.fechaCaducidadTarjetaCredito = _this.objCheckOut.cardExpirationDate;
+                _this.CheckoutObj.titularTarjeta = _this.objCheckOut.cardHolder;
+                _this.CheckoutObj.tokenTarjeta = _this.objCheckOut.Token;
+                // this.CheckoutObj.agreeCheckboxField = true;
+                var itemArray = {};
+                //itemArray.reservaId = this.reservation.objReservation.reservationId;
+                //itemArray.id = null;
+                itemArray.nombre = _this.objCheckOut.guestData.nombre;
+                itemArray.apellidos = _this.objCheckOut.guestData.apellidos;
+                itemArray.fechaNacimiento = _this.objCheckOut.guestData.fechaNacimiento;
+                itemArray.sexo = _this.objCheckOut.guestData.sexo;
+                itemArray.documentoIdentidad = _this.objCheckOut.guestData.documentoIdentidad;
+                itemArray.tipoDocumentoIdentidad = _this.objCheckOut.guestData.tipoDocumentoIdentidad;
+                itemArray.fechaDocumentoIdentidad = _this.objCheckOut.guestData.fechaDocumentoIdentidad;
+                itemArray.nacionalidadDocumentoIdentidad = _this.objCheckOut.guestData.nacionalidadDocumentoIdentidad;
+                itemArray.mail = _this.objCheckOut.guestData.mail;
+                itemArray.principal = true;
+                // itemArray.datosHuespedId = null;
+                // itemArray.ciudadResidencia = null;
+                // itemArray.codigoPaisResidencia = null;
+                itemArray.residencia = _this.objCheckOut.guestData.residencia;
+                // itemArray.newsletter = true;
+                // itemArray.telefono = null;
+                itemArray.pictureFront = _this.objCheckOut.guestData.pictureFront;
+                itemArray.addressStreet = _this.objCheckOut.guestData.addressStreet;
+                itemArray.addressPostalCode = _this.objCheckOut.guestData.addressPostalCode;
+                itemArray.addressCity = _this.objCheckOut.guestData.addressCity;
+                itemArray.addressCountry = _this.objCheckOut.guestData.addressCountry;
+                // itemArray.huespedYaRegistrado = false;
+                // itemArray.formularioRegistroEnviado = null;
+                // itemArray.tipoViajeReservaYaDefinido = false;
+                // itemArray.numeroHabitacion = null;
+                // itemArray.nombreHuesped = this.reservation.objReservation.guestName;
+                // itemArray.nombreHotel = this.reservation.objReservation.hotelName;
+                // itemArray.entrada = null;
+                // itemArray.noches = this.reservation.objReservation.nights;
+                // itemArray.personas = this.reservation.objReservation.noOfPersons;
+                // itemArray.tipoHabitacion = this.reservation.objReservation.roomType;
+                // itemArray.huespedYaCheckInRealizado = this.reservation.objReservation.alreadyCheckIn;
+                // itemArray.huespedYaCheckOutRealizado = false;
+                // itemArray.localizadorHotel = this.reservation.objReservation.hotelLocation;
+                // itemArray.precio = this.reservation.objReservation.price;
+                _this.CheckoutObj.principal = itemArray;
+            }
+            var url = _this.constant.URL_TRANSACTION_SERVER + '/online/checkout?uuid=' + _this.deviceProvider.uuid + '&reservaId=' + _this.reservation.objReservation.reservationId;
+            _this.communication.post(url, _this.CheckoutObj, observer); // http get service call
+        });
+    };
+    CheckoutServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__["a" /* CommunicationServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_4__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__["a" /* ReservationServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__["a" /* CheckinServiceProvider */]])
+    ], CheckoutServiceProvider);
+    return CheckoutServiceProvider;
+}());
+
+//# sourceMappingURL=checkout-service.js.map
 
 /***/ }),
 
@@ -4607,7 +4607,7 @@ var GuestData = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__model_guest_data_model__ = __webpack_require__(405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__model_guest_data_model__ = __webpack_require__(403);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_guest_service_guest_service__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_native_storage__ = __webpack_require__(34);
@@ -5070,7 +5070,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_home_service_home_service__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_nostay_service_nostay_service__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_nostay_service_nostay_service__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_storage__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_login_login__ = __webpack_require__(156);
@@ -5084,7 +5084,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__ionic_native_device__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__providers_restaurant_service_restaurant_service__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(405);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__providers_wellness_service_wellness_service__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__providers_promotions_service_promotions_service__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__providers_rooms_service_rooms_service__ = __webpack_require__(105);
@@ -5211,21 +5211,21 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness/wellness.module#WellnessPageModule', name: 'WellnessPage', segment: 'wellness', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -6190,21 +6190,6 @@ var RoomService = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckOutData; });
-var CheckOutData = /** @class */ (function () {
-    function CheckOutData() {
-    }
-    return CheckOutData;
-}());
-
-//# sourceMappingURL=checkout-model.js.map
-
-/***/ }),
-
-/***/ 722:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingData; });
 var BookingData = /** @class */ (function () {
     function BookingData() {
@@ -6214,6 +6199,21 @@ var BookingData = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=booking-model.js.map
+
+/***/ }),
+
+/***/ 722:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckOutData; });
+var CheckOutData = /** @class */ (function () {
+    function CheckOutData() {
+    }
+    return CheckOutData;
+}());
+
+//# sourceMappingURL=checkout-model.js.map
 
 /***/ }),
 
@@ -6276,8 +6276,8 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_onesignal__ = __webpack_require__(389);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_notification_notification__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_my_bookings_my_bookings__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_notifications_notifications__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_my_bookings_my_bookings__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_notifications_notifications__ = __webpack_require__(404);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_hotel_info_hotel_info__ = __webpack_require__(397);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_checkin_summary_checkin_summary__ = __webpack_require__(396);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -6452,7 +6452,7 @@ var MyApp = /** @class */ (function () {
         var _this = this;
         if (this.deviceServiceProvider.Online) {
             if (!this.NotificationService.Registered) {
-                if (this.platform.is('ios') || this.platform.is('android')) {
+                if (!('serviceWorker' in navigator)) {
                     console.log('ENTRO MOBILE');
                     this.oneSignal.setLogLevel({ logLevel: 6, visualLevel: 0 });
                     this.oneSignal.startInit(this.constant.PUSH_KEY);
