@@ -41,7 +41,7 @@ var WellnessBookingPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 786:
+/***/ 787:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +69,7 @@ var ServiceForm = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_common_service_common_service__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_service_form_model__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_service_form_model__ = __webpack_require__(787);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_wellness_service_wellness_service__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_notification_notification__ = __webpack_require__(44);
