@@ -2081,11 +2081,11 @@ var map = {
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		782,
+		781,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		781,
+		782,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2825,7 +2825,6 @@ var OneSignalService = /** @class */ (function () {
                     // El SDK de WebPush ya ha sido cargado y ahora debemos inicializarlo
                     // normalmente.
                     var OneSignalBrowser = window['OneSignal'] || [];
-                    console.log(_this.constant);
                     OneSignalBrowser.push(function () {
                         OneSignalBrowser.init({
                             appId: __WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].pushKey
@@ -5778,8 +5777,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
