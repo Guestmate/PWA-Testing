@@ -415,6 +415,14 @@ module.exports = [
         "merges": [
             "window.plugins.uniqueDeviceID"
         ]
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
+        "id": "onesignal-cordova-plugin.OneSignal",
+        "pluginId": "onesignal-cordova-plugin",
+        "clobbers": [
+            "OneSignal"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -434,7 +442,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-stripe": "1.5.3",
     "cordova-plugin-uniquedeviceid": "1.3.2",
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "onesignal-cordova-plugin": "2.4.6"
 }
 // BOTTOM OF METADATA
 });
