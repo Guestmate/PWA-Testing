@@ -18,13 +18,13 @@
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta http-equiv="Content-Security-Policy" content ="default-src https://onesignal.com https://cdn.onesignal.com https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' gap://ready 'unsafe-eval' 'unsafe-inline' file://* ws: wss: data: content:;
-                    script-src https://onesignal.com https://cdn.onesignal.com https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 https://js.stripe.com 'self' 'unsafe-inline' 'unsafe-eval';
-                    child-src https://onesignal.com https://cdn.onesignal.com https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 gap://ready file://* https://js.stripe.com 'unsafe-inline' 'unsafe-eval';
-                    object-src https://onesignal.com https://cdn.onesignal.com https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' 'unsafe-inline' 'unsafe-eval';
-                    style-src https://onesignal.com https://cdn.onesignal.com 'self' data: content: 'unsafe-inline' 'unsafe-eval';
-                    img-src https://onesignal.com https://cdn.onesignal.com https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' data: content: 'unsafe-inline' 'unsafe-eval';
-                    connect-src https://onesignal.com https://cdn.onesignal.com https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://api.stripe.com https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' 'unsafe-inline' 'unsafe-eval' ">
+  <meta http-equiv="Content-Security-Policy" content ="default-src https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' gap://ready 'unsafe-eval' 'unsafe-inline' file://* ws: wss: data: content:;
+                    script-src https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 https://js.stripe.com 'self' 'unsafe-inline' 'unsafe-eval';
+                    child-src https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 gap://ready file://* https://js.stripe.com 'unsafe-inline' 'unsafe-eval';
+                    object-src https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' 'unsafe-inline' 'unsafe-eval';
+                    style-src 'self' 'unsafe-inline';
+                    img-src https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' data: content: 'unsafe-inline' 'unsafe-eval';
+                    connect-src https://guestmate.github.io http://localhost:8100 https://127.0.0.1:8080 https://192.168.1.42:8080 https://192.168.1.139:8080 https://api.stripe.com https://dev.guestmate-app.com:443 https://prod.guestmate-app.com:443 'self' 'unsafe-inline' 'unsafe-eval' ">
 
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
@@ -40,7 +40,6 @@
     }
   </script>
 
-  <!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="true"></script> -->
   <link href="build/main.css" rel="stylesheet">
 
   <noscript>
