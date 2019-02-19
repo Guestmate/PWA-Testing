@@ -1,14 +1,14 @@
 webpackJsonp([3],{
 
-/***/ 785:
+/***/ 788:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckinBasicinfoPageModule", function() { return CheckinBasicinfoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkin_basicinfo__ = __webpack_require__(821);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkin_basicinfo__ = __webpack_require__(824);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(77);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -41,13 +41,13 @@ var CheckinBasicinfoPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 821:
+/***/ 824:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckinBasicinfoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_common_service_common_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__ = __webpack_require__(26);
@@ -58,8 +58,8 @@ var CheckinBasicinfoPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__auto_complete_country_auto_complete_country__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_guest_service_guest_service__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_checkin_service_checkin_service__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__model_checkin_model__ = __webpack_require__(822);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__model_checkin_model__ = __webpack_require__(825);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_country_service_country_service__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__ionic_native_native_storage__ = __webpack_require__(34);
@@ -746,7 +746,7 @@ var CheckinBasicinfoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 822:
+/***/ 825:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
