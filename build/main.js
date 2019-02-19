@@ -2829,6 +2829,7 @@ var OneSignalService = /** @class */ (function () {
                         OneSignalBrowser.init({
                             appId: __WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].pushKey
                         });
+                        OneSignalBrowser.registerForPushNotifications();
                     });
                     _this.initialized = true;
                     return resolve(_this);
