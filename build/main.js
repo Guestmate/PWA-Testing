@@ -2101,7 +2101,7 @@ var map = {
 		36
 	],
 	"../pages/registration/registration.module": [
-		784,
+		783,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
@@ -2117,7 +2117,7 @@ var map = {
 		17
 	],
 	"../pages/restaurants/restaurants.module": [
-		762,
+		761,
 		16
 	],
 	"../pages/room-issue-details/room-issue-details.module": [
@@ -2129,7 +2129,7 @@ var map = {
 		14
 	],
 	"../pages/room-makeup-details/room-makeup-details.module": [
-		761,
+		762,
 		13
 	],
 	"../pages/room-makeup/room-makeup.module": [
@@ -2165,7 +2165,7 @@ var map = {
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		783,
+		784,
 		5
 	],
 	"../pages/wellness/wellness.module": [
@@ -5201,8 +5201,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/restaurant-details/restaurant-details.module#RestaurantDetailsPageModule', name: 'RestaurantDetailsPage', segment: 'restaurant-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue-details/room-issue-details.module#RoomissueDetailsPageModule', name: 'RoomissueDetailsPage', segment: 'room-issue-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue/room-issue.module#RoomissuePageModule', name: 'RoomissuePage', segment: 'room-issue', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/room-makeup-details/room-makeup-details.module#RoommakeupDetailsPageModule', name: 'RoommakeupDetailsPage', segment: 'room-makeup-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/room-makeup-details/room-makeup-details.module#RoommakeupDetailsPageModule', name: 'RoommakeupDetailsPage', segment: 'room-makeup-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service/room-service.module#RoomServicePageModule', name: 'RoomServicePage', segment: 'room-service', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-upgrade/room-upgrade.module#RoomUpgradePageModule', name: 'RoomUpgradePage', segment: 'room-upgrade', priority: 'low', defaultHistory: [] },
@@ -5223,8 +5223,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
                 }),
