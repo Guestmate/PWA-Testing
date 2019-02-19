@@ -2041,7 +2041,7 @@ var map = {
 		29
 	],
 	"../pages/checkout-payment/checkout-payment.module": [
-		774,
+		775,
 		28
 	],
 	"../pages/confirm-order/confirm-order.module": [
@@ -2061,7 +2061,7 @@ var map = {
 		39
 	],
 	"../pages/my-bookings/my-bookings.module": [
-		775,
+		774,
 		38
 	],
 	"../pages/no-stay-in-hotel/no-stay-in-hotel.module": [
@@ -2085,7 +2085,7 @@ var map = {
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		780,
+		779,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		779,
+		780,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -3969,130 +3969,6 @@ var NotificationsPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(720);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__ = __webpack_require__(78);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-var CheckoutServiceProvider = /** @class */ (function () {
-    function CheckoutServiceProvider(http, communication, constant, reservation, deviceProvider, checkinProvider) {
-        this.http = http;
-        this.communication = communication;
-        this.constant = constant;
-        this.reservation = reservation;
-        this.deviceProvider = deviceProvider;
-        this.checkinProvider = checkinProvider;
-        this.CheckoutObj = [];
-        console.log('Hello CheckoutServiceProvider Provider');
-        this.objCheckOut = new __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__["a" /* CheckOutData */]();
-        this.CheckoutObj = {
-            codigoSeguridadTarjetaCredito: null,
-            fechaCaducidadTarjetaCredito: null,
-            numeroTarjetaCredito: null,
-            principal: {},
-            tipoTarjetaCredito: null,
-            titularTarjeta: null,
-            tokenTarjeta: null
-        };
-    }
-    CheckoutServiceProvider.prototype.sendCheckOutData = function () {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].create(function (observer) {
-            if (_this.objCheckOut != null) {
-                //this.CheckoutObj.id = null;
-                //this.CheckoutObj.reservaId = this.reservation.objReservation.reservationId;
-                _this.CheckoutObj.tipoTarjetaCredito = _this.objCheckOut.cardType;
-                _this.CheckoutObj.numeroTarjetaCredito = _this.objCheckOut.cardNumber;
-                _this.CheckoutObj.codigoSeguridadTarjetaCredito = _this.objCheckOut.cvv;
-                _this.CheckoutObj.fechaCaducidadTarjetaCredito = _this.objCheckOut.cardExpirationDate;
-                _this.CheckoutObj.titularTarjeta = _this.objCheckOut.cardHolder;
-                _this.CheckoutObj.tokenTarjeta = _this.objCheckOut.Token;
-                // this.CheckoutObj.agreeCheckboxField = true;
-                var itemArray = {};
-                //itemArray.reservaId = this.reservation.objReservation.reservationId;
-                //itemArray.id = null;
-                itemArray.nombre = _this.objCheckOut.guestData.nombre;
-                itemArray.apellidos = _this.objCheckOut.guestData.apellidos;
-                itemArray.fechaNacimiento = _this.objCheckOut.guestData.fechaNacimiento;
-                itemArray.sexo = _this.objCheckOut.guestData.sexo;
-                itemArray.documentoIdentidad = _this.objCheckOut.guestData.documentoIdentidad;
-                itemArray.tipoDocumentoIdentidad = _this.objCheckOut.guestData.tipoDocumentoIdentidad;
-                itemArray.fechaDocumentoIdentidad = _this.objCheckOut.guestData.fechaDocumentoIdentidad;
-                itemArray.nacionalidadDocumentoIdentidad = _this.objCheckOut.guestData.nacionalidadDocumentoIdentidad;
-                itemArray.mail = _this.objCheckOut.guestData.mail;
-                itemArray.principal = true;
-                // itemArray.datosHuespedId = null;
-                // itemArray.ciudadResidencia = null;
-                // itemArray.codigoPaisResidencia = null;
-                itemArray.residencia = _this.objCheckOut.guestData.residencia;
-                // itemArray.newsletter = true;
-                // itemArray.telefono = null;
-                itemArray.pictureFront = _this.objCheckOut.guestData.pictureFront;
-                itemArray.addressStreet = _this.objCheckOut.guestData.addressStreet;
-                itemArray.addressPostalCode = _this.objCheckOut.guestData.addressPostalCode;
-                itemArray.addressCity = _this.objCheckOut.guestData.addressCity;
-                itemArray.addressCountry = _this.objCheckOut.guestData.addressCountry;
-                // itemArray.huespedYaRegistrado = false;
-                // itemArray.formularioRegistroEnviado = null;
-                // itemArray.tipoViajeReservaYaDefinido = false;
-                // itemArray.numeroHabitacion = null;
-                // itemArray.nombreHuesped = this.reservation.objReservation.guestName;
-                // itemArray.nombreHotel = this.reservation.objReservation.hotelName;
-                // itemArray.entrada = null;
-                // itemArray.noches = this.reservation.objReservation.nights;
-                // itemArray.personas = this.reservation.objReservation.noOfPersons;
-                // itemArray.tipoHabitacion = this.reservation.objReservation.roomType;
-                // itemArray.huespedYaCheckInRealizado = this.reservation.objReservation.alreadyCheckIn;
-                // itemArray.huespedYaCheckOutRealizado = false;
-                // itemArray.localizadorHotel = this.reservation.objReservation.hotelLocation;
-                // itemArray.precio = this.reservation.objReservation.price;
-                _this.CheckoutObj.principal = itemArray;
-            }
-            var url = _this.constant.URL_TRANSACTION_SERVER + '/online/checkout?uuid=' + _this.deviceProvider.uuid + '&reservaId=' + _this.reservation.objReservation.reservationId;
-            _this.communication.post(url, _this.CheckoutObj, observer); // http get service call
-        });
-    };
-    CheckoutServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__["a" /* CommunicationServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__["a" /* ReservationServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__["a" /* CheckinServiceProvider */]])
-    ], CheckoutServiceProvider);
-    return CheckoutServiceProvider;
-}());
-
-//# sourceMappingURL=checkout-service.js.map
-
-/***/ }),
-
-/***/ 402:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyBookingsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
@@ -4103,7 +3979,7 @@ var CheckoutServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants_constants__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_notification_notification__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_storage__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(720);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4506,6 +4382,130 @@ var MyBookingsPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=my-bookings.js.map
+
+/***/ }),
+
+/***/ 402:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__ = __webpack_require__(78);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+var CheckoutServiceProvider = /** @class */ (function () {
+    function CheckoutServiceProvider(http, communication, constant, reservation, deviceProvider, checkinProvider) {
+        this.http = http;
+        this.communication = communication;
+        this.constant = constant;
+        this.reservation = reservation;
+        this.deviceProvider = deviceProvider;
+        this.checkinProvider = checkinProvider;
+        this.CheckoutObj = [];
+        console.log('Hello CheckoutServiceProvider Provider');
+        this.objCheckOut = new __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__["a" /* CheckOutData */]();
+        this.CheckoutObj = {
+            codigoSeguridadTarjetaCredito: null,
+            fechaCaducidadTarjetaCredito: null,
+            numeroTarjetaCredito: null,
+            principal: {},
+            tipoTarjetaCredito: null,
+            titularTarjeta: null,
+            tokenTarjeta: null
+        };
+    }
+    CheckoutServiceProvider.prototype.sendCheckOutData = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_3_rxjs__["Observable"].create(function (observer) {
+            if (_this.objCheckOut != null) {
+                //this.CheckoutObj.id = null;
+                //this.CheckoutObj.reservaId = this.reservation.objReservation.reservationId;
+                _this.CheckoutObj.tipoTarjetaCredito = _this.objCheckOut.cardType;
+                _this.CheckoutObj.numeroTarjetaCredito = _this.objCheckOut.cardNumber;
+                _this.CheckoutObj.codigoSeguridadTarjetaCredito = _this.objCheckOut.cvv;
+                _this.CheckoutObj.fechaCaducidadTarjetaCredito = _this.objCheckOut.cardExpirationDate;
+                _this.CheckoutObj.titularTarjeta = _this.objCheckOut.cardHolder;
+                _this.CheckoutObj.tokenTarjeta = _this.objCheckOut.Token;
+                // this.CheckoutObj.agreeCheckboxField = true;
+                var itemArray = {};
+                //itemArray.reservaId = this.reservation.objReservation.reservationId;
+                //itemArray.id = null;
+                itemArray.nombre = _this.objCheckOut.guestData.nombre;
+                itemArray.apellidos = _this.objCheckOut.guestData.apellidos;
+                itemArray.fechaNacimiento = _this.objCheckOut.guestData.fechaNacimiento;
+                itemArray.sexo = _this.objCheckOut.guestData.sexo;
+                itemArray.documentoIdentidad = _this.objCheckOut.guestData.documentoIdentidad;
+                itemArray.tipoDocumentoIdentidad = _this.objCheckOut.guestData.tipoDocumentoIdentidad;
+                itemArray.fechaDocumentoIdentidad = _this.objCheckOut.guestData.fechaDocumentoIdentidad;
+                itemArray.nacionalidadDocumentoIdentidad = _this.objCheckOut.guestData.nacionalidadDocumentoIdentidad;
+                itemArray.mail = _this.objCheckOut.guestData.mail;
+                itemArray.principal = true;
+                // itemArray.datosHuespedId = null;
+                // itemArray.ciudadResidencia = null;
+                // itemArray.codigoPaisResidencia = null;
+                itemArray.residencia = _this.objCheckOut.guestData.residencia;
+                // itemArray.newsletter = true;
+                // itemArray.telefono = null;
+                itemArray.pictureFront = _this.objCheckOut.guestData.pictureFront;
+                itemArray.addressStreet = _this.objCheckOut.guestData.addressStreet;
+                itemArray.addressPostalCode = _this.objCheckOut.guestData.addressPostalCode;
+                itemArray.addressCity = _this.objCheckOut.guestData.addressCity;
+                itemArray.addressCountry = _this.objCheckOut.guestData.addressCountry;
+                // itemArray.huespedYaRegistrado = false;
+                // itemArray.formularioRegistroEnviado = null;
+                // itemArray.tipoViajeReservaYaDefinido = false;
+                // itemArray.numeroHabitacion = null;
+                // itemArray.nombreHuesped = this.reservation.objReservation.guestName;
+                // itemArray.nombreHotel = this.reservation.objReservation.hotelName;
+                // itemArray.entrada = null;
+                // itemArray.noches = this.reservation.objReservation.nights;
+                // itemArray.personas = this.reservation.objReservation.noOfPersons;
+                // itemArray.tipoHabitacion = this.reservation.objReservation.roomType;
+                // itemArray.huespedYaCheckInRealizado = this.reservation.objReservation.alreadyCheckIn;
+                // itemArray.huespedYaCheckOutRealizado = false;
+                // itemArray.localizadorHotel = this.reservation.objReservation.hotelLocation;
+                // itemArray.precio = this.reservation.objReservation.price;
+                _this.CheckoutObj.principal = itemArray;
+            }
+            var url = _this.constant.URL_TRANSACTION_SERVER + '/online/checkout?uuid=' + _this.deviceProvider.uuid + '&reservaId=' + _this.reservation.objReservation.reservationId;
+            _this.communication.post(url, _this.CheckoutObj, observer); // http get service call
+        });
+    };
+    CheckoutServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__["a" /* CommunicationServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_4__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__["a" /* ReservationServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_8__checkin_service_checkin_service__["a" /* CheckinServiceProvider */]])
+    ], CheckoutServiceProvider);
+    return CheckoutServiceProvider;
+}());
+
+//# sourceMappingURL=checkout-service.js.map
 
 /***/ }),
 
@@ -5084,7 +5084,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__ionic_native_device__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_auto_complete_spain_provinces_auto_complete_spain_provinces__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__providers_restaurant_service_restaurant_service__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__providers_checkout_service_checkout_service__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__providers_wellness_service_wellness_service__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__providers_promotions_service_promotions_service__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__providers_rooms_service_rooms_service__ = __webpack_require__(105);
@@ -5214,13 +5214,13 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
@@ -6189,21 +6189,6 @@ var RoomService = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckOutData; });
-var CheckOutData = /** @class */ (function () {
-    function CheckOutData() {
-    }
-    return CheckOutData;
-}());
-
-//# sourceMappingURL=checkout-model.js.map
-
-/***/ }),
-
-/***/ 721:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingData; });
 var BookingData = /** @class */ (function () {
     function BookingData() {
@@ -6213,6 +6198,21 @@ var BookingData = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=booking-model.js.map
+
+/***/ }),
+
+/***/ 721:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckOutData; });
+var CheckOutData = /** @class */ (function () {
+    function CheckOutData() {
+    }
+    return CheckOutData;
+}());
+
+//# sourceMappingURL=checkout-model.js.map
 
 /***/ }),
 
@@ -6274,7 +6274,7 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_device__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_notification_notification__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_my_bookings_my_bookings__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_my_bookings_my_bookings__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_notifications_notifications__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_hotel_info_hotel_info__ = __webpack_require__(396);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_checkin_summary_checkin_summary__ = __webpack_require__(395);
@@ -6477,10 +6477,10 @@ var MyApp = /** @class */ (function () {
                 else {
                     console.log('ENTRO PWA');
                     //PWA Notifications
-                    var OneSignalWeb = window['OneSignal'] || [];
-                    console.log('OneSignal::::: ', OneSignalWeb);
-                    OneSignalWeb.push(function () {
-                        OneSignalWeb.init({
+                    var OneSignal = window['OneSignal'] || [];
+                    console.log('OneSignal::::: ', OneSignal);
+                    OneSignal.push(function () {
+                        OneSignal.init({
                             appId: "3ae88d10-d238-4705-963d-7c56fd3861d1",
                             autoRegister: false,
                             notifyButton: {
@@ -6495,20 +6495,20 @@ var MyApp = /** @class */ (function () {
                                 cancelButtonText: "NO THANKS"
                             }
                         });
-                        console.log('OneSignal::::: ', OneSignalWeb);
+                        console.log('OneSignal::::: ', OneSignal);
                         if ('Notification' in window) {
                             var Notification_1 = window['Notification'] || [];
                             if (Notification_1.permission === "granted") {
                                 // Automatically subscribe user if deleted cookies and browser shows "Allow"
-                                OneSignalWeb.getUserId()
+                                OneSignal.getUserId()
                                     .then(function (userId) {
                                     if (!userId) {
-                                        OneSignalWeb.registerForPushNotifications();
+                                        OneSignal.registerForPushNotifications();
                                     }
                                 });
                             }
                             else {
-                                OneSignalWeb.showHttpPrompt();
+                                OneSignal.showHttpPrompt();
                             }
                         }
                     });
