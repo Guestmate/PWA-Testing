@@ -2085,7 +2085,7 @@ var map = {
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		782,
+		783,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
@@ -2101,7 +2101,7 @@ var map = {
 		36
 	],
 	"../pages/registration/registration.module": [
-		786,
+		787,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
@@ -2157,7 +2157,7 @@ var map = {
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		783,
+		782,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
@@ -2165,7 +2165,7 @@ var map = {
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		787,
+		786,
 		5
 	],
 	"../pages/wellness/wellness.module": [
@@ -2730,8 +2730,9 @@ var RegistrationServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_onesignal__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_notification_notification__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_env__ = __webpack_require__(743);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_notification_notification__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_env__ = __webpack_require__(743);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2781,6 +2782,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
+
 var ONESIGNAL_APP_ID = '3ae88d10-d238-4705-963d-7c56fd3861d1';
 var GOOGLE_PROJECT_ID = 'GOOGLE_PROJECT_ID';
 var OneSignalService = /** @class */ (function () {
@@ -2789,6 +2791,7 @@ var OneSignalService = /** @class */ (function () {
         this.OneSignalCordova = OneSignalCordova;
         this.NotificationService = NotificationService;
         this.initialized = false;
+        this.constant = new __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */]();
         this.WebPushSDK = {
             loaded: false,
             src: 'https://cdn.onesignal.com/sdks/OneSignalSDK.js',
@@ -2802,7 +2805,7 @@ var OneSignalService = /** @class */ (function () {
                 // `this.platform.is('cordova')` no es suficiente ya que Browser es una plataforma
                 // que corre sobre Cordova. Aún así, `@ionic-native/onesignal` no tiene una
                 // implementación para Browser.
-                if (__WEBPACK_IMPORTED_MODULE_4__app_env__["a" /* ENV */].isBrowser) {
+                if (__WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].isBrowser) {
                     return [2 /*return*/, this._initBrowser()];
                 }
                 return [2 /*return*/, this._initCordova()];
@@ -2899,7 +2902,7 @@ var OneSignalService = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1__ionic_native_onesignal__["a" /* OneSignal */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_notification_notification__["a" /* NotificationProvider */]])
+            __WEBPACK_IMPORTED_MODULE_4__providers_notification_notification__["a" /* NotificationProvider */]])
     ], OneSignalService);
     return OneSignalService;
 }());
@@ -5774,12 +5777,12 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/restaurant-booking/restaurant-booking.module#RestaurantBookingPageModule', name: 'RestaurantBookingPage', segment: 'restaurant-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/payment-data/payment-data.module#PaymentDataPageModule', name: 'PaymentDataPage', segment: 'payment-data', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-booking/wellness-booking.module#WellnessBookingPageModule', name: 'WellnessBookingPage', segment: 'wellness-booking', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/promotions-booking/promotions-booking.module#PromotionsBookingPageModule', name: 'PromotionsBookingPage', segment: 'promotions-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-payment/restaurant-payment.module#RestaurantPaymentPageModule', name: 'RestaurantPaymentPage', segment: 'restaurant-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service-booking/room-service-booking.module#RoomServiceBookingPageModule', name: 'RoomServiceBookingPage', segment: 'room-service-booking', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-payment/wellness-payment.module#WellnessPaymentPageModule', name: 'WellnessPaymentPage', segment: 'wellness-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/registration/registration.module#RegistrationPageModule', name: 'RegistrationPage', segment: 'registration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkin-basicinfo/checkin-basicinfo.module#CheckinBasicinfoPageModule', name: 'CheckinBasicinfoPage', segment: 'checkin-basicinfo', priority: 'low', defaultHistory: [] }
                     ]
                 }),
