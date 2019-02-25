@@ -2831,7 +2831,7 @@ var OneSignalService = /** @class */ (function () {
                         OneSignalBrowser.log.setLevel('trace');
                         OneSignalBrowser.init({
                             appId: _this.constant.PUSH_KEY,
-                            allowLocalhostAsSecureOrigin: true,
+                            //allowLocalhostAsSecureOrigin: true,
                             autoRegister: true,
                         });
                         OneSignalBrowser.registerForPushNotifications();
