@@ -52,8 +52,8 @@
                                   },
                         "backview":"Ga terug",
                         "newsletter":"Ik accepteer om informatie per email te ontvangenl",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+												"privacy":"Ik heb het gelezen en geaccepteerd <span id='privacyPolicy'><b>privacybeleid</b></span> en <span id='termsOfService'><b>Voorwaarden</b>.</span>",
+												"privacyerrormessage": "Voorwaarden en Privacybeleid moeten worden aanvaard."
         		        },
         		 "error":{
         		 		"credentials":"Inloggen is mislukt. Vul een geldig reserveringsnummer in.",
@@ -136,10 +136,10 @@
               "title" : "Activiteiten"
           },
           "ofertaCarousel" : {
-              "title" : "Promoties"
+              "title" : "Extra diensten"
           },
           "ofertaLearnMore" : {
-              "title" : "Promoties"
+              "title" : "Extra diensten"
           },
           "servicioHabitacion" :{
               "title" : "Room Service",

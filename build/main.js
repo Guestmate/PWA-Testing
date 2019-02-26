@@ -20,7 +20,7 @@ var Constant = /** @class */ (function () {
     function Constant() {
         this.devHost = "dev.guestmate-app.com";
         this.testHost = "localhost";
-        this.prodHost = "localhost";
+        this.prodHost = "prod.guestmate-app.com";
         this.environment = 'dev';
         this.isBrowser = true;
         this.local = {
@@ -89,10 +89,10 @@ var Constant = /** @class */ (function () {
         /* Default values ​​or common to all environments */
         this._API_VERSION = 1;
         this._DEFAULT_MASK_START_MILLIS = 1500;
-        this.PRIVACY_URL_ES = "http://www.guestpilot.com/es/legal/privacidad.html";
-        this.PRIVACY_URL_WORLD = "http://www.guestpilot.com/legal/privacy.html";
-        this.LEGAL_URL_ES = "http://www.guestpilot.com/es/legal/terms.html";
-        this.LEGAL_URL_WORLD = "http://www.guestpilot.com/legal/terms.html";
+        this.PRIVACY_URL_ES = "https://www.guestmate-app.com/privacy/";
+        this.PRIVACY_URL_WORLD = "https://www.guestmate-app.com/privacy/";
+        this.LEGAL_URL_ES = "https://www.guestmate-app.com/terms-of-service/";
+        this.LEGAL_URL_WORLD = "https://www.guestmate-app.com/terms-of-service/";
         this.LOCAL_STORAGE = "GEN_";
         this.LANGUAGES = {
             es: { key: "es", name: "español" },
@@ -1659,6 +1659,7 @@ var Hotel = /** @class */ (function () {
         this.noStayChatService = false;
         this.noStayActivityService = false;
         this.noStayRestaurantService = false;
+        this.housekeepingtService = false;
     }
     return Hotel;
 }());
@@ -2050,11 +2051,11 @@ var map = {
 		27
 	],
 	"../pages/forgot-id/forgot-id.module": [
-		753,
+		754,
 		26
 	],
 	"../pages/hotel-info/hotel-info.module": [
-		754,
+		753,
 		40
 	],
 	"../pages/login/login.module": [
@@ -5782,8 +5783,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/checkin-summary/checkin-summary.module#CheckinSummaryPageModule', name: 'CheckinSummaryPage', segment: 'checkin-summary', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-basicinfo/checkout-basicinfo.module#CheckoutBasicinfoPageModule', name: 'CheckoutBasicinfoPage', segment: 'checkout-basicinfo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/confirm-order/confirm-order.module#ConfirmOrderPageModule', name: 'ConfirmOrderPage', segment: 'confirm-order', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/forgot-id/forgot-id.module#ForgotIdPageModule', name: 'ForgotIdPage', segment: 'forgot-id', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/hotel-info/hotel-info.module#HotelInfoPageModule', name: 'HotelInfoPage', segment: 'hotel-info', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/forgot-id/forgot-id.module#ForgotIdPageModule', name: 'ForgotIdPage', segment: 'forgot-id', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification-details/notification-details.module#NotificationDetailsPageModule', name: 'NotificationDetailsPage', segment: 'notification-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/passport-picture/passport-picture.module#PassportPicturePageModule', name: 'PassportPicturePage', segment: 'passport-picture', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promotions-details/promotions-details.module#PromotionsDetailsPageModule', name: 'PromotionsDetailsPage', segment: 'promotions-details', priority: 'low', defaultHistory: [] },
@@ -7388,7 +7389,7 @@ var HomePage = /** @class */ (function () {
                 serviceButtons.push({ iconClass: 'icon-Food_Beverage', id: 'restaurante', ui: 'circleItems', elId: 'ext-element-68', service: 'restaurant', hasChild: false });
             }
             //Housekeeping service
-            if (true) {
+            if (this.hotel.objHotel.housekeepingtService) {
                 serviceButtons.push({ iconClass: 'icon-Housekeeping_main', id: 'housekeeping', ui: 'circleItems', elId: 'ext-element-63', service: 'housekeeping', hasChild: true });
             }
             if (this.hotel.objHotel.healthService) {

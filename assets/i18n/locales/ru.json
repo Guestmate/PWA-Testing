@@ -51,8 +51,8 @@
                                   },
                         "backview":"возвращаться",
                         "newsletter":"Я принимаю, чтобы получать информацию по электронной почте",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+												"privacy":"Я прочитал и принимаю <span id='privacyPolicy'><b>Pполитика конфиденциальности</b></span> и <span id='termsOfService'><b>Условия обслуживания</b>.</span>",
+												"privacyerrormessage": "Условия и политика конфиденциальности должны быть приняты."
         		      },
         		 "error":{
         		 		"credentials":"PОшибка заезда. Пожалуйста, введите действительный идентификатор бронирования.",

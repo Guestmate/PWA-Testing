@@ -70,7 +70,7 @@
                                   },
                         "backview":"Tornar enrera",
                         "newsletter":"Accepto rebre informació en el meu email",
-												"privacy":"He llegit i accepto la <span id='privacyPolicy'><b>política de privacitat</b>.</span>",
+												"privacy":"He llegit i accepto la <span id='privacyPolicy'><b>política de privacitat</b> y les <span id='termsOfService'><b>condicions</b>.</span>",
 												"privacyerrormessage": "Per registrar-se ha d'acceptar les condicions i la política de privacitat."
         		      },
 
@@ -156,10 +156,10 @@
               "title" : "Activitats"
           },
           "ofertaCarousel" : {
-              "title" : "Ofertes"
+              "title" : "Serveis extra"
           },
           "ofertaLearnMore" : {
-              "title" : "Ofertes"
+              "title" : "Serveis extra"
           },
 
           "servicioHabitacion" :{
@@ -271,7 +271,7 @@
                                         "placeHolder":"Data naixement"
                           },
                           "documentoIdentidad":{
-                                        "title":"Núm Id Nacional",
+                                        "title":"Núm document",
                                         "placeHolder":"Identificador"
                           },
                           "tipoDocumentoIdentidad":{

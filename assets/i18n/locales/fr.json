@@ -25,7 +25,7 @@
                                  "title":"Code de réservation oublié ?",
                                  "message":"Un mail vous a été envoyé avec votre code de réservation. S'il vous plaît vérifier votre boîte mail <b>{mail}</b>."
                                  },
-                        "legal":"En m'inscrivant à Guest Pilot j'accepte les <br> <span id='termsOfService'><b>conditions de vente</b></span> et les <span id='privacyPolicy'><b>règles de confidentialité</b></span>",
+                        "legal":"En m'inscrivant j'accepte les <br> <span id='termsOfService'><b>conditions de vente</b></span> et les <span id='privacyPolicy'><b>règles de confidentialité</b></span>",
                         "name":{
                                       "title":"Nom:",
                                       "placeHolder":"<Votre nom>"
@@ -51,9 +51,9 @@
                                   },
                         "backview":"Retourner",
                         "newsletter":"J'accepte de recevoir des informations dans mon email",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
-        					   
+												"privacy":"J'ai lu et accepte la <span id='privacyPolicy'><b>politique de confidentialité</b></span> et <span id='termsOfService'><b>les conditions d'utilisation</b>.</span>",
+												"privacyerrormessage": "Les conditions et la politique de confidentialité doivent être acceptées."
+
         		      },
         		 "error":{
         		 		"credentials":"Code erroné. Merci d'entrer un code valide.",
@@ -136,10 +136,10 @@
               "title" : "Activités"
           },
           "ofertaCarousel" : {
-              "title" : "Offres"
+              "title" : "Services supplémentaires"
           },
           "ofertaLearnMore" : {
-              "title" : "Offres"
+              "title" : "Services supplémentaires"
           },
 
           "servicioHabitacion" :{

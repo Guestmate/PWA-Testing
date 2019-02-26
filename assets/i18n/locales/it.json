@@ -51,9 +51,9 @@
                                   },
                         "backview":"Tornare",
                         "newsletter":"Accetto di ricevere informazioni in mia e-mail",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
-        					   
+												"privacy":"Ho letto e accetto <span id='privacyPolicy'><b>l'informativa sulla privacy</b></span> e i <span id='termsOfService'><b>termini di servizio</b>.</span>",
+												"privacyerrormessage": "Condizioni e politica sulla privacy devono essere accettate."
+
         		      },
         		 "error":{
         		 		"credentials":"Per favore, inserisci un codice di prenotazione valido.",
@@ -136,10 +136,10 @@
               "title" : "Attività"
           },
           "ofertaCarousel" : {
-              "title" : "Offerte"
+              "title" : "Servizi extra"
           },
           "ofertaLearnMore" : {
-              "title" : "Offerte"
+              "title" : "Servizi extra"
           },
 
           "servicioHabitacion" :{

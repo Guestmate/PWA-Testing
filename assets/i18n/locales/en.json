@@ -52,8 +52,8 @@
                                   },
                         "backview":"Go back",
                         "newsletter":"I agree to receive information by email",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+												"privacy":"I have read and accept the <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b> Terms of Service</b>.</span>",
+												"privacyerrormessage": "Conditions and Privacy Policy must be accepted."
         		        },
         		 "error":{
         		 		"credentials":"Sign-in failed. Please enter a valid Reservation Id.",
@@ -136,10 +136,10 @@
               "title" : "Activities"
           },
           "ofertaCarousel" : {
-              "title" : "Promotions"
+              "title" : "Extra Services"
           },
           "ofertaLearnMore" : {
-              "title" : "Promotions"
+              "title" : "Extra Services"
           },
           "servicioHabitacion" :{
               "title" : "Room Service",

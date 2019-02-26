@@ -51,9 +51,9 @@
                                   },
                         "backview":"atzera egin",
                         "newsletter":"Informazioa jasotzeko nire posta onartzen dut",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
-        					   
+												"privacy":"Irakurri eta onartu dut <span id='privacyPolicy'><b>pribatutasun politika</b></span> eta <span id='termsOfService'><b>zerbitzu baldintzak</b>.</span>",
+												"privacyerrormessage": "Zerbitzu-baldintzak eta pribatutasun-politika onartu behar dituzu."
+
         		      },
         		 "error":{
         		 		"credentials":"Mesedez, erreserbarako kode zuzena sartu.",

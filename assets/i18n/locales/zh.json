@@ -52,8 +52,8 @@
                                   },
                         "backview":"回去",
                         "newsletter":"我接受通过电子邮件收到信息",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
+												"privacy":"我已经阅读并接受了 <span id='privacyPolicy'><b>隐私政策</b></span> 和 <span id='termsOfService'><b>服务条款</b>.</span>",
+												"privacyerrormessage": "必须接受条件和隐私政策。"
         		        },
         		 "error":{
         		 		"credentials":"登录失败。 请输入有效的预订号。",

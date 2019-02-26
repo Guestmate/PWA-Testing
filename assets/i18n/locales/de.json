@@ -51,9 +51,9 @@
                                   },
                         "backview":"zurückgehen",
                         "newsletter":"Ich stimme Informationen per Email erhalten",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
-        					   
+												"privacy":"Ich habe gelesen und akzeptiere <span id='privacyPolicy'><b>Datenschutzbestimmungen</b></span> und <span id='termsOfService'><b>Nutzungsbedingungen</b>.</span>",
+												"privacyerrormessage": "Bedingungen und Datenschutzbestimmungen müssen akzeptiert werden."
+
         		      },
         		 "error":{
         		 		"credentials":"Registrierung fehlgeschlagen. Bitte geben Sie eine gültige Reservierungs-Nº ein.",
@@ -139,10 +139,10 @@
               "title" : "Aktivitäten"
           },
           "ofertaCarousel" : {
-              "title" : "Angebote"
+              "title" : "Zusatzleistungen"
           },
           "ofertaLearnMore" : {
-              "title" : "Angebote"
+              "title" : "Zusatzleistungen"
           },
 
           "servicioHabitacion" :{

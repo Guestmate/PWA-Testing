@@ -51,9 +51,9 @@
                                   },
                         "backview":"Wracaj",
                         "newsletter":"Akceptuję, aby otrzymywać informacje w moim e-mailu",
-												"privacy":"I accept <span id='privacyPolicy'><b>Privacy Policy</b></span> and <span id='termsOfService'><b>Terms of Service</b>.</span>",
-												"privacyerrormessage": "You must accept terms of sercice and privacy policy."
-        					   
+												"privacy":"przeczytałem i akceptuję <span id='privacyPolicy'><b>Polityka prywatności</b></span> i <span id='termsOfService'><b>zasady usługi</b>.</span>",
+												"privacyerrormessage": "Warunki i polityka prywatności muszą zostać zaakceptowane."
+
         		      },
         		 "error":{
         		 		"credentials":"Wprowadź ważny kod rezerwacji.",
@@ -136,10 +136,10 @@
               "title" : "Zajęcia"
           },
           "ofertaCarousel" : {
-              "title" : "Oferty"
+              "title" : "Dodatkowe usługi"
           },
           "ofertaLearnMore" : {
-              "title" : "Oferty"
+              "title" : "Dodatkowe usługi"
           },
 
           "servicioHabitacion" :{
