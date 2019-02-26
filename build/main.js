@@ -3518,6 +3518,7 @@ var CheckinSummaryPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_common_service_common_service__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_notification_notification__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_constants__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3535,6 +3536,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the HotelInfoPage page.
  *
@@ -3542,7 +3544,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var HotelInfoPage = /** @class */ (function () {
-    function HotelInfoPage(alertCtrl, platform, formBuilder, navCtrl, navParams, hotelProvider, toolsProvider, menuCtrl, commonProvider, loadingCtrl, notificationProvider) {
+    function HotelInfoPage(alertCtrl, platform, formBuilder, navCtrl, navParams, hotelProvider, toolsProvider, menuCtrl, commonProvider, loadingCtrl, notificationProvider, constant) {
         this.alertCtrl = alertCtrl;
         this.platform = platform;
         this.formBuilder = formBuilder;
@@ -3554,6 +3556,7 @@ var HotelInfoPage = /** @class */ (function () {
         this.commonProvider = commonProvider;
         this.loadingCtrl = loadingCtrl;
         this.notificationProvider = notificationProvider;
+        this.constant = constant;
         this.backgroundImageUrl = "";
         this.nombre = "";
         this.telefono = "";
@@ -3607,12 +3610,14 @@ var HotelInfoPage = /** @class */ (function () {
             var hotelName_1 = this.nombre.trim().replace(/\s+/g, "+");
             this.platform.ready().then(function () {
                 // ios
-                if (_this.platform.is('ios')) {
-                    window.open("maps://?q=" + hotelName_1 + "&ll=" + _this.lat + "," + _this.lon, '_system');
-                }
-                else if (_this.platform.is('android')) {
-                    //android and other platforms
-                    window.open('geo://' + _this.lat + ',' + _this.lon + '?q=' + _this.lat + ',' + _this.lon + '(' + hotelName_1 + ')', '_system');
+                if (!_this.constant.isBrowser) {
+                    if (_this.platform.is('ios')) {
+                        window.open("maps://?q=" + hotelName_1 + "&ll=" + _this.lat + "," + _this.lon, '_system');
+                    }
+                    else if (_this.platform.is('android')) {
+                        //android and other platforms
+                        window.open('geo://' + _this.lat + ',' + _this.lon + '?q=' + _this.lat + ',' + _this.lon + '(' + hotelName_1 + ')', '_system');
+                    }
                 }
                 else {
                     window.open('https://maps.google.com/maps?daddr=' + _this.lat + ',' + _this.lon + '&amp;ll="');
@@ -3689,7 +3694,7 @@ var HotelInfoPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-hotel-info',template:/*ion-inline-start:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/pages/hotel-info/hotel-info.html"*/'<!--\n  Generated template for the HotelInfoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-content id="homecontent" class="home_container" no-bounce>\n  <ion-header>\n    <ion-navbar>\n      <ion-title class="tranprnt_page_hdng">{{\'view.hotelInfo.title\' | translate}}</ion-title>\n      <button (click)=\'fnBack()\' class="hdr_back_btn_wrpr">\n        <i class="icon-arrow-left2"></i>\n      </button>\n      <ion-buttons end>\n        <button ion-button menuToggle hidden="false" class="main_menu">\n          <i class="icon-Menu"></i>\n          <span class="x-badge" *ngIf="notificationProvider.hasNotifications" ></span>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header>\n\n  <div class="service_details">\n    <div class="service_upgrade hotel_info_msg_actve">\n      <ion-item class="serve_bgimg htl_infoslid" [style.backgroundImage]="\'url(\' + backgroundImageUrl + \')\'">\n        <div class="htlinfo_slider_content">\n          <h3 id="hotleinfo_nombre" class="hotel_name">{{nombre}}</h3>\n          <ul id="hotleinfo_direccion" class="htl_info_drctn">\n            <li id="hotleinfo_calle">{{direccion}}</li>\n            <li>\n              <span id="hotleinfo_cp">{{codigoPostal}}</span> &nbsp; <span id="hotleinfo_poblacion">{{poblacion}}</span>\n            </li>\n            <li id="hotleinfo_pais">{{paisNombre}}</li>\n          </ul>\n        </div>\n        <div class="hotelInfoTabButtons">\n          <span (tap)="gotoCall()" class="hotelInfoPhone"></span>\n          <span class="hotelInfoMessage active"></span>\n          <span (tap)="gotoMap()" class="hotelInfoMap"></span>\n        </div>\n      </ion-item>\n    </div>\n    <div class="hote_info">\n      <h3>\n        {{\'view.hotelInfo.help\' | translate}}\n      </h3>\n      <p>\n        {{\'view.hotelInfo.legal\' | translate}}\n      </p>\n    </div>\n    <form [formGroup]="sendMessageForm">\n      <div class="btnPageCotainer">\n        <ion-item class="htl_info_textarea">\n          <ion-textarea class="cm_textarea" formControlName="commentsTextAreaField" placeholder="{{\'view.hotelInfo.placeHolder\' | translate}}" (ionFocus)="textFocus()" (ionBlur)="textBlur()">\n          </ion-textarea>\n        </ion-item>\n      </div>\n      <ion-item *ngIf="!textFocused" class="footerfixed_btn">\n        <button class="cmn_btn" (click)="fnSend()">{{"common.send" | translate}}</button>\n      </ion-item>\n      <ion-item *ngIf="textFocused" class="footer_btn">\n        <button class="cmn_btn" (click)="fnSend()">{{"common.send" | translate}}</button>\n      </ion-item>\n    </form>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Volumes/Transcend/Projects/guestmate/ionic-app/GuestMate/src/pages/hotel-info/hotel-info.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_hotel_service_hotel_service__["a" /* HotelServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__["a" /* ToolsProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_4__providers_common_service_common_service__["a" /* CommonServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__providers_notification_notification__["a" /* NotificationProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_hotel_service_hotel_service__["a" /* HotelServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__["a" /* ToolsProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* MenuController */], __WEBPACK_IMPORTED_MODULE_4__providers_common_service_common_service__["a" /* CommonServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_6__providers_notification_notification__["a" /* NotificationProvider */], __WEBPACK_IMPORTED_MODULE_7__constants_constants__["a" /* Constant */]])
     ], HotelInfoPage);
     return HotelInfoPage;
 }());
@@ -5965,7 +5970,7 @@ var CommonServiceProvider = /** @class */ (function () {
         this.checkinProvider = checkinProvider;
         this.roomsProvider = roomsProvider;
         this.platForm = platForm;
-        this.objAppData = new __WEBPACK_IMPORTED_MODULE_9__model_appdata_model__["a" /* AppData */](); // object of appData model 
+        this.objAppData = new __WEBPACK_IMPORTED_MODULE_9__model_appdata_model__["a" /* AppData */](); // object of appData model
         this.alertlogout = null; // variable for logout alert box
         this.objFormData = new __WEBPACK_IMPORTED_MODULE_16__model_pre_entered_form_data_model__["a" /* PreEnteredFormData */]();
         console.log('Hello CommonServiceProvider Provider');
@@ -5987,18 +5992,33 @@ var CommonServiceProvider = /** @class */ (function () {
                 this.app.getActiveNav().push("NotificationsPage", {}, { animate: true, animation: 'transition', duration: 500, direction: 'back' });
                 break;
             case 'facebook':
-                if (this.platForm.is('ios')) {
-                    window.open('fb://page/?id=' + this.hotel.objHotel.userFacebook, "_system", "location=no");
+                if (!this.constant.isBrowser) {
+                    if (this.platForm.is('ios')) {
+                        window.open('fb://page/?id=' + this.hotel.objHotel.userFacebook, "_system", "location=no");
+                    }
+                    else {
+                        window.open('fb://page/' + this.hotel.objHotel.userFacebook, "_system", "location=no");
+                    }
                 }
                 else {
-                    window.open('fb://page/' + this.hotel.objHotel.userFacebook, "_system", "location=no");
+                    window.open("https://www.facebook.com/" + this.hotel.objHotel.userFacebook);
                 }
                 break;
             case 'twitter':
-                window.open('twitter://user?screen_name=' + this.hotel.objHotel.twitterUser, '_system', 'location=no');
+                if (!this.constant.isBrowser) {
+                    window.open('twitter://user?screen_name=' + this.hotel.objHotel.twitterUser, '_system', 'location=no');
+                }
+                else {
+                    window.open('https://twitter.com/' + this.hotel.objHotel.twitterUser);
+                }
                 break;
             case 'website':
-                window.open("http://" + this.hotel.objHotel.urlWeb, "_system", "location=yes");
+                if (!this.constant.isBrowser) {
+                    window.open("http://" + this.hotel.objHotel.urlWeb, "_system", "location=yes");
+                }
+                else {
+                    window.open("http://" + this.hotel.objHotel.urlWeb);
+                }
                 break;
             case 'logout':
                 this.fnLogout();
@@ -6146,7 +6166,7 @@ var CommonServiceProvider = /** @class */ (function () {
             increment = 10;
             hourDecimal = parseInt(increment) / 60;
         }
-        //starting and ending time 
+        //starting and ending time
         var timeSlotStart = startTime;
         var timeSlotEnd = endTime;
         timeSlots.push(startTime); //push start time to array
