@@ -2122,11 +2122,11 @@ var map = {
 		16
 	],
 	"../pages/room-issue-details/room-issue-details.module": [
-		763,
+		762,
 		15
 	],
 	"../pages/room-issue/room-issue.module": [
-		762,
+		763,
 		14
 	],
 	"../pages/room-makeup-details/room-makeup-details.module": [
@@ -2134,7 +2134,7 @@ var map = {
 		13
 	],
 	"../pages/room-makeup/room-makeup.module": [
-		771,
+		765,
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
@@ -2142,19 +2142,19 @@ var map = {
 		11
 	],
 	"../pages/room-service/room-service.module": [
-		765,
+		766,
 		10
 	],
 	"../pages/room-upgrade/room-upgrade.module": [
-		766,
+		767,
 		9
 	],
 	"../pages/service-upgrade/service-upgrade.module": [
-		767,
+		768,
 		8
 	],
 	"../pages/terms-and-conditions/terms-and-conditions.module": [
-		768,
+		769,
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
@@ -2162,7 +2162,7 @@ var map = {
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
-		769,
+		770,
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
@@ -2170,7 +2170,7 @@ var map = {
 		5
 	],
 	"../pages/wellness/wellness.module": [
-		770,
+		771,
 		4
 	]
 };
@@ -5786,16 +5786,16 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/reception/reception.module#ReceptionPageModule', name: 'ReceptionPage', segment: 'reception', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-details/restaurant-details.module#RestaurantDetailsPageModule', name: 'RestaurantDetailsPage', segment: 'restaurant-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/room-issue/room-issue.module#RoomissuePageModule', name: 'RoomissuePage', segment: 'room-issue', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue-details/room-issue-details.module#RoomissueDetailsPageModule', name: 'RoomissueDetailsPage', segment: 'room-issue-details', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/room-issue/room-issue.module#RoomissuePageModule', name: 'RoomissuePage', segment: 'room-issue', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup-details/room-makeup-details.module#RoommakeupDetailsPageModule', name: 'RoommakeupDetailsPage', segment: 'room-makeup-details', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service/room-service.module#RoomServicePageModule', name: 'RoomServicePage', segment: 'room-service', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-upgrade/room-upgrade.module#RoomUpgradePageModule', name: 'RoomUpgradePage', segment: 'room-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/service-upgrade/service-upgrade.module#ServiceUpgradePageModule', name: 'ServiceUpgradePage', segment: 'service-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness/wellness.module#WellnessPageModule', name: 'WellnessPage', segment: 'wellness', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
