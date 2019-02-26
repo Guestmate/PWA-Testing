@@ -25718,8 +25718,11 @@ Definition of SASS variables used within the project
 /*Background color of the main menu badge */
 /*Gradient background color of the startup template - login */
 /* Color text screens login - original #FFFFFF */
+/* Color input text in login screens*/
+/* Color check-box in login screens*/
 /* Color legal texts to login - original #9d9d9d */
 /* Color transparent boot screens login - original #FFFFF */
+/* Color for splash animation background*/
 /*menu badge */
 @font-face {
   font-family: 'GuestPilot';
@@ -26631,7 +26634,7 @@ button.action-sheet-selected {
 
 .app_start_wrpr .app_start_inner ion-item .item-inner .input-wrapper ion-input {
   font-family: "ralewaylight";
-  color: #fff;
+  color: #ffffff;
 }
 
 .app_start_wrpr .app_start_inner ion-item.frgt_goback {
@@ -26644,7 +26647,7 @@ button.action-sheet-selected {
 }
 
 .app_start_wrpr .app_start_inner ion-item.frgt_goback .item-inner ion-label a {
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .app_start_wrpr .app_start_inner ion-item.serve_agree_btn {
@@ -26662,7 +26665,7 @@ button.action-sheet-selected {
   top: 0px;
   width: 24px;
   height: 24px;
-  border-color: #fff;
+  border-color: #ffffff;
   border-width: 5px;
 }
 
@@ -26691,8 +26694,12 @@ button.action-sheet-selected {
   box-shadow: none;
 }
 
+.app_start_wrpr.login_wrpr .login_footer_nostay {
+  margin-top: 30% !important;
+}
+
 .app_start_wrpr.login_wrpr .login_footer {
-  margin-top: 30%;
+  margin-top: 40%;
 }
 
 .app_start_wrpr.frgt_id_wrpr .login_footer {
@@ -26705,27 +26712,33 @@ button.action-sheet-selected {
 
 @media only screen and (max-width: 616px) and (min-width: 360px) {
   .app_start_wrpr.login_wrpr .login_footer {
-    margin-top: 20%;
+    margin-top: 30%;
+  }
+  .app_start_wrpr.login_wrpr .login_footer_nostay {
+    margin-top: 20% !important;
   }
 }
 
 @media only screen and (max-width: 708px) and (min-width: 412px) {
-  .app_start_wrpr.login_wrpr .login_footer {
-    margin-top: 30%;
+  .login_wrpr .login_footer {
+    margin-top: 40%;
+  }
+  .login_wrpr .login_footer_nostay {
+    margin-top: 30% !important;
   }
 }
 
 @media only screen and (min-width: 450px) {
-  .app_start_wrpr.login_wrpr .login_footer, .app_start_wrpr.frgt_id_wrpr .login_footer, .app_start_wrpr.nt_nstay_wrpr .login_footer {
+  .login_wrpr .login_footer, .frgt_id_wrpr .login_footer, .nt_nstay_wrpr .login_footer {
     margin-top: 0%;
   }
-  .app_start_wrpr .app_start_inner .radio-icon {
+  .app_start_inner .radio-icon {
     top: 0 !important;
   }
 }
 
 @media only screen and (max-height: 500px) {
-  .app_start_wrpr .login_logo, .app_start_wrpr .frgt_logo {
+  .login_logo, .frgt_logo {
     margin: 17px auto 20px auto;
   }
 }
@@ -27382,7 +27395,7 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
 }
 
 .registration .scroll-content .reg_frm ion-item.agree_rdo {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .registration .scroll-content .reg_frm ion-item.agree_rdo ion-radio {
@@ -30459,8 +30472,11 @@ Definition of SASS variables used within the project
 /*Background color of the main menu badge */
 /*Gradient background color of the startup template - login */
 /* Color text screens login - original #FFFFFF */
+/* Color input text in login screens*/
+/* Color check-box in login screens*/
 /* Color legal texts to login - original #9d9d9d */
 /* Color transparent boot screens login - original #FFFFF */
+/* Color for splash animation background*/
 /*menu badge */
 @font-face {
   font-family: 'GuestPilot';
@@ -30926,8 +30942,11 @@ Definition of SASS variables used within the project
 /*Background color of the main menu badge */
 /*Gradient background color of the startup template - login */
 /* Color text screens login - original #FFFFFF */
+/* Color input text in login screens*/
+/* Color check-box in login screens*/
 /* Color legal texts to login - original #9d9d9d */
 /* Color transparent boot screens login - original #FFFFF */
+/* Color for splash animation background*/
 /*menu badge */
 page-activity-payment .cardInvalid {
   color: red;
