@@ -1,323 +1,6 @@
 webpackJsonp([42],{
 
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivityServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/*
-  Generated class for the ActivityServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var ActivityServiceProvider = /** @class */ (function () {
-    function ActivityServiceProvider(http, constant, communicationProvider, deviceProvider) {
-        this.http = http;
-        this.constant = constant;
-        this.communicationProvider = communicationProvider;
-        this.deviceProvider = deviceProvider;
-        console.log('Hello ActivityServiceProvider Provider');
-    }
-    ActivityServiceProvider.prototype.getActivityList = function (hotelId, reservationId) {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var url = _this.constant.URL_TRANSACTION_SERVER + '/cacheable/hotel/' + hotelId + '/actividades';
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('reservaId', reservationId);
-            Params = Params.append('uuid', _this.deviceProvider.uuid);
-            _this.communicationProvider.get(url, Params, observer); // http get service call
-        });
-    };
-    ActivityServiceProvider.prototype.sendActivityReservation = function (serviceId, date, turn, person, comments, reservationId) {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var service = 'CREATE_ACTIVITY_RESERVATION'; // service type
-            var url = _this.constant.URL_TRANSACTION_SERVER;
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('serviceId', serviceId); // params
-            Params = Params.append('fecha', date);
-            Params = Params.append('turno', turn);
-            Params = Params.append('pax', person);
-            Params = Params.append('comentario', comments);
-            Params = Params.append('reservaId', reservationId);
-            Params = Params.append('uuid', _this.deviceProvider.uuid);
-            _this.communicationProvider.post(url, Params, observer, service); // http get service call
-        });
-    };
-    ActivityServiceProvider.prototype.sendServiceReservationWithPayment = function (reservationId, serviceId, date, turn, noOfPersons, comments, cardholder, token) {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var service = 'CREATE_ACTIVITY_RESERVATION_PAYMENT';
-            var url = _this.constant.URL_TRANSACTION_SERVER;
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('serviceId', serviceId);
-            Params = Params.append('fecha', date);
-            Params = Params.append('turno', turn);
-            Params = Params.append('pax', noOfPersons);
-            Params = Params.append('comentario', comments);
-            Params = Params.append('titularTarjeta', cardholder);
-            Params = Params.append('tokenTarjeta', token);
-            Params = Params.append('reservaId', reservationId);
-            Params = Params.append('uuid', _this.deviceProvider.uuid);
-            _this.communicationProvider.post(url, Params, observer, service);
-        });
-    };
-    ActivityServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__["a" /* CommunicationServiceProvider */], __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__["a" /* DeviceServiceProvider */]])
-    ], ActivityServiceProvider);
-    return ActivityServiceProvider;
-}());
-
-//# sourceMappingURL=activity-service.js.map
-
-/***/ }),
-
-/***/ 105:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomsServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hotel_service_hotel_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__communication_service_communication_service__ = __webpack_require__(17);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-/*
-  Generated class for the RoomsServiceProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var RoomsServiceProvider = /** @class */ (function () {
-    function RoomsServiceProvider(http, hotelProvider, reservationProvider, constant, deviceProvider, communicationProvider) {
-        this.http = http;
-        this.hotelProvider = hotelProvider;
-        this.reservationProvider = reservationProvider;
-        this.constant = constant;
-        this.deviceProvider = deviceProvider;
-        this.communicationProvider = communicationProvider;
-        console.log('Hello RoomsServiceProvider Provider');
-    }
-    //to set all Room Services data
-    RoomsServiceProvider.prototype.getRoomServiceInfo = function () {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var url = _this.constant.URL_TRANSACTION_SERVER + '/cacheable/hotel/' + _this.hotelProvider.objHotel.id + '/servicios-habitacion';
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('reservaId', _this.reservationProvider.objReservation.reservationId);
-            Params = Params.append('uuid', _this.deviceProvider.uuid); // parameters
-            _this.communicationProvider.get(url, Params, observer); // http get service call
-        });
-    };
-    //to set all items under a room service
-    RoomsServiceProvider.prototype.getServiceItems = function () {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var url = _this.constant.URL_TRANSACTION_SERVER + '/cacheable/hotel/' + _this.hotelProvider.objHotel.id + '/servicios-habitacion/items';
-            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
-            Params = Params.append('reservaId', _this.reservationProvider.objReservation.reservationId);
-            Params = Params.append('uuid', _this.deviceProvider.uuid); // parameters
-            _this.communicationProvider.get(url, Params, observer); // http get service call
-        });
-    };
-    RoomsServiceProvider.prototype.fnGetTimeSlotsForRoomService = function (today) {
-        var startTime = "00:00", endTime = "23:45", increment = 15;
-        var hourDecimal = parseInt(increment) / 60;
-        var turns = '';
-        var defaultDate = new Date();
-        var nextDate = new Date();
-        var newDate;
-        var timeSlots = [];
-        var currentHour = defaultDate.getHours() == 0 ? 24 : defaultDate.getHours();
-        var startReminder = defaultDate.getMinutes() % increment;
-        var startMinute = (defaultDate.getMinutes() - startReminder) + increment;
-        if (today == true) {
-            startTime = currentHour + ':' + startMinute;
-            var startTimeTokens_1 = startTime.split(':');
-            newDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), startTimeTokens_1[0], startTimeTokens_1[1]); //date format
-            nextDate = new Date(newDate.getTime() + (1000 * 60 * 30)); //get incremented date time
-            startTime = nextDate.getHours() + ":" + nextDate.getMinutes(); //extract time part
-            startTime = startTime.replace(":0", ":00");
-        }
-        timeSlots.push(startTime); //push start time to array
-        // end time to timedata
-        var endTimeTokens = endTime.split(':');
-        var endDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), endTimeTokens[0], endTimeTokens[1]); //date format
-        var endHour = endDate.getHours() == 0 ? 24 : endDate.getHours();
-        // start time to timedata
-        var startTimeTokens = startTime.split(':');
-        var startDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), startTimeTokens[0], startTimeTokens[1]); //date format
-        var startHour = startDate.getHours();
-        turns = (endHour - startHour) / hourDecimal; //to calculate number of time intervals that should be shown
-        for (var i = 0; i < turns; i++) {
-            var timeTokens = startTime.split(':');
-            newDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), timeTokens[0], timeTokens[1]); //date format
-            nextDate = new Date(newDate.getTime() + (1000 * 60 * increment)); //get incremented date time
-            startTime = nextDate.getHours() + ":" + nextDate.getMinutes(); //extract time part
-            startTime = startTime.replace(":0", ":00");
-            //change start time is selected date is today
-            timeSlots.push(startTime); //push time to array
-        }
-        return timeSlots; // returns time slots as array
-    };
-    //service call to request check-in
-    RoomsServiceProvider.prototype.sendRoomServiceRequest = function (date, comments) {
-        var _this = this;
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            var itemObj = [];
-            if (_this.objRoomService != null) {
-                var itemList = _this.objRoomService.serviceItemsList;
-                for (var i = 0; i < itemList.length; i++) {
-                    if (itemList[i].quantity > 0) {
-                        var itemArray = {};
-                        itemArray.cantidad = itemList[i].quantity;
-                        itemArray.precio = itemList[i].price;
-                        itemArray.id = itemList[i].id;
-                        itemObj.push(itemArray);
-                    }
-                }
-            }
-            var serviceData = {
-                'items': itemObj
-            };
-            var service = 'CREATE_ROOMSERVICE_RESERVATION';
-            var qryParams = 'fechaHora=' + date + '&comentario=' + comments + '&uuid=' + _this.deviceProvider.uuid + '&reservaId=' + _this.reservationProvider.objReservation.reservationId;
-            var url = _this.constant.URL_TRANSACTION_SERVER;
-            _this.communicationProvider.post(url, serviceData, observer, service, qryParams); // http post service call
-        });
-    };
-    RoomsServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_4__hotel_service_hotel_service__["a" /* HotelServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__["a" /* ReservationServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */],
-            __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__["a" /* DeviceServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_7__communication_service_communication_service__["a" /* CommunicationServiceProvider */]])
-    ], RoomsServiceProvider);
-    return RoomsServiceProvider;
-}());
-
-//# sourceMappingURL=rooms-service.js.map
-
-/***/ }),
-
-/***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CountryServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__ = __webpack_require__(26);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var CountryServiceProvider = /** @class */ (function () {
-    function CountryServiceProvider(http, device, tools) {
-        this.http = http;
-        this.device = device;
-        this.tools = tools;
-        console.log('Hello CountryServiceProvider Provider');
-    }
-    /**
-     * Function to show country list based on device preferred language
-     */
-    CountryServiceProvider.prototype.fnshowCountryList = function () {
-        var _this = this;
-        this.language = this.device.preferredLanguage;
-        this.tools.isLanguageFromSpain(this.language) ? this.url = "assets/countries/countriesES.json" : this.url = "assets/countries/countries.json";
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            _this.http.get(_this.url)
-                .subscribe(function (data) {
-                observer.next(data);
-                observer.complete();
-                return data;
-            });
-        });
-    };
-    CountryServiceProvider.prototype.fnshowProvinceList = function () {
-        var _this = this;
-        this.language = this.device.preferredLanguage;
-        this.url = "assets/countries/provincies.json";
-        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
-            _this.http.get(_this.url)
-                .subscribe(function (data) {
-                observer.next(data);
-                observer.complete();
-                return data;
-            });
-        });
-    };
-    CountryServiceProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__["a" /* ToolsProvider */]])
-    ], CountryServiceProvider);
-    return CountryServiceProvider;
-}());
-
-//# sourceMappingURL=country-service.js.map
-
-/***/ }),
-
-/***/ 11:
+/***/ 10:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -339,6 +22,7 @@ var Constant = /** @class */ (function () {
         this.testHost = "localhost";
         this.prodHost = "localhost";
         this.environment = 'dev';
+        this.isBrowser = true;
         this.local = {
             INFO_SERVER: "localhost",
             INFO_SERVER_PORT: "80",
@@ -522,6 +206,323 @@ var Constant = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivityServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/*
+  Generated class for the ActivityServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var ActivityServiceProvider = /** @class */ (function () {
+    function ActivityServiceProvider(http, constant, communicationProvider, deviceProvider) {
+        this.http = http;
+        this.constant = constant;
+        this.communicationProvider = communicationProvider;
+        this.deviceProvider = deviceProvider;
+        console.log('Hello ActivityServiceProvider Provider');
+    }
+    ActivityServiceProvider.prototype.getActivityList = function (hotelId, reservationId) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var url = _this.constant.URL_TRANSACTION_SERVER + '/cacheable/hotel/' + hotelId + '/actividades';
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('reservaId', reservationId);
+            Params = Params.append('uuid', _this.deviceProvider.uuid);
+            _this.communicationProvider.get(url, Params, observer); // http get service call
+        });
+    };
+    ActivityServiceProvider.prototype.sendActivityReservation = function (serviceId, date, turn, person, comments, reservationId) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var service = 'CREATE_ACTIVITY_RESERVATION'; // service type
+            var url = _this.constant.URL_TRANSACTION_SERVER;
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('serviceId', serviceId); // params
+            Params = Params.append('fecha', date);
+            Params = Params.append('turno', turn);
+            Params = Params.append('pax', person);
+            Params = Params.append('comentario', comments);
+            Params = Params.append('reservaId', reservationId);
+            Params = Params.append('uuid', _this.deviceProvider.uuid);
+            _this.communicationProvider.post(url, Params, observer, service); // http get service call
+        });
+    };
+    ActivityServiceProvider.prototype.sendServiceReservationWithPayment = function (reservationId, serviceId, date, turn, noOfPersons, comments, cardholder, token) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var service = 'CREATE_ACTIVITY_RESERVATION_PAYMENT';
+            var url = _this.constant.URL_TRANSACTION_SERVER;
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('serviceId', serviceId);
+            Params = Params.append('fecha', date);
+            Params = Params.append('turno', turn);
+            Params = Params.append('pax', noOfPersons);
+            Params = Params.append('comentario', comments);
+            Params = Params.append('titularTarjeta', cardholder);
+            Params = Params.append('tokenTarjeta', token);
+            Params = Params.append('reservaId', reservationId);
+            Params = Params.append('uuid', _this.deviceProvider.uuid);
+            _this.communicationProvider.post(url, Params, observer, service);
+        });
+    };
+    ActivityServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__["a" /* CommunicationServiceProvider */], __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__["a" /* DeviceServiceProvider */]])
+    ], ActivityServiceProvider);
+    return ActivityServiceProvider;
+}());
+
+//# sourceMappingURL=activity-service.js.map
+
+/***/ }),
+
+/***/ 105:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomsServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hotel_service_hotel_service__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__communication_service_communication_service__ = __webpack_require__(17);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+/*
+  Generated class for the RoomsServiceProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var RoomsServiceProvider = /** @class */ (function () {
+    function RoomsServiceProvider(http, hotelProvider, reservationProvider, constant, deviceProvider, communicationProvider) {
+        this.http = http;
+        this.hotelProvider = hotelProvider;
+        this.reservationProvider = reservationProvider;
+        this.constant = constant;
+        this.deviceProvider = deviceProvider;
+        this.communicationProvider = communicationProvider;
+        console.log('Hello RoomsServiceProvider Provider');
+    }
+    //to set all Room Services data
+    RoomsServiceProvider.prototype.getRoomServiceInfo = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var url = _this.constant.URL_TRANSACTION_SERVER + '/cacheable/hotel/' + _this.hotelProvider.objHotel.id + '/servicios-habitacion';
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('reservaId', _this.reservationProvider.objReservation.reservationId);
+            Params = Params.append('uuid', _this.deviceProvider.uuid); // parameters
+            _this.communicationProvider.get(url, Params, observer); // http get service call
+        });
+    };
+    //to set all items under a room service
+    RoomsServiceProvider.prototype.getServiceItems = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var url = _this.constant.URL_TRANSACTION_SERVER + '/cacheable/hotel/' + _this.hotelProvider.objHotel.id + '/servicios-habitacion/items';
+            var Params = new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["d" /* HttpParams */]();
+            Params = Params.append('reservaId', _this.reservationProvider.objReservation.reservationId);
+            Params = Params.append('uuid', _this.deviceProvider.uuid); // parameters
+            _this.communicationProvider.get(url, Params, observer); // http get service call
+        });
+    };
+    RoomsServiceProvider.prototype.fnGetTimeSlotsForRoomService = function (today) {
+        var startTime = "00:00", endTime = "23:45", increment = 15;
+        var hourDecimal = parseInt(increment) / 60;
+        var turns = '';
+        var defaultDate = new Date();
+        var nextDate = new Date();
+        var newDate;
+        var timeSlots = [];
+        var currentHour = defaultDate.getHours() == 0 ? 24 : defaultDate.getHours();
+        var startReminder = defaultDate.getMinutes() % increment;
+        var startMinute = (defaultDate.getMinutes() - startReminder) + increment;
+        if (today == true) {
+            startTime = currentHour + ':' + startMinute;
+            var startTimeTokens_1 = startTime.split(':');
+            newDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), startTimeTokens_1[0], startTimeTokens_1[1]); //date format
+            nextDate = new Date(newDate.getTime() + (1000 * 60 * 30)); //get incremented date time
+            startTime = nextDate.getHours() + ":" + nextDate.getMinutes(); //extract time part
+            startTime = startTime.replace(":0", ":00");
+        }
+        timeSlots.push(startTime); //push start time to array
+        // end time to timedata
+        var endTimeTokens = endTime.split(':');
+        var endDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), endTimeTokens[0], endTimeTokens[1]); //date format
+        var endHour = endDate.getHours() == 0 ? 24 : endDate.getHours();
+        // start time to timedata
+        var startTimeTokens = startTime.split(':');
+        var startDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), startTimeTokens[0], startTimeTokens[1]); //date format
+        var startHour = startDate.getHours();
+        turns = (endHour - startHour) / hourDecimal; //to calculate number of time intervals that should be shown
+        for (var i = 0; i < turns; i++) {
+            var timeTokens = startTime.split(':');
+            newDate = new Date(defaultDate.getFullYear(), defaultDate.getMonth(), defaultDate.getDate(), timeTokens[0], timeTokens[1]); //date format
+            nextDate = new Date(newDate.getTime() + (1000 * 60 * increment)); //get incremented date time
+            startTime = nextDate.getHours() + ":" + nextDate.getMinutes(); //extract time part
+            startTime = startTime.replace(":0", ":00");
+            //change start time is selected date is today
+            timeSlots.push(startTime); //push time to array
+        }
+        return timeSlots; // returns time slots as array
+    };
+    //service call to request check-in
+    RoomsServiceProvider.prototype.sendRoomServiceRequest = function (date, comments) {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            var itemObj = [];
+            if (_this.objRoomService != null) {
+                var itemList = _this.objRoomService.serviceItemsList;
+                for (var i = 0; i < itemList.length; i++) {
+                    if (itemList[i].quantity > 0) {
+                        var itemArray = {};
+                        itemArray.cantidad = itemList[i].quantity;
+                        itemArray.precio = itemList[i].price;
+                        itemArray.id = itemList[i].id;
+                        itemObj.push(itemArray);
+                    }
+                }
+            }
+            var serviceData = {
+                'items': itemObj
+            };
+            var service = 'CREATE_ROOMSERVICE_RESERVATION';
+            var qryParams = 'fechaHora=' + date + '&comentario=' + comments + '&uuid=' + _this.deviceProvider.uuid + '&reservaId=' + _this.reservationProvider.objReservation.reservationId;
+            var url = _this.constant.URL_TRANSACTION_SERVER;
+            _this.communicationProvider.post(url, serviceData, observer, service, qryParams); // http post service call
+        });
+    };
+    RoomsServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_4__hotel_service_hotel_service__["a" /* HotelServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__["a" /* ReservationServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__constants_constants__["a" /* Constant */],
+            __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__["a" /* DeviceServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_7__communication_service_communication_service__["a" /* CommunicationServiceProvider */]])
+    ], RoomsServiceProvider);
+    return RoomsServiceProvider;
+}());
+
+//# sourceMappingURL=rooms-service.js.map
+
+/***/ }),
+
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CountryServiceProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__device_service_device_service__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__ = __webpack_require__(26);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var CountryServiceProvider = /** @class */ (function () {
+    function CountryServiceProvider(http, device, tools) {
+        this.http = http;
+        this.device = device;
+        this.tools = tools;
+        console.log('Hello CountryServiceProvider Provider');
+    }
+    /**
+     * Function to show country list based on device preferred language
+     */
+    CountryServiceProvider.prototype.fnshowCountryList = function () {
+        var _this = this;
+        this.language = this.device.preferredLanguage;
+        this.tools.isLanguageFromSpain(this.language) ? this.url = "assets/countries/countriesES.json" : this.url = "assets/countries/countries.json";
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            _this.http.get(_this.url)
+                .subscribe(function (data) {
+                observer.next(data);
+                observer.complete();
+                return data;
+            });
+        });
+    };
+    CountryServiceProvider.prototype.fnshowProvinceList = function () {
+        var _this = this;
+        this.language = this.device.preferredLanguage;
+        this.url = "assets/countries/provincies.json";
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs__["Observable"].create(function (observer) {
+            _this.http.get(_this.url)
+                .subscribe(function (data) {
+                observer.next(data);
+                observer.complete();
+                return data;
+            });
+        });
+    };
+    CountryServiceProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["b" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__device_service_device_service__["a" /* DeviceServiceProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__["a" /* ToolsProvider */]])
+    ], CountryServiceProvider);
+    return CountryServiceProvider;
+}());
+
+//# sourceMappingURL=country-service.js.map
+
+/***/ }),
+
 /***/ 12:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -583,11 +584,11 @@ var DeviceServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -670,7 +671,7 @@ var BookingServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_globalization__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_core__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__model_reservation_model__ = __webpack_require__(187);
@@ -1016,12 +1017,12 @@ var LoginPage = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reservation_service_reservation_service__ = __webpack_require__(22);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1105,7 +1106,7 @@ var HomeServiceProvider = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommunicationServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_http__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__errorhandler_guestmate_error_handler__ = __webpack_require__(344);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(14);
@@ -1278,11 +1279,11 @@ var CommunicationServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RestaurantServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reservation_service_reservation_service__ = __webpack_require__(22);
@@ -1393,11 +1394,11 @@ var RestaurantServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WellnessServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1505,11 +1506,11 @@ var WellnessServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PromotionsServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1583,7 +1584,7 @@ var PromotionsServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GuestServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1671,7 +1672,7 @@ var Hotel = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomServiceExtraProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1805,12 +1806,12 @@ webpackEmptyAsyncContext.id = 200;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReservationServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__device_service_device_service__ = __webpack_require__(12);
@@ -2005,55 +2006,55 @@ var ReservationServiceProvider = /** @class */ (function () {
 
 var map = {
 	"../pages/activities-booking/activities-booking.module": [
-		773,
+		772,
 		2
 	],
 	"../pages/activities-details/activities-details.module": [
-		747,
+		746,
 		34
 	],
 	"../pages/activities/activities.module": [
-		748,
+		747,
 		33
 	],
 	"../pages/activity-payment/activity-payment.module": [
-		774,
+		773,
 		32
 	],
 	"../pages/amenities/amenities.module": [
-		749,
+		748,
 		31
 	],
 	"../pages/checkin-arrivaltime/checkin-arrivaltime.module": [
-		750,
+		749,
 		30
 	],
 	"../pages/checkin-basicinfo/checkin-basicinfo.module": [
-		788,
+		787,
 		3
 	],
 	"../pages/checkin-summary/checkin-summary.module": [
-		751,
+		750,
 		41
 	],
 	"../pages/checkout-basicinfo/checkout-basicinfo.module": [
-		752,
+		751,
 		29
 	],
 	"../pages/checkout-payment/checkout-payment.module": [
-		776,
+		774,
 		28
 	],
 	"../pages/confirm-order/confirm-order.module": [
-		753,
+		752,
 		27
 	],
 	"../pages/forgot-id/forgot-id.module": [
-		754,
+		753,
 		26
 	],
 	"../pages/hotel-info/hotel-info.module": [
-		755,
+		754,
 		40
 	],
 	"../pages/login/login.module": [
@@ -2061,63 +2062,63 @@ var map = {
 		39
 	],
 	"../pages/my-bookings/my-bookings.module": [
-		777,
+		776,
 		38
 	],
 	"../pages/no-stay-in-hotel/no-stay-in-hotel.module": [
-		778,
+		777,
 		25
 	],
 	"../pages/notification-details/notification-details.module": [
-		756,
+		755,
 		24
 	],
 	"../pages/notifications/notifications.module": [
-		779,
+		778,
 		37
 	],
 	"../pages/passport-picture/passport-picture.module": [
-		757,
+		756,
 		23
 	],
 	"../pages/payment-data/payment-data.module": [
-		780,
+		779,
 		22
 	],
 	"../pages/promotions-booking/promotions-booking.module": [
-		781,
+		780,
 		21
 	],
 	"../pages/promotions-details/promotions-details.module": [
-		758,
+		757,
 		20
 	],
 	"../pages/promotions/promotions.module": [
-		759,
+		758,
 		19
 	],
 	"../pages/reception/reception.module": [
-		760,
+		759,
 		36
 	],
 	"../pages/registration/registration.module": [
-		787,
+		786,
 		35
 	],
 	"../pages/restaurant-booking/restaurant-booking.module": [
-		782,
+		781,
 		1
 	],
 	"../pages/restaurant-details/restaurant-details.module": [
-		761,
+		760,
 		18
 	],
 	"../pages/restaurant-payment/restaurant-payment.module": [
-		783,
+		782,
 		17
 	],
 	"../pages/restaurants/restaurants.module": [
-		762,
+		761,
 		16
 	],
 	"../pages/room-issue-details/room-issue-details.module": [
@@ -2125,51 +2126,51 @@ var map = {
 		15
 	],
 	"../pages/room-issue/room-issue.module": [
-		764,
+		762,
 		14
 	],
 	"../pages/room-makeup-details/room-makeup-details.module": [
-		765,
+		764,
 		13
 	],
 	"../pages/room-makeup/room-makeup.module": [
-		766,
+		771,
 		12
 	],
 	"../pages/room-service-booking/room-service-booking.module": [
-		784,
+		783,
 		11
 	],
 	"../pages/room-service/room-service.module": [
-		767,
+		765,
 		10
 	],
 	"../pages/room-upgrade/room-upgrade.module": [
-		768,
+		766,
 		9
 	],
 	"../pages/service-upgrade/service-upgrade.module": [
-		769,
+		767,
 		8
 	],
 	"../pages/terms-and-conditions/terms-and-conditions.module": [
-		770,
+		768,
 		7
 	],
 	"../pages/wellness-booking/wellness-booking.module": [
-		785,
+		784,
 		0
 	],
 	"../pages/wellness-details/wellness-details.module": [
-		771,
+		769,
 		6
 	],
 	"../pages/wellness-payment/wellness-payment.module": [
-		786,
+		785,
 		5
 	],
 	"../pages/wellness/wellness.module": [
-		772,
+		770,
 		4
 	]
 };
@@ -2194,10 +2195,10 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToolsProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ngx_translate_core__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2450,7 +2451,7 @@ var ToolsProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HotelServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2560,11 +2561,11 @@ var GuestmateErrorHandlerProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__notification_notification__ = __webpack_require__(41);
@@ -2645,12 +2646,12 @@ var LoginServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegistrationServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__device_service_device_service__ = __webpack_require__(12);
@@ -2730,9 +2731,8 @@ var RegistrationServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_onesignal__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_notification_notification__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_env__ = __webpack_require__(743);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2782,9 +2782,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
-
-var ONESIGNAL_APP_ID = '3ae88d10-d238-4705-963d-7c56fd3861d1';
-var GOOGLE_PROJECT_ID = 'GOOGLE_PROJECT_ID';
 var OneSignalService = /** @class */ (function () {
     function OneSignalService(platform, OneSignalCordova, NotificationService, constant) {
         this.platform = platform;
@@ -2805,8 +2802,7 @@ var OneSignalService = /** @class */ (function () {
                 // `this.platform.is('cordova')` no es suficiente ya que Browser es una plataforma
                 // que corre sobre Cordova. Aún así, `@ionic-native/onesignal` no tiene una
                 // implementación para Browser.
-                console.log('THIS:::::: ', this);
-                if (__WEBPACK_IMPORTED_MODULE_5__app_env__["a" /* ENV */].isBrowser) {
+                if (this.constant.isBrowser) {
                     return [2 /*return*/, this._initBrowser()];
                 }
                 return [2 /*return*/, this._initCordova()];
@@ -2948,11 +2944,11 @@ var OneSignalService = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AncillaryServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_service_model__ = __webpack_require__(395);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__communication_service_communication_service__ = __webpack_require__(17);
@@ -3017,11 +3013,11 @@ var AncillaryServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoommakeupServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(346);
@@ -3162,11 +3158,11 @@ var RoommakeupServiceProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpgradeRoomServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__model_upgrade_room_model__ = __webpack_require__(401);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__communication_service_communication_service__ = __webpack_require__(17);
@@ -3253,11 +3249,11 @@ var UpgradeServiceData = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AmenitiesServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3859,11 +3855,11 @@ var ReceptionPage = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoomissueServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3940,12 +3936,12 @@ var UpgradeRoomData = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckoutServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__model_checkout_model__ = __webpack_require__(722);
@@ -4070,7 +4066,7 @@ var CheckoutServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_tools_tools__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_hotel_service_hotel_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_notification_notification__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_booking_model__ = __webpack_require__(723);
@@ -4484,11 +4480,11 @@ var MyBookingsPage = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NostayServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__communication_service_communication_service__ = __webpack_require__(17);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4570,7 +4566,7 @@ var GuestData = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_notification_notification__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__ = __webpack_require__(34);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5261,12 +5257,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__communication_service_communication_service__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__booking_service_booking_service__ = __webpack_require__(155);
@@ -5634,26 +5630,26 @@ var NotificationProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__errorhandler_guestmate_error_handler__ = __webpack_require__(344);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(387);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(388);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__interceptor_http_interceptor__ = __webpack_require__(741);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(742);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ngx_translate_core__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_http_loader__ = __webpack_require__(744);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ngx_translate_http_loader__ = __webpack_require__(743);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_tools_tools__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_globalization__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_in_app_browser__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_auto_complete_country_auto_complete_country__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_http__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__constants_constants__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_unique_device_id__ = __webpack_require__(745);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__constants_constants__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_unique_device_id__ = __webpack_require__(744);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_login_service_login_service__ = __webpack_require__(345);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_hotel_service_hotel_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_country_service_country_service__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_searchpipe_searchpipe__ = __webpack_require__(746);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_searchpipe_searchpipe__ = __webpack_require__(745);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__angular_common__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_registration_service_registration_service__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_home_service_home_service__ = __webpack_require__(157);
@@ -5790,20 +5786,20 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/reception/reception.module#ReceptionPageModule', name: 'ReceptionPage', segment: 'reception', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurant-details/restaurant-details.module#RestaurantDetailsPageModule', name: 'RestaurantDetailsPage', segment: 'restaurant-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/restaurants/restaurants.module#RestaurantsPageModule', name: 'RestaurantsPage', segment: 'restaurants', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/room-issue-details/room-issue-details.module#RoomissueDetailsPageModule', name: 'RoomissueDetailsPage', segment: 'room-issue-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-issue/room-issue.module#RoomissuePageModule', name: 'RoomissuePage', segment: 'room-issue', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/room-issue-details/room-issue-details.module#RoomissueDetailsPageModule', name: 'RoomissueDetailsPage', segment: 'room-issue-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-makeup-details/room-makeup-details.module#RoommakeupDetailsPageModule', name: 'RoommakeupDetailsPage', segment: 'room-makeup-details', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-service/room-service.module#RoomServicePageModule', name: 'RoomServicePage', segment: 'room-service', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/room-upgrade/room-upgrade.module#RoomUpgradePageModule', name: 'RoomUpgradePage', segment: 'room-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/service-upgrade/service-upgrade.module#ServiceUpgradePageModule', name: 'ServiceUpgradePage', segment: 'service-upgrade', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule', name: 'TermsAndConditionsPage', segment: 'terms-and-conditions', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness-details/wellness-details.module#WellnessDetailsPageModule', name: 'WellnessDetailsPage', segment: 'wellness-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wellness/wellness.module#WellnessPageModule', name: 'WellnessPage', segment: 'wellness', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/room-makeup/room-makeup.module#RoommakeupPageModule', name: 'RoommakeupPage', segment: 'room-makeup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activities-booking/activities-booking.module#ActivitiesBookingPageModule', name: 'ActivitiesBookingPage', segment: 'activities-booking', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/activity-payment/activity-payment.module#ActivityPaymentPageModule', name: 'ActivityPaymentPage', segment: 'activity-payment', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/checkout-payment/checkout-payment.module#CheckoutPaymentPageModule', name: 'CheckoutPaymentPage', segment: 'checkout-payment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/my-bookings/my-bookings.module#MyBookingsPageModule', name: 'MyBookingsPage', segment: 'my-bookings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/no-stay-in-hotel/no-stay-in-hotel.module#NoStayInHotelPageModule', name: 'NoStayInHotelPage', segment: 'no-stay-in-hotel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notifications/notifications.module#NotificationsPageModule', name: 'NotificationsPage', segment: 'notifications', priority: 'low', defaultHistory: [] },
@@ -5902,7 +5898,7 @@ var AppModule = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommonServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
@@ -5913,7 +5909,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__model_appdata_model__ = __webpack_require__(712);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__communication_service_communication_service__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__activity_service_activity_service__ = __webpack_require__(104);
@@ -6486,7 +6482,7 @@ var InterceptedHttp = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_globalization__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_tools_tools__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_device_service_device_service__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_native_storage__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_login_login__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(79);
@@ -6842,21 +6838,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 743:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ENV; });
-var ENV = {
-    mode: 'Development',
-    isBrowser: true,
-    pushKey: '3ae88d10-d238-4705-963d-7c56fd3861d1'
-};
-//# sourceMappingURL=environment.dev.js.map
-
-/***/ }),
-
-/***/ 746:
+/***/ 745:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6906,11 +6888,11 @@ var SearchpipePipe = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckinServiceProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants_constants__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__device_service_device_service__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reservation_service_reservation_service__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__communication_service_communication_service__ = __webpack_require__(17);
@@ -7142,6 +7124,7 @@ var CheckinServiceProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__model_room_service_model__ = __webpack_require__(718);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_rooms_service_rooms_service__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_room_service_extra_room_service_extra__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__constants_constants__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7176,8 +7159,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 //Xevi
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(roomsServiceExtra, roomsService, promotionsProvider, wellnessProvider, restaurants, transfer, file, activityProvider, loadingCtrl, notificationProvider, events, navCtrl, menuCtrl, hotel, tools, reservation, home, alertCtrl, nativeStorage, commonProvider, platForm, toastCtrl) {
+    function HomePage(roomsServiceExtra, roomsService, promotionsProvider, wellnessProvider, restaurants, transfer, file, activityProvider, loadingCtrl, notificationProvider, events, navCtrl, menuCtrl, hotel, tools, reservation, home, alertCtrl, nativeStorage, commonProvider, platForm, toastCtrl, constant) {
         var _this = this;
         this.roomsServiceExtra = roomsServiceExtra;
         this.roomsService = roomsService;
@@ -7201,6 +7185,7 @@ var HomePage = /** @class */ (function () {
         this.commonProvider = commonProvider;
         this.platForm = platForm;
         this.toastCtrl = toastCtrl;
+        this.constant = constant;
         this.isMemuOpened = false;
         this.isSubMenuOpened = false;
         this.buttons = [];
@@ -7371,7 +7356,7 @@ var HomePage = /** @class */ (function () {
             }
         }
         else {
-            if (this.hotel.objHotel.checkinService && (this.platForm.is('ios') || this.platForm.is('android'))) {
+            if (this.hotel.objHotel.checkinService && (!this.constant.isBrowser)) {
                 if (checkId == "checkout" && this.disableCheckout)
                     disabled = true;
                 serviceButtons.push({ iconClass: checkCls, id: checkId, ui: 'circleItems', service: checkService, disabled: disabled, hasChild: false });
@@ -8401,7 +8386,8 @@ var HomePage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_2__providers_hotel_service_hotel_service__["a" /* HotelServiceProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_tools_tools__["a" /* ToolsProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_reservation_service_reservation_service__["a" /* ReservationServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_5__providers_home_service_home_service__["a" /* HomeServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_storage__["a" /* NativeStorage */],
             __WEBPACK_IMPORTED_MODULE_7__providers_common_service_common_service__["a" /* CommonServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_22__constants_constants__["a" /* Constant */]])
     ], HomePage);
     return HomePage;
 }());
