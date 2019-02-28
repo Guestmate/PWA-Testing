@@ -1,6 +1,6 @@
 {
-  "name": "Guestmate",
-  "short_name": "Guestmate",
+  "name": "Aqua Hotel",
+  "short_name": "Aqua Hotel",
   "icons": [
     {
       "src": "assets/imgs/icon48.png",
@@ -43,8 +43,8 @@
 
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#002539",
-  "theme_color": "#002539",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
   "description": "The most simple and complete PWA for hotels",
   "dir": "ltr",
   "lang": "en-US",
