@@ -1,0 +1,139 @@
+{
+   "success":true,
+   "errorCode":null,
+   "exceptionClassName":"",
+   "exceptionMessage":"",
+   "exceptionTrace":"",
+   "response":[
+      {
+         "id":84,
+         "orden":1,
+         "animacionCategoriaId": 18,
+         "foto":{
+            "id":550,
+            "ancho":1270,
+            "alto":649,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":true,
+         "bookNoStay":true,
+         "paymentRequired":false,
+         "paymentRequiredNoStay":true,
+         "paymentType":"GUARANTEE",
+         "precio":85.00,
+         "nombre":"Squash",
+         "descripcion":"Squash in our new brand team",
+         "timming": [
+           {"dayOfWeek": 1, "init": "09:00", "end": "11:00"},
+           {"dayOfWeek": 2, "init": "09:00", "end": "11:00"},
+           {"dayOfWeek": 3, "init": "09:00", "end": "11:00"},
+           {"dayOfWeek": 4, "init": "09:00", "end": "11:00"},
+           {"dayOfWeek": 5, "init": "09:00", "end": "11:00"}
+         ]
+      },
+      {
+         "id":85,
+         "orden":2,
+         "animacionCategoriaId": 18,
+         "foto":{
+            "id":551,
+            "ancho":465,
+            "alto":229,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":true,
+         "bookNoStay":true,
+         "paymentRequired":false,
+         "paymentRequiredNoStay":true,
+         "paymentType":"GUARANTEE",
+         "precio":85.00,
+         "nombre":"Pool Yoga",
+         "descripcion":"Discver our new pool with our team and practice some Yoga",
+         "timming": [
+           {"dayOfWeek": 1, "init": "11:00", "end": "13:00"},
+           {"dayOfWeek": 3, "init": "11:00", "end": "13:00"},
+           {"dayOfWeek": 5, "init": "11:00", "end": "13:00"}
+         ]
+      },
+      {
+         "id":86,
+         "orden":1,
+         "animacionCategoriaId": 18,
+         "foto":{
+            "id":550,
+            "ancho":1270,
+            "alto":649,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":true,
+         "bookNoStay":true,
+         "paymentRequired":false,
+         "paymentRequiredNoStay":true,
+         "paymentType":"GUARANTEE",
+         "precio":85.00,
+         "nombre":"Spinning",
+         "descripcion":"Practice spinnig with oir team",
+         "timming": [
+           {"dayOfWeek": 2, "init": "11:00", "end": "13:00"},
+           {"dayOfWeek": 4, "init": "11:00", "end": "13:00"}
+         ]
+      },
+      {
+         "id":87,
+         "orden":2,
+         "animacionCategoriaId": 18,
+         "foto":{
+            "id":551,
+            "ancho":465,
+            "alto":229,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":false,
+         "bookNoStay":true,
+         "paymentRequired":false,
+         "paymentRequiredNoStay":true,
+         "paymentType":"GUARANTEE",
+         "precio":85.00,
+         "nombre":"Darts",
+         "descripcion":"Bull eye with our team",
+         "timming": [
+           {"dayOfWeek": 1, "init": "15:00", "end": "17:00"},
+           {"dayOfWeek": 2, "init": "15:00", "end": "17:00"},
+           {"dayOfWeek": 3, "init": "15:00", "end": "17:00"},
+           {"dayOfWeek": 4, "init": "15:00", "end": "17:00"},
+           {"dayOfWeek": 5, "init": "15:00", "end": "17:00"},
+           {"dayOfWeek": 6, "init": "15:00", "end": "17:00"},
+           {"dayOfWeek": 7, "init": "15:00", "end": "17:00"}
+         ]
+      },
+      {
+         "id":88,
+         "orden":2,
+         "animacionCategoriaId": 18,
+         "foto":{
+            "id":551,
+            "ancho":465,
+            "alto":229,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":true,
+         "bookNoStay":true,
+         "paymentRequired":false,
+         "paymentRequiredNoStay":true,
+         "paymentType":"GUARANTEE",
+         "precio":85.00,
+         "nombre":"MiniDisco",
+         "descripcion":"Dance with us",
+         "timming": [
+           {"dayOfWeek": 1, "init": "17:00", "end": "19:00"},
+           {"dayOfWeek": 2, "init": "17:00", "end": "19:00"},
+           {"dayOfWeek": 3, "init": "17:00", "end": "19:00"},
+           {"dayOfWeek": 4, "init": "17:00", "end": "19:00"},
+           {"dayOfWeek": 5, "init": "17:00", "end": "19:00"},
+           {"dayOfWeek": 6, "init": "17:00", "end": "19:00"},
+           {"dayOfWeek": 7, "init": "17:00", "end": "19:00"}
+         ]
+      }
+   ],
+   "timestamp":1551710623570
+}

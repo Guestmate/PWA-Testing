@@ -417,6 +417,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-salto/www/SaltoPlugin.js",
+        "id": "cordova-plugin-salto.SaltoPlugin",
+        "pluginId": "cordova-plugin-salto",
+        "clobbers": [
+            "cordova.plugins.SaltoPlugin"
+        ]
+    },
+    {
         "file": "plugins/onesignal-cordova-plugin/www/OneSignal.js",
         "id": "onesignal-cordova-plugin.OneSignal",
         "pluginId": "onesignal-cordova-plugin",
@@ -443,6 +451,7 @@ module.exports.metadata =
     "cordova-plugin-stripe": "1.5.3",
     "cordova-plugin-uniquedeviceid": "1.3.2",
     "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-salto": "0.0.1",
     "onesignal-cordova-plugin": "2.4.6"
 }
 // BOTTOM OF METADATA

@@ -1,0 +1,38 @@
+{
+   "success":true,
+   "errorCode":null,
+   "exceptionClassName":"",
+   "exceptionMessage":"",
+   "exceptionTrace":"",
+   "response":[
+      {
+         "id":18,
+         "orden":1,
+         "foto":{
+            "id":536,
+            "ancho":865,
+            "alto":555,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":true,
+         "nombre":"Animación Jovenes",
+         "descripcion":"",
+         "descripcionAmpliada":"Description of section massages and beauty in English"
+      },
+      {
+         "id":19,
+         "orden":2,
+         "foto":{
+            "id":539,
+            "ancho":1080,
+            "alto":736,
+            "mimeType":"image/jpeg"
+         },
+         "esReservable":true,
+         "nombre":"Animación Adultos",
+         "descripcion":"",
+         "descripcionAmpliada":"Description of section massages and beauty in English"
+      }
+   ],
+   "timestamp":1551710379962
+}
