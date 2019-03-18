@@ -26322,7 +26322,7 @@ button.action-sheet-selected {
   top: 5px;
   width: 16px;
   height: 16px;
-  background: #b59553;
+  background: #05549b;
 }
 
 .rdo_btn .radio-md .radio-icon.radio-checked, .rdo_btn .radio-ios .radio-icon.radio-checked {
@@ -26482,21 +26482,21 @@ button.action-sheet-selected {
   border: 1px solid #fff;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  background-color: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b59553), to(#92713e));
-  background: linear-gradient(to bottom, #b59553 0%, #92713e 100%);
+  background-color: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#05549b), to(#003565));
+  background: linear-gradient(to bottom, #05549b 0%, #003565 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientbutton', endColorstr='$high_gradientbutton',GradientType=0 );
 }
 
 .cm_ylw_btn.activated, .roomservice_slidebtm_wrpr .roomservice_slidebtm ion-slide .slide_img .slider_caption .count_block button.activated {
-  background-color: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#92713e), to(#b59553));
-  background: linear-gradient(to bottom, #92713e 0%, #b59553 100%);
+  background-color: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#003565), to(#05549b));
+  background: linear-gradient(to bottom, #003565 0%, #05549b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$high_gradientbutton', endColorstr='$low_gradientbutton',GradientType=0 );
 }
 
 .cmn_btn {
-  background-color: #b59553;
+  background-color: #05549b;
   border-radius: 150px;
   padding: 14px !important;
   border: 0;
@@ -26547,9 +26547,9 @@ button.action-sheet-selected {
 }
 
 .app_start_wrpr {
-  background: #0a1924;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a1924), to(#002539));
-  background: linear-gradient(to bottom, #0a1924 0%, #002539 100%);
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradient_screen', endColorstr='$high_gradient_screen',GradientType=0 );
   height: 100%;
 }
@@ -26627,14 +26627,14 @@ button.action-sheet-selected {
 }
 
 .app_start_wrpr .app_start_inner ion-item .item-inner .input-wrapper ion-label {
-  color: #FFFFFF;
+  color: #9d9d9d;
   font-family: "ralewaythin";
   line-height: 120%;
 }
 
 .app_start_wrpr .app_start_inner ion-item .item-inner .input-wrapper ion-input {
   font-family: "ralewaylight";
-  color: #ffffff;
+  color: #535453;
 }
 
 .app_start_wrpr .app_start_inner ion-item.frgt_goback {
@@ -26647,7 +26647,7 @@ button.action-sheet-selected {
 }
 
 .app_start_wrpr .app_start_inner ion-item.frgt_goback .item-inner ion-label a {
-  color: #FFFFFF;
+  color: #9d9d9d;
 }
 
 .app_start_wrpr .app_start_inner ion-item.serve_agree_btn {
@@ -26665,7 +26665,7 @@ button.action-sheet-selected {
   top: 0px;
   width: 24px;
   height: 24px;
-  border-color: #ffffff;
+  border-color: #d1d1d1;
   border-width: 5px;
 }
 
@@ -26674,7 +26674,7 @@ button.action-sheet-selected {
   left: 0px;
   width: 14px;
   height: 14px;
-  background: #b59553;
+  background: #05549b;
 }
 
 .app_start_wrpr .app_start_inner ion-item.serve_agree_btn .item-inner {
@@ -26866,7 +26866,7 @@ ion-header.header_menu ion-navbar ion-buttons button ion-icon {
 }
 
 ion-header.header_menu ion-navbar .toolbar-background {
-  background: #b59553 !important;
+  background: #05549b !important;
   min-height: 48px;
   border-bottom: solid thin #fff;
 }
@@ -27046,7 +27046,7 @@ ion-header.header_menu.nobrdr_menu_hdr ion-navbar {
 }
 
 .home_menu .menu-inner ion-item.activated {
-  background-color: #b59553 !important;
+  background-color: #05549b !important;
   color: #fff;
 }
 
@@ -27175,9 +27175,9 @@ ion-picker-cmp .picker-wrapper {
 
 ion-picker-cmp .picker-wrapper .picker-toolbar {
   height: 49px;
-  background: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b59553), to(#92713e));
-  background: linear-gradient(to bottom, #b59553 0%, #92713e 100%);
+  background: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#05549b), to(#003565));
+  background: linear-gradient(to bottom, #05549b 0%, #003565 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientpicker', endColorstr='$high_gradientpicker',GradientType=0 );
   display: block;
   border-bottom-color: #000;
@@ -27271,20 +27271,20 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
 }
 
 .action-sheet-container .action-sheet-group .action-sheet-title {
-  background: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b59553), to(#92713e));
-  background: linear-gradient(to bottom, #b59553 0%, #92713e 100%);
+  background: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#05549b), to(#003565));
+  background: linear-gradient(to bottom, #05549b 0%, #003565 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientpicker', endColorstr='$high_gradientpicker',GradientType=0 );
   border-top: 1px solid #000;
   color: #fff;
 }
 
 .action-sheet-container .action-sheet-group:last-child {
-  border-top: 1px solid #b59553;
+  border-top: 1px solid #05549b;
 }
 
 .action-sheet-container .action-sheet-group:last-child button .button-inner {
-  color: #b59553;
+  color: #05549b;
 }
 
 .registration .scroll-content {
@@ -27422,7 +27422,7 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
 }
 
 .registration .scroll-content .reg_frm ion-item.agree_rdo ion-radio .radio-icon .radio-inner {
-  background: #b59553;
+  background: #05549b;
   left: 0px;
   top: 0px;
   width: 13px;
@@ -27496,7 +27496,7 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
 }
 
 .search_header {
-  background: #b59553 !important;
+  background: #05549b !important;
 }
 
 .search_header ion-navbar {
@@ -27506,7 +27506,7 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
 .search_header ion-navbar .back_header {
   width: 100%;
   display: inline-block;
-  background: #b59553 !important;
+  background: #05549b !important;
   color: #fff;
   font-size: 18px;
   font-family: "ralewayregular";
@@ -27617,13 +27617,13 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
 }
 
 .login_footer ion-item.login_btn_wrpr .item-inner ion-label button {
-  border: solid thin #FFFFFF;
+  border: solid thin #535453;
   padding: 14px 10px;
   width: 80%;
   max-width: 270px;
   display: block;
   margin: auto;
-  color: #FFFFFF;
+  color: #535453;
   font-size: 20px;
   text-transform: uppercase;
   background: none;
@@ -27753,7 +27753,7 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
   float: left;
   font-size: 16px;
   font-family: "ralewaylight";
-  color: #b59553;
+  color: #05549b;
   text-transform: capitalize;
 }
 
@@ -28136,8 +28136,8 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
   right: 0;
   margin-bottom: 5px;
   font-family: "ralewayregular";
-  background: -webkit-gradient(linear, left top, left bottom, from(#b59553), to(#92713e));
-  background: linear-gradient(to bottom, #b59553 0%, #92713e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#05549b), to(#003565));
+  background: linear-gradient(to bottom, #05549b 0%, #003565 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientbutton', endColorstr='$high_gradientbutton',GradientType=0 );
 }
 
@@ -28236,17 +28236,17 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
   position: absolute;
   right: 16px;
   top: -31px;
-  background-color: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b59553), to(#92713e));
-  background: linear-gradient(to bottom, #b59553 0%, #92713e 100%);
+  background-color: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#05549b), to(#003565));
+  background: linear-gradient(to bottom, #05549b 0%, #003565 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientbutton', endColorstr='$high_gradientbutton',GradientType=0 );
   line-height: 105%;
 }
 
 .slider_plus_btn.activated {
-  background-color: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#92713e), to(#b59553));
-  background: linear-gradient(to bottom, #92713e 0%, #b59553 100%);
+  background-color: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#003565), to(#05549b));
+  background: linear-gradient(to bottom, #003565 0%, #05549b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$high_gradientbutton', endColorstr='$low_gradientbutton',GradientType=0 );
 }
 
@@ -29072,9 +29072,9 @@ ion-picker-cmp .picker-wrapper .picker-columns:after {
   height: 60px;
   border-radius: 100%;
   overflow: hidden;
-  background: #0a1924;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a1924), to(#002539));
-  background: linear-gradient(to bottom, #0a1924 0%, #002539 100%);
+  background: #535453;
+  background: -webkit-gradient(linear, left top, left bottom, from(#535453), to(#3f3f3f));
+  background: linear-gradient(to bottom, #535453 0%, #3f3f3f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientfotobutton', endColorstr='$high_gradientfotobutton',GradientType=0 );
   text-align: center;
   border: solid 2px #fff;
@@ -29356,9 +29356,9 @@ ul.chckin_navbtn li.active {
   left: calc(50% - 35px);
   bottom: -24px;
   text-align: center;
-  background: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a1924), to(#002539));
-  background: linear-gradient(to bottom, #0a1924 0%, #002539 100%);
+  background: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#535453), to(#3f3f3f));
+  background: linear-gradient(to bottom, #535453 0%, #3f3f3f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientfotobutton', endColorstr='$high_gradientfotobutton',GradientType=0 );
   border: solid 2px #fff;
   -webkit-box-shadow: 0 2px 5px #666;
@@ -29404,9 +29404,9 @@ ul.chckin_navbtn li.active {
   left: calc(50% - 35px);
   bottom: -24px;
   text-align: center;
-  background: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a1924), to(#002539));
-  background: linear-gradient(to bottom, #0a1924 0%, #002539 100%);
+  background: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#535453), to(#3f3f3f));
+  background: linear-gradient(to bottom, #535453 0%, #3f3f3f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientfotobutton', endColorstr='$high_gradientfotobutton',GradientType=0 );
   border: solid 2px #fff;
   -webkit-box-shadow: 0 2px 5px #666;
@@ -30130,8 +30130,8 @@ page-home .menu-button {
   width: 12px;
   height: 12px;
   top: calc(50% - 6px);
-  background: #92713e;
-  border: 2px solid #92713e !important;
+  background: #535453;
+  border: 2px solid #3f3f3f !important;
 }
 
 .notification_list ion-item.unread .notification_bloks h3 {
@@ -30491,7 +30491,7 @@ ion-slides.slides-ios .service_list {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #002037;
+  background: #ffffff;
 }
 
 /********text transform******/
@@ -31799,9 +31799,9 @@ page-roomissuedetails .issue_pic_wrpr .scroll-content .issue_pic_inr .issue_btn 
   left: calc(50% - 35px);
   bottom: -24px;
   text-align: center;
-  background: #b59553;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0a1924), to(#002539));
-  background: linear-gradient(to bottom, #0a1924 0%, #002539 100%);
+  background: #05549b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#535453), to(#3f3f3f));
+  background: linear-gradient(to bottom, #535453 0%, #3f3f3f 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$low_gradientfotobutton', endColorstr='$high_gradientfotobutton',GradientType=0 );
   border: solid 2px #fff;
   -webkit-box-shadow: 0 2px 5px #666;
